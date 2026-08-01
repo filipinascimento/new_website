@@ -1,6 +1,6 @@
 ---
 title: Curriculum vitae
-subtitle: Public web version · contact details omitted
+subtitle: Contact details omitted
 updated: 2026-08-01
 ---
 

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import contentJson from "@/data/content.json";
-import { LockKeyhole } from "lucide-react";
 import { PrintButton } from "../components/PrintButton";
 import type { ContentRecord } from "../lib/types";
 
@@ -11,23 +10,30 @@ export const metadata: Metadata = {
 
 export default function CvPage() {
   const cv = contentJson.cv[0] as ContentRecord & { subtitle: string; updated: string };
+  const profile = contentJson.site[0] as ContentRecord & { role: string; institution: string };
   const updated = new Intl.DateTimeFormat("en-US", {
     dateStyle: "long",
     timeZone: "UTC",
   }).format(new Date(cv.updated));
   return (
     <main id="main-content" className="cv-page">
-      <header className="page-hero shell cv-hero">
-        <div>
-          <div className="eyebrow">{cv.subtitle}</div>
-          <h1>{cv.title}</h1>
-          <p>Last updated {updated}. Publications and public software metadata are maintained separately by the automated site pipeline.</p>
+      <header className="cv-hero shell">
+        <div className="cv-hero__identity">
+          <p className="cv-kicker">Curriculum vitae</p>
+          <h1>{profile.title}</h1>
+          <p className="cv-hero__role">
+            <strong>{profile.role}</strong>
+            <span>{profile.institution}</span>
+          </p>
         </div>
-        <PrintButton />
+        <div className="cv-hero__actions">
+          <p>Updated {updated}</p>
+          <PrintButton />
+        </div>
       </header>
       <aside className="privacy-note shell">
-        <LockKeyhole size={18} aria-hidden="true" />
-        <span>This web edition intentionally omits personal email, phone, and postal details. Complete ATS-friendly Markdown, Word, and PDF versions are maintained locally.</span>
+        <strong>Public edition</strong>
+        <span>{cv.subtitle}. The complete ATS-readable Markdown, Word, and PDF versions are maintained locally.</span>
       </aside>
       <article className="cv-document shell" dangerouslySetInnerHTML={{ __html: cv.html }} />
     </main>
