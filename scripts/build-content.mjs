@@ -56,7 +56,6 @@ async function loadCollection(collection) {
 
 const output = {};
 for (const collection of collections) output[collection] = await loadCollection(collection);
-output.generatedAt = new Date().toISOString();
 
 const outputDir = path.join(root, "data");
 await mkdir(outputDir, { recursive: true });
