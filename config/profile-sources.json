@@ -1,0 +1,35 @@
+{
+  "openalex": {
+    "primaryAuthorId": "A5025683130",
+    "authorIds": [
+      "A5025683130",
+      "A5133555595",
+      "A5123858264",
+      "A5120752287",
+      "A5133327538",
+      "A5122442661",
+      "A5135553381",
+      "A5102054363",
+      "A5115590821",
+      "A5136191170"
+    ],
+    "orcid": "0000-0002-9151-6517",
+    "manualWorkDois": [
+      "10.1103/4124-dyj8",
+      "10.48550/arxiv.2506.17851"
+    ]
+  },
+  "github": {
+    "username": "filipinascimento",
+    "featuredRepositories": [
+      "helios-web",
+      "motifs",
+      "openalexnet",
+      "tpsimilarity",
+      "coordinationz",
+      "RModularity",
+      "bigscience",
+      "progressista"
+    ]
+  }
+}

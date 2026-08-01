@@ -1,0 +1,113 @@
+{
+  "fetchedAt": "2026-08-01T22:23:31.049Z",
+  "profile": {
+    "login": "filipinascimento",
+    "name": "Filipi Nascimento Silva",
+    "bio": "Research Assistant Professor at CSSI - Kellogg - Northwestern University",
+    "company": "Northwestern University",
+    "publicRepos": 110,
+    "followers": 72,
+    "url": "https://github.com/filipinascimento"
+  },
+  "featured": [
+    {
+      "name": "helios-web",
+      "description": "A web-based framework to visualize dynamic networks in real-time.",
+      "url": "https://github.com/filipinascimento/helios-web",
+      "homepage": null,
+      "language": "JavaScript",
+      "stars": 92,
+      "forks": 15,
+      "pushedAt": "2026-06-29T08:30:16Z",
+      "topics": [
+        "3d",
+        "complex-networks",
+        "network",
+        "visualization"
+      ]
+    },
+    {
+      "name": "motifs",
+      "description": "Static explorer for a hierarchical device-motif atlas",
+      "url": "https://github.com/filipinascimento/motifs",
+      "homepage": "https://filipinascimento.github.io/motifs/",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-07-30T20:03:31Z",
+      "topics": []
+    },
+    {
+      "name": "openalexnet",
+      "description": "OpenAlex Networks is a helper library to process and obtain data from the OpenAlex dataset via API. It also provides functionality to generate citation and coauthorship networks from queries.",
+      "url": "https://github.com/filipinascimento/openalexnet",
+      "homepage": null,
+      "language": "Jupyter Notebook",
+      "stars": 27,
+      "forks": 1,
+      "pushedAt": "2023-04-05T18:42:36Z",
+      "topics": []
+    },
+    {
+      "name": "tpsimilarity",
+      "description": "TP Similarity is a Python package designed to compute Transition Probability (TP) similarities between nodes in a network. This package provides various methods to estimate these similarities, including exact computation, estimated methods, and node2vec-based cosine similarity.",
+      "url": "https://github.com/filipinascimento/tpsimilarity",
+      "homepage": null,
+      "language": "Python",
+      "stars": 4,
+      "forks": 1,
+      "pushedAt": "2025-03-04T18:22:17Z",
+      "topics": []
+    },
+    {
+      "name": "coordinationz",
+      "description": "",
+      "url": "https://github.com/filipinascimento/coordinationz",
+      "homepage": null,
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 1,
+      "pushedAt": "2026-03-24T20:42:10Z",
+      "topics": []
+    },
+    {
+      "name": "RModularity",
+      "description": "Small utility to calculate the robustness modularity, information modularity and modularity difference.",
+      "url": "https://github.com/filipinascimento/RModularity",
+      "homepage": null,
+      "language": "Python",
+      "stars": 7,
+      "forks": 0,
+      "pushedAt": "2024-07-31T21:09:22Z",
+      "topics": [
+        "complex-networks",
+        "modularity",
+        "networks",
+        "robustness-modularity",
+        "sbm"
+      ]
+    },
+    {
+      "name": "bigscience",
+      "description": "Big Science Project",
+      "url": "https://github.com/filipinascimento/bigscience",
+      "homepage": null,
+      "language": "Jupyter Notebook",
+      "stars": 6,
+      "forks": 5,
+      "pushedAt": "2022-05-03T15:45:37Z",
+      "topics": []
+    },
+    {
+      "name": "progressista",
+      "description": "Remote tqdm progress dashboards with a FastAPI push gateway and live web UI.",
+      "url": "https://github.com/filipinascimento/progressista",
+      "homepage": null,
+      "language": "Python",
+      "stars": 2,
+      "forks": 1,
+      "pushedAt": "2025-10-27T19:49:09Z",
+      "topics": []
+    }
+  ]
+}

@@ -1,0 +1,569 @@
+{
+  "site": [
+    {
+      "slug": "profile",
+      "collection": "site",
+      "title": "Filipi Nascimento Silva",
+      "eyebrow": "Network scientist · AI researcher · visual systems builder",
+      "role": "Research Assistant Professor",
+      "institution": "Center for Science of Science & Innovation, Kellogg School of Management, Northwestern University",
+      "location": "Evanston, Illinois",
+      "orcid": "https://orcid.org/0000-0002-9151-6517",
+      "scholar": "https://scholar.google.com/citations?user=fhWJEysAAAAJ",
+      "github": "https://github.com/filipinascimento",
+      "openalex": "https://openalex.org/A5025683130",
+      "markdown": "I study how knowledge moves—through papers, collaborations, technologies, software, and public discourse. My work combines network science, machine learning, science of science, and visual computing to make complex systems easier to analyze and explore.\n\nAt Northwestern’s Center for Science of Science & Innovation, I develop data and AI systems for understanding scientific change and accelerating the path from research to useful technology. I also build open tools, including Helios Web, for interactive exploration of large networks and embedding spaces.\n\nAcross earlier work in computational physics, bioinformatics, climate science, information science, and computational social science, the recurring idea has been the same: build rigorous representations of complex systems, then make those representations usable.",
+      "html": "<p>I study how knowledge moves—through papers, collaborations, technologies, software, and public discourse. My work combines network science, machine learning, science of science, and visual computing to make complex systems easier to analyze and explore.</p>\n<p>At Northwestern’s Center for Science of Science &amp; Innovation, I develop data and AI systems for understanding scientific change and accelerating the path from research to useful technology. I also build open tools, including Helios Web, for interactive exploration of large networks and embedding spaces.</p>\n<p>Across earlier work in computational physics, bioinformatics, climate science, information science, and computational social science, the recurring idea has been the same: build rigorous representations of complex systems, then make those representations usable.</p>\n",
+      "text": "I study how knowledge moves—through papers, collaborations, technologies, software, and public discourse. My work combines network science, machine learning, science of science, and visual computing to make complex systems easier to analyze and explore. At Northwestern’s Center for Science of Science & Innovation, I develop data and AI systems for understanding scientific change and accelerating the path from research to useful technology. I also build open tools, including Helios Web, for interactive exploration of large networks and embedding spaces. Across earlier work in computational physics, bioinformatics, climate science, information science, and computational social science, the recurring idea has been the same: build rigorous representations of complex systems, then make those representations usable."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "agentic-scientific-design",
+      "collection": "projects",
+      "title": "Agentic AI for scientific and engineering design",
+      "era": "current",
+      "status": "Active research",
+      "year": "2026–present",
+      "order": 1,
+      "featured": true,
+      "accent": "coral",
+      "topics": [
+        "Agentic AI",
+        "Science of science",
+        "Materials",
+        "Devices"
+      ],
+      "markdown": "Using agentic AI and science-of-science evidence to discover promising materials, identify reusable technical motifs, and support the design of new devices. The work connects scientific literature, structured engineering knowledge, specialized tools, and expert evaluation while keeping early-stage technical details private.",
+      "html": "<p>Using agentic AI and science-of-science evidence to discover promising materials, identify reusable technical motifs, and support the design of new devices. The work connects scientific literature, structured engineering knowledge, specialized tools, and expert evaluation while keeping early-stage technical details private.</p>\n",
+      "text": "Using agentic AI and science of science evidence to discover promising materials, identify reusable technical motifs, and support the design of new devices. The work connects scientific literature, structured engineering knowledge, specialized tools, and expert evaluation while keeping early stage technical details private."
+    },
+    {
+      "slug": "climate-teleconnections",
+      "collection": "projects",
+      "title": "Climate teleconnections",
+      "era": "past",
+      "status": "Published",
+      "year": "2019–2021",
+      "order": 1,
+      "accent": "cyan",
+      "topics": [
+        "Climate networks",
+        "Granger causality",
+        "Complex systems"
+      ],
+      "collaborators": [
+        "Didier Vega-Oliveros",
+        "Xiaoran Yan",
+        "Alessandro Flammini",
+        "Filippo Menczer",
+        "Filippo Radicchi",
+        "Ben Kravitz",
+        "Santo Fortunato"
+      ],
+      "links": [
+        {
+          "label": "Geophysical Research Letters",
+          "url": "https://doi.org/10.1029/2021GL094707"
+        }
+      ],
+      "markdown": "Developed a network-based method for detecting statistically significant long-range relationships between temperature and precipitation anomalies. The project used Granger causality to reveal climate teleconnections while explicitly controlling for indirect effects.",
+      "html": "<p>Developed a network-based method for detecting statistically significant long-range relationships between temperature and precipitation anomalies. The project used Granger causality to reveal climate teleconnections while explicitly controlling for indirect effects.</p>\n",
+      "text": "Developed a network based method for detecting statistically significant long range relationships between temperature and precipitation anomalies. The project used Granger causality to reveal climate teleconnections while explicitly controlling for indirect effects."
+    },
+    {
+      "slug": "science-funding",
+      "collection": "projects",
+      "title": "Mapping how science is funded",
+      "era": "current",
+      "status": "Active research",
+      "year": "2025–present",
+      "order": 2,
+      "featured": true,
+      "accent": "gold",
+      "topics": [
+        "Science funding",
+        "Data infrastructure",
+        "Entity resolution"
+      ],
+      "links": [
+        {
+          "label": "Public preprint",
+          "url": "https://arxiv.org/abs/2603.24147"
+        }
+      ],
+      "markdown": "Building large-scale, validated links between funding acknowledgments, organizations, and publications. The broader research program examines how public, philanthropic, and corporate support shapes scientific directions, researcher trajectories, and the geography of knowledge production.",
+      "html": "<p>Building large-scale, validated links between funding acknowledgments, organizations, and publications. The broader research program examines how public, philanthropic, and corporate support shapes scientific directions, researcher trajectories, and the geography of knowledge production.</p>\n",
+      "text": "Building large scale, validated links between funding acknowledgments, organizations, and publications. The broader research program examines how public, philanthropic, and corporate support shapes scientific directions, researcher trajectories, and the geography of knowledge production."
+    },
+    {
+      "slug": "big-science",
+      "collection": "projects",
+      "title": "Visualizing big science projects",
+      "era": "past",
+      "status": "Published · Open data and software",
+      "year": "2020–2022",
+      "order": 2,
+      "accent": "gold",
+      "topics": [
+        "Science of science",
+        "Collaboration networks",
+        "Interactive visualization"
+      ],
+      "collaborators": [
+        "Katy Börner",
+        "Staša Milojević"
+      ],
+      "links": [
+        {
+          "label": "Nature Reviews Physics",
+          "url": "https://doi.org/10.1038/s42254-021-00374-7"
+        },
+        {
+          "label": "Interactive maps",
+          "url": "https://bigscience.github.io/"
+        }
+      ],
+      "markdown": "Mapped the changing scale, collaboration structure, funding, and topical reach of landmark physics, astronomy, and biomedical research programs. The public project includes reproducible datasets, processing code, and interactive institution and science maps.",
+      "html": "<p>Mapped the changing scale, collaboration structure, funding, and topical reach of landmark physics, astronomy, and biomedical research programs. The public project includes reproducible datasets, processing code, and interactive institution and science maps.</p>\n",
+      "text": "Mapped the changing scale, collaboration structure, funding, and topical reach of landmark physics, astronomy, and biomedical research programs. The public project includes reproducible datasets, processing code, and interactive institution and science maps."
+    },
+    {
+      "slug": "technology-capability-maps",
+      "collection": "projects",
+      "title": "Technology capability maps",
+      "era": "current",
+      "status": "Active research",
+      "year": "2025–present",
+      "order": 3,
+      "featured": true,
+      "accent": "blue",
+      "topics": [
+        "Technology forecasting",
+        "Materials",
+        "Quantum systems",
+        "Patents"
+      ],
+      "markdown": "Extracting performance, design, and translation signals from papers and patents to trace how technological capabilities evolve. Current pilots connect scientific descriptions to measurable outcomes in advanced materials and device platforms, with the aim of making technical progress comparable across time.",
+      "html": "<p>Extracting performance, design, and translation signals from papers and patents to trace how technological capabilities evolve. Current pilots connect scientific descriptions to measurable outcomes in advanced materials and device platforms, with the aim of making technical progress comparable across time.</p>\n",
+      "text": "Extracting performance, design, and translation signals from papers and patents to trace how technological capabilities evolve. Current pilots connect scientific descriptions to measurable outcomes in advanced materials and device platforms, with the aim of making technical progress comparable across time."
+    },
+    {
+      "slug": "brainlife-network-apps",
+      "collection": "projects",
+      "title": "Network science for brainlife.io",
+      "era": "past",
+      "status": "Published · Open-source infrastructure",
+      "year": "2020–2024",
+      "order": 3,
+      "accent": "violet",
+      "topics": [
+        "Neuroscience",
+        "Reproducibility",
+        "Network analysis"
+      ],
+      "collaborators": [
+        "Soichi Hayashi",
+        "Eleftherios Garyfallidis",
+        "brainlife.io contributors"
+      ],
+      "links": [
+        {
+          "label": "Nature Methods",
+          "url": "https://doi.org/10.1038/s41592-024-02237-2"
+        },
+        {
+          "label": "Network apps",
+          "url": "https://brainlife.io/apps#network"
+        }
+      ],
+      "markdown": "Designed reusable applications and templates for turning connectivity matrices and time series into networks, measuring communities and network properties, generating null models, and producing reproducible reports inside the brainlife.io platform.",
+      "html": "<p>Designed reusable applications and templates for turning connectivity matrices and time series into networks, measuring communities and network properties, generating null models, and producing reproducible reports inside the brainlife.io platform.</p>\n",
+      "text": "Designed reusable applications and templates for turning connectivity matrices and time series into networks, measuring communities and network properties, generating null models, and producing reproducible reports inside the brainlife.io platform."
+    },
+    {
+      "slug": "helios-web",
+      "collection": "projects",
+      "title": "Helios Web",
+      "era": "current",
+      "status": "Active open-source project",
+      "year": "2021–present",
+      "order": 4,
+      "featured": true,
+      "accent": "violet",
+      "topics": [
+        "Network visualization",
+        "WebGPU",
+        "WebAssembly",
+        "Embeddings"
+      ],
+      "links": [
+        {
+          "label": "Launch Helios",
+          "url": "https://heliosweb.io/app/"
+        },
+        {
+          "label": "Documentation",
+          "url": "https://heliosweb.io/docs/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/filipinascimento/helios-web"
+        }
+      ],
+      "markdown": "A browser-first platform for interactive graph visualization and embedding exploration. The current release combines a WebGPU renderer with WebGL2 fallback and a WebAssembly graph store, supporting real-time layouts and analysis at million-node scale across browsers, notebooks, desktop workflows, and agentic tools.",
+      "html": "<p>A browser-first platform for interactive graph visualization and embedding exploration. The current release combines a WebGPU renderer with WebGL2 fallback and a WebAssembly graph store, supporting real-time layouts and analysis at million-node scale across browsers, notebooks, desktop workflows, and agentic tools.</p>\n",
+      "text": "A browser first platform for interactive graph visualization and embedding exploration. The current release combines a WebGPU renderer with WebGL2 fallback and a WebAssembly graph store, supporting real time layouts and analysis at million node scale across browsers, notebooks, desktop workflows, and agentic tools."
+    },
+    {
+      "slug": "osome-network-tools",
+      "collection": "projects",
+      "title": "Social media network analysis at OSoMe",
+      "era": "past",
+      "status": "Deployed research infrastructure",
+      "year": "2019–2025",
+      "order": 4,
+      "accent": "coral",
+      "topics": [
+        "Computational social science",
+        "Coordination",
+        "Visualization"
+      ],
+      "collaborators": [
+        "Alessandro Flammini",
+        "Filippo Menczer",
+        "OSoMe collaborators"
+      ],
+      "links": [
+        {
+          "label": "OSoMe tools",
+          "url": "https://osome.iu.edu/tools/"
+        }
+      ],
+      "markdown": "Contributed network-analysis and real-time visualization infrastructure for studying online information diffusion and coordinated activity. This work connected research pipelines to accessible browser tools used by scientists, journalists, and public-interest investigators.",
+      "html": "<p>Contributed network-analysis and real-time visualization infrastructure for studying online information diffusion and coordinated activity. This work connected research pipelines to accessible browser tools used by scientists, journalists, and public-interest investigators.</p>\n",
+      "text": "Contributed network analysis and real time visualization infrastructure for studying online information diffusion and coordinated activity. This work connected research pipelines to accessible browser tools used by scientists, journalists, and public interest investigators."
+    },
+    {
+      "slug": "scientific-trajectories",
+      "collection": "projects",
+      "title": "Scientific trajectories and innovation",
+      "era": "current",
+      "status": "Active research",
+      "year": "2025–present",
+      "order": 5,
+      "featured": true,
+      "accent": "green",
+      "topics": [
+        "Embeddings",
+        "Research careers",
+        "Novelty",
+        "Collaboration"
+      ],
+      "markdown": "Developing network and embedding methods to study how researchers and fields change direction, recombine ideas, and approach new frontiers. The work relates paper trajectories to collaboration structure, scientific impact, disruption, and the conditions that help new directions emerge.",
+      "html": "<p>Developing network and embedding methods to study how researchers and fields change direction, recombine ideas, and approach new frontiers. The work relates paper trajectories to collaboration structure, scientific impact, disruption, and the conditions that help new directions emerge.</p>\n",
+      "text": "Developing network and embedding methods to study how researchers and fields change direction, recombine ideas, and approach new frontiers. The work relates paper trajectories to collaboration structure, scientific impact, disruption, and the conditions that help new directions emerge."
+    },
+    {
+      "slug": "complex-network-geometry",
+      "collection": "projects",
+      "title": "Geometry, symmetry, and dimension in complex networks",
+      "era": "past",
+      "status": "Published methods and software",
+      "year": "2006–2019",
+      "order": 5,
+      "accent": "blue",
+      "topics": [
+        "Complex networks",
+        "Geometry",
+        "Symmetry",
+        "Accessibility"
+      ],
+      "collaborators": [
+        "Luciano da Fontoura Costa",
+        "César Henrique Comin",
+        "Henrique Ferraz de Arruda",
+        "Diego Raphael Amancio",
+        "Osvaldo Novais de Oliveira Jr."
+      ],
+      "markdown": "Developed multiscale measurements for describing nodes and networks through concentric structure, accessibility, symmetry, and local dimension. The methods were applied to collaboration, text, biological, urban, transportation, and infrastructure networks and released with supporting software.",
+      "html": "<p>Developed multiscale measurements for describing nodes and networks through concentric structure, accessibility, symmetry, and local dimension. The methods were applied to collaboration, text, biological, urban, transportation, and infrastructure networks and released with supporting software.</p>\n",
+      "text": "Developed multiscale measurements for describing nodes and networks through concentric structure, accessibility, symmetry, and local dimension. The methods were applied to collaboration, text, biological, urban, transportation, and infrastructure networks and released with supporting software."
+    },
+    {
+      "slug": "computational-social-systems",
+      "collection": "projects",
+      "title": "Computational social systems",
+      "era": "current",
+      "status": "Active research",
+      "year": "2024–present",
+      "order": 6,
+      "featured": false,
+      "accent": "cyan",
+      "topics": [
+        "Social media",
+        "Coordination",
+        "Information integrity",
+        "Public health"
+      ],
+      "markdown": "Studying coordinated behavior, information integrity, and public discourse across emerging social platforms. Current work combines network structure, text embeddings, topic models, and human validation to understand how collective behavior forms and changes online.",
+      "html": "<p>Studying coordinated behavior, information integrity, and public discourse across emerging social platforms. Current work combines network structure, text embeddings, topic models, and human validation to understand how collective behavior forms and changes online.</p>\n",
+      "text": "Studying coordinated behavior, information integrity, and public discourse across emerging social platforms. Current work combines network structure, text embeddings, topic models, and human validation to understand how collective behavior forms and changes online."
+    },
+    {
+      "slug": "citation-dynamics",
+      "collection": "projects",
+      "title": "Scientific careers, citations, and community structure",
+      "era": "past",
+      "status": "Published research",
+      "year": "2018–2024",
+      "order": 6,
+      "accent": "green",
+      "topics": [
+        "Science of science",
+        "Citations",
+        "Communities",
+        "Research careers"
+      ],
+      "collaborators": [
+        "Santo Fortunato",
+        "Alessandro Flammini",
+        "Filippo Menczer",
+        "Staša Milojević",
+        "Diego Raphael Amancio"
+      ],
+      "links": [
+        {
+          "label": "Recency predicts bursts",
+          "url": "https://doi.org/10.1162/qss_a_00070"
+        },
+        {
+          "label": "Robustness modularity",
+          "url": "https://doi.org/10.1103/PhysRevE.105.054308"
+        }
+      ],
+      "markdown": "Studied how recent attention predicts citation bursts, how collaboration patterns relate to productivity and visibility, and how stable scientific communities remain as citation networks evolve. The work introduced both empirical findings and new measures of community robustness.",
+      "html": "<p>Studied how recent attention predicts citation bursts, how collaboration patterns relate to productivity and visibility, and how stable scientific communities remain as citation networks evolve. The work introduced both empirical findings and new measures of community robustness.</p>\n",
+      "text": "Studied how recent attention predicts citation bursts, how collaboration patterns relate to productivity and visibility, and how stable scientific communities remain as citation networks evolve. The work introduced both empirical findings and new measures of community robustness."
+    }
+  ],
+  "software": [
+    {
+      "slug": "helios-web",
+      "collection": "software",
+      "title": "Helios Web",
+      "repo": "helios-web",
+      "tagline": "Interactive network visualization at million-node scale",
+      "order": 1,
+      "featured": true,
+      "status": "Active",
+      "url": "https://github.com/filipinascimento/helios-web",
+      "homepage": "https://heliosweb.io/",
+      "technologies": [
+        "WebGPU",
+        "WebGL2",
+        "WebAssembly",
+        "JavaScript"
+      ],
+      "markdown": "The browser visualization package for Helios, pairing a WebGPU-first renderer with a WebGL2 fallback and the `helios-network` WebAssembly graph store. It supports dynamic graphs, embeddings, GPU layouts, interaction, export, and application-level integrations.",
+      "html": "<p>The browser visualization package for Helios, pairing a WebGPU-first renderer with a WebGL2 fallback and the <code>helios-network</code> WebAssembly graph store. It supports dynamic graphs, embeddings, GPU layouts, interaction, export, and application-level integrations.</p>\n",
+      "text": "The browser visualization package for Helios, pairing a WebGPU first renderer with a WebGL2 fallback and the helios network WebAssembly graph store. It supports dynamic graphs, embeddings, GPU layouts, interaction, export, and application level integrations."
+    },
+    {
+      "slug": "motifs",
+      "collection": "software",
+      "title": "Device Motif Atlas",
+      "repo": "motifs",
+      "tagline": "Explore recurring technical structures across devices",
+      "order": 2,
+      "featured": true,
+      "status": "Active",
+      "url": "https://github.com/filipinascimento/motifs",
+      "homepage": "https://filipinascimento.github.io/motifs/",
+      "technologies": [
+        "Helios Web",
+        "Knowledge graphs",
+        "Scientific literature"
+      ],
+      "markdown": "A static, browser-side explorer for a hierarchical atlas of device motifs and engineering observations. The public application exposes sanitized derived structures, timelines, and measurements while keeping source documents and private extraction artifacts outside the release.",
+      "html": "<p>A static, browser-side explorer for a hierarchical atlas of device motifs and engineering observations. The public application exposes sanitized derived structures, timelines, and measurements while keeping source documents and private extraction artifacts outside the release.</p>\n",
+      "text": "A static, browser side explorer for a hierarchical atlas of device motifs and engineering observations. The public application exposes sanitized derived structures, timelines, and measurements while keeping source documents and private extraction artifacts outside the release."
+    },
+    {
+      "slug": "openalexnet",
+      "collection": "software",
+      "title": "OpenAlex Networks",
+      "repo": "openalexnet",
+      "tagline": "Turn OpenAlex queries into research networks",
+      "order": 3,
+      "featured": true,
+      "status": "Maintained",
+      "url": "https://github.com/filipinascimento/openalexnet",
+      "technologies": [
+        "Python",
+        "OpenAlex",
+        "Citation networks"
+      ],
+      "markdown": "A Python library and command-line application for querying OpenAlex and generating citation and coauthorship networks in reusable graph formats. It supports single and batched queries, saved JSONL inputs, and structured attribute export.",
+      "html": "<p>A Python library and command-line application for querying OpenAlex and generating citation and coauthorship networks in reusable graph formats. It supports single and batched queries, saved JSONL inputs, and structured attribute export.</p>\n",
+      "text": "A Python library and command line application for querying OpenAlex and generating citation and coauthorship networks in reusable graph formats. It supports single and batched queries, saved JSONL inputs, and structured attribute export."
+    },
+    {
+      "slug": "tpsimilarity",
+      "collection": "software",
+      "title": "TP Similarity",
+      "repo": "tpsimilarity",
+      "tagline": "Measure research-interest similarity with random walks",
+      "order": 4,
+      "featured": true,
+      "status": "Published package",
+      "url": "https://github.com/filipinascimento/tpsimilarity",
+      "technologies": [
+        "Python",
+        "Random walks",
+        "Graph embeddings"
+      ],
+      "markdown": "An implementation of transition-probability similarity for papers and authors. The package provides exact, estimated, shortest-path, and node2vec-based methods for comparing positions in citation and other networks.",
+      "html": "<p>An implementation of transition-probability similarity for papers and authors. The package provides exact, estimated, shortest-path, and node2vec-based methods for comparing positions in citation and other networks.</p>\n",
+      "text": "An implementation of transition probability similarity for papers and authors. The package provides exact, estimated, shortest path, and node2vec based methods for comparing positions in citation and other networks."
+    },
+    {
+      "slug": "coordinationz",
+      "collection": "software",
+      "title": "CoordinationZ",
+      "repo": "coordinationz",
+      "tagline": "Detect coordinated behavior in social media data",
+      "order": 5,
+      "featured": true,
+      "status": "Research software",
+      "url": "https://github.com/filipinascimento/coordinationz",
+      "technologies": [
+        "Python",
+        "Social networks",
+        "Text embeddings"
+      ],
+      "markdown": "A collection of optimized pipelines for analyzing coordination through co-hashtags, co-URLs, co-retweets, co-words, and text similarity. It produces suspicious-user tables, network outputs, figures, and reproducible run configurations.",
+      "html": "<p>A collection of optimized pipelines for analyzing coordination through co-hashtags, co-URLs, co-retweets, co-words, and text similarity. It produces suspicious-user tables, network outputs, figures, and reproducible run configurations.</p>\n",
+      "text": "A collection of optimized pipelines for analyzing coordination through co hashtags, co URLs, co retweets, co words, and text similarity. It produces suspicious user tables, network outputs, figures, and reproducible run configurations."
+    },
+    {
+      "slug": "rmodularity",
+      "collection": "software",
+      "title": "Robustness Modularity",
+      "repo": "RModularity",
+      "tagline": "Evaluate the stability of detected communities",
+      "order": 6,
+      "featured": false,
+      "status": "Published package",
+      "url": "https://github.com/filipinascimento/RModularity",
+      "technologies": [
+        "Python",
+        "Community detection",
+        "Information theory"
+      ],
+      "markdown": "Software for calculating robustness modularity, information modularity, and modularity difference, including a fast Monte Carlo approximation for large-network experiments.",
+      "html": "<p>Software for calculating robustness modularity, information modularity, and modularity difference, including a fast Monte Carlo approximation for large-network experiments.</p>\n",
+      "text": "Software for calculating robustness modularity, information modularity, and modularity difference, including a fast Monte Carlo approximation for large network experiments."
+    },
+    {
+      "slug": "bigscience",
+      "collection": "software",
+      "title": "Big Science Visualizations",
+      "repo": "bigscience",
+      "tagline": "Reproducible maps of large scientific collaborations",
+      "order": 7,
+      "featured": false,
+      "status": "Archived research project",
+      "url": "https://github.com/filipinascimento/bigscience",
+      "homepage": "https://bigscience.github.io/",
+      "technologies": [
+        "Python",
+        "Data visualization",
+        "Science maps"
+      ],
+      "markdown": "Data, code, and interactive maps developed for the Nature Reviews Physics project on ATLAS, BaBar, LIGO, IceCube, the Human Genome Project, the Human Cell Atlas, and HuBMAP.",
+      "html": "<p>Data, code, and interactive maps developed for the Nature Reviews Physics project on ATLAS, BaBar, LIGO, IceCube, the Human Genome Project, the Human Cell Atlas, and HuBMAP.</p>\n",
+      "text": "Data, code, and interactive maps developed for the Nature Reviews Physics project on ATLAS, BaBar, LIGO, IceCube, the Human Genome Project, the Human Cell Atlas, and HuBMAP."
+    },
+    {
+      "slug": "progressista",
+      "collection": "software",
+      "title": "Progressista",
+      "repo": "progressista",
+      "tagline": "Live progress dashboards for remote Python workloads",
+      "order": 8,
+      "featured": false,
+      "status": "Experimental utility",
+      "url": "https://github.com/filipinascimento/progressista",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "WebSockets"
+      ],
+      "markdown": "A small push gateway that turns familiar `tqdm` progress bars into a live browser dashboard for remote experiments and data pipelines, without removing local terminal feedback.",
+      "html": "<p>A small push gateway that turns familiar <code>tqdm</code> progress bars into a live browser dashboard for remote experiments and data pipelines, without removing local terminal feedback.</p>\n",
+      "text": "A small push gateway that turns familiar tqdm progress bars into a live browser dashboard for remote experiments and data pipelines, without removing local terminal feedback."
+    }
+  ],
+  "teaching": [
+    {
+      "slug": "data-visualization",
+      "collection": "teaching",
+      "title": "Data Visualization",
+      "code": "INFO-I 590",
+      "term": "Spring 2025",
+      "institution": "Luddy School of Informatics, Computing, and Engineering · Indiana University",
+      "format": "In person",
+      "order": 1,
+      "url": "https://filipinascimento.github.io/dataviz/",
+      "repo": "https://github.com/filipinascimento/dataviz",
+      "topics": [
+        "Visual perception",
+        "Exploratory analysis",
+        "D3.js",
+        "Networks",
+        "Geospatial data",
+        "Storytelling"
+      ],
+      "markdown": "A hands-on course connecting visual perception and design principles to practical analysis in Python and JavaScript. Students moved from exploratory charts and multidimensional data to maps, text and embedding views, network visualization, interaction, and web deployment, culminating in a real-world visualization project.",
+      "html": "<p>A hands-on course connecting visual perception and design principles to practical analysis in Python and JavaScript. Students moved from exploratory charts and multidimensional data to maps, text and embedding views, network visualization, interaction, and web deployment, culminating in a real-world visualization project.</p>\n",
+      "text": "A hands on course connecting visual perception and design principles to practical analysis in Python and JavaScript. Students moved from exploratory charts and multidimensional data to maps, text and embedding views, network visualization, interaction, and web deployment, culminating in a real world visualization project."
+    },
+    {
+      "slug": "usable-ai",
+      "collection": "teaching",
+      "title": "Usable Artificial Intelligence",
+      "term": "Spring 2025",
+      "institution": "Luddy School of Informatics, Computing, and Engineering · Indiana University",
+      "format": "Online",
+      "order": 2,
+      "url": "https://filipinascimento.github.io/usable_ai/",
+      "repo": "https://github.com/filipinascimento/usable_ai",
+      "topics": [
+        "Machine learning",
+        "Data preparation",
+        "Explainability",
+        "NLP",
+        "Embeddings",
+        "LLMs"
+      ],
+      "markdown": "An applied introduction to AI for interdisciplinary problem solving. The course covered data preparation, regression, classification, clustering, evaluation, feature selection, explainability, natural-language processing, embeddings, and responsible use of large language models through practical Python workflows.",
+      "html": "<p>An applied introduction to AI for interdisciplinary problem solving. The course covered data preparation, regression, classification, clustering, evaluation, feature selection, explainability, natural-language processing, embeddings, and responsible use of large language models through practical Python workflows.</p>\n",
+      "text": "An applied introduction to AI for interdisciplinary problem solving. The course covered data preparation, regression, classification, clustering, evaluation, feature selection, explainability, natural language processing, embeddings, and responsible use of large language models through practical Python workflows."
+    }
+  ],
+  "cv": [
+    {
+      "slug": "public",
+      "collection": "cv",
+      "title": "Curriculum vitae",
+      "subtitle": "Public web version · contact details omitted",
+      "updated": "2026-08-01T00:00:00.000Z",
+      "markdown": "## Profile\n\nResearch Assistant Professor at Northwestern University’s Kellogg School of Management and the Center for Science of Science & Innovation. Network scientist, data scientist, and software developer working across science of science, complex systems, machine learning, computational social science, and interactive visualization. Creator of Helios Web and author of more than 50 scholarly works.\n\n## Appointments\n\n- **Research Assistant Professor**, Center for Science of Science & Innovation, Kellogg School of Management, Northwestern University — 2025–present\n- **Associate Research Scientist**, Observatory on Social Media, Indiana University — 2023–2025\n- **Assistant Research Scientist**, Indiana University Network Science Institute — 2019–2023\n- **Postdoctoral Fellow**, São Carlos Institute of Physics, University of São Paulo — 2015–2019\n- **Visiting Research Scholar**, Indiana University Bloomington — 2017–2018\n\n## Education\n\n- **Ph.D. in Physics, Computational Physics**, São Carlos Institute of Physics, University of São Paulo — 2015\n- **M.Sc. in Physics, Computational Physics**, São Carlos Institute of Physics, University of São Paulo — 2009\n- **B.Sc. in Physics, Computational Physics**, São Carlos Institute of Physics, University of São Paulo — 2006\n\nThe doctoral dissertation received a university-level honorable mention, ranking among the top three theses in the exact sciences.\n\n## Research areas\n\nNetwork science; science of science; complex systems; artificial intelligence and machine learning; computational social science; scientific and engineering discovery; graph and text embeddings; interactive visualization; community detection; information science; biological, climate, political, and urban networks.\n\n## Selected teaching and mentorship\n\n- Instructor, **Data Visualization**, Indiana University, Spring 2025.\n- Instructor, **Usable Artificial Intelligence**, Indiana University, Spring 2025.\n- Guest lecturer on complex-network visualization at the University of São Paulo.\n- Graduate and undergraduate research supervision in network visualization, embedding analysis, large-language-model interfaces, and scientific software.\n- Google Summer of Code mentor for Helios/FURY projects under the Python Software Foundation, 2021–2023.\n\n## Selected service\n\n- Academic editor for PLOS ONE and PeerJ.\n- Reviewer for journals and conferences spanning network science, information science, complex systems, computational social science, and physics.\n- Organizer of tutorials and workshops for IC2S2, ISSI/CADRE, and the Indiana University Network Science Institute.\n- Contributor to open research infrastructure including Helios Web, OSoMe tools, brainlife.io network apps, Scholarometer, and FURY.\n\n## Technical skills\n\nPython, JavaScript, C/C++, Objective-C, WebGPU, WebGL, OpenGL, WebAssembly, parallel processing, large-scale data pipelines, network analysis, community detection, scientific visualization, natural-language processing, machine learning, graph and text embeddings, PyTorch, TensorFlow, transformer models, and LLM APIs.\n\n## Languages\n\nPortuguese (native); English (fluent).\n\n## Profiles\n\n[ORCID](https://orcid.org/0000-0002-9151-6517) · [Google Scholar](https://scholar.google.com/citations?user=fhWJEysAAAAJ) · [OpenAlex](https://openalex.org/A5025683130) · [GitHub](https://github.com/filipinascimento)",
+      "html": "<h2>Profile</h2>\n<p>Research Assistant Professor at Northwestern University’s Kellogg School of Management and the Center for Science of Science &amp; Innovation. Network scientist, data scientist, and software developer working across science of science, complex systems, machine learning, computational social science, and interactive visualization. Creator of Helios Web and author of more than 50 scholarly works.</p>\n<h2>Appointments</h2>\n<ul>\n<li><strong>Research Assistant Professor</strong>, Center for Science of Science &amp; Innovation, Kellogg School of Management, Northwestern University — 2025–present</li>\n<li><strong>Associate Research Scientist</strong>, Observatory on Social Media, Indiana University — 2023–2025</li>\n<li><strong>Assistant Research Scientist</strong>, Indiana University Network Science Institute — 2019–2023</li>\n<li><strong>Postdoctoral Fellow</strong>, São Carlos Institute of Physics, University of São Paulo — 2015–2019</li>\n<li><strong>Visiting Research Scholar</strong>, Indiana University Bloomington — 2017–2018</li>\n</ul>\n<h2>Education</h2>\n<ul>\n<li><strong>Ph.D. in Physics, Computational Physics</strong>, São Carlos Institute of Physics, University of São Paulo — 2015</li>\n<li><strong>M.Sc. in Physics, Computational Physics</strong>, São Carlos Institute of Physics, University of São Paulo — 2009</li>\n<li><strong>B.Sc. in Physics, Computational Physics</strong>, São Carlos Institute of Physics, University of São Paulo — 2006</li>\n</ul>\n<p>The doctoral dissertation received a university-level honorable mention, ranking among the top three theses in the exact sciences.</p>\n<h2>Research areas</h2>\n<p>Network science; science of science; complex systems; artificial intelligence and machine learning; computational social science; scientific and engineering discovery; graph and text embeddings; interactive visualization; community detection; information science; biological, climate, political, and urban networks.</p>\n<h2>Selected teaching and mentorship</h2>\n<ul>\n<li>Instructor, <strong>Data Visualization</strong>, Indiana University, Spring 2025.</li>\n<li>Instructor, <strong>Usable Artificial Intelligence</strong>, Indiana University, Spring 2025.</li>\n<li>Guest lecturer on complex-network visualization at the University of São Paulo.</li>\n<li>Graduate and undergraduate research supervision in network visualization, embedding analysis, large-language-model interfaces, and scientific software.</li>\n<li>Google Summer of Code mentor for Helios/FURY projects under the Python Software Foundation, 2021–2023.</li>\n</ul>\n<h2>Selected service</h2>\n<ul>\n<li>Academic editor for PLOS ONE and PeerJ.</li>\n<li>Reviewer for journals and conferences spanning network science, information science, complex systems, computational social science, and physics.</li>\n<li>Organizer of tutorials and workshops for IC2S2, ISSI/CADRE, and the Indiana University Network Science Institute.</li>\n<li>Contributor to open research infrastructure including Helios Web, OSoMe tools, brainlife.io network apps, Scholarometer, and FURY.</li>\n</ul>\n<h2>Technical skills</h2>\n<p>Python, JavaScript, C/C++, Objective-C, WebGPU, WebGL, OpenGL, WebAssembly, parallel processing, large-scale data pipelines, network analysis, community detection, scientific visualization, natural-language processing, machine learning, graph and text embeddings, PyTorch, TensorFlow, transformer models, and LLM APIs.</p>\n<h2>Languages</h2>\n<p>Portuguese (native); English (fluent).</p>\n<h2>Profiles</h2>\n<p><a href=\"https://orcid.org/0000-0002-9151-6517\">ORCID</a> · <a href=\"https://scholar.google.com/citations?user=fhWJEysAAAAJ\">Google Scholar</a> · <a href=\"https://openalex.org/A5025683130\">OpenAlex</a> · <a href=\"https://github.com/filipinascimento\">GitHub</a></p>\n",
+      "text": "Profile Research Assistant Professor at Northwestern University’s Kellogg School of Management and the Center for Science of Science & Innovation. Network scientist, data scientist, and software developer working across science of science, complex systems, machine learning, computational social science, and interactive visualization. Creator of Helios Web and author of more than 50 scholarly works. Appointments Research Assistant Professor , Center for Science of Science & Innovation, Kellogg School of Management, Northwestern University — 2025–present Associate Research Scientist , Observatory on Social Media, Indiana University — 2023–2025 Assistant Research Scientist , Indiana University Network Science Institute — 2019–2023 Postdoctoral Fellow , São Carlos Institute of Physics, University of São Paulo — 2015–2019 Visiting Research Scholar , Indiana University Bloomington — 2017–2018 Education Ph.D. in Physics, Computational Physics , São Carlos Institute of Physics, University of São Paulo — 2015 M.Sc. in Physics, Computational Physics , São Carlos Institute of Physics, University of São Paulo — 2009 B.Sc. in Physics, Computational Physics , São Carlos Institute of Physics, University of São Paulo — 2006 The doctoral dissertation received a university level honorable mention, ranking among the top three theses in the exact sciences. Research areas Network science; science of science; complex systems; artificial intelligence and machine learning; computational social science; scientific and engineering discovery; graph and text embeddings; interactive visualization; community detection; information science; biological, climate, political, and urban networks. Selected teaching and mentorship Instructor, Data Visualization , Indiana University, Spring 2025. Instructor, Usable Artificial Intelligence , Indiana University, Spring 2025. Guest lecturer on complex network visualization at the University of São Paulo. Graduate and undergraduate research supervision in network visualization, embedding analysis, large language model interfaces, and scientific software. Google Summer of Code mentor for Helios/FURY projects under the Python Software Foundation, 2021–2023. Selected service Academic editor for PLOS ONE and PeerJ. Reviewer for journals and conferences spanning network science, information science, complex systems, computational social science, and physics. Organizer of tutorials and workshops for IC2S2, ISSI/CADRE, and the Indiana University Network Science Institute. Contributor to open research infrastructure including Helios Web, OSoMe tools, brainlife.io network apps, Scholarometer, and FURY. Technical skills Python, JavaScript, C/C++, Objective C, WebGPU, WebGL, OpenGL, WebAssembly, parallel processing, large scale data pipelines, network analysis, community detection, scientific visualization, natural language processing, machine learning, graph and text embeddings, PyTorch, TensorFlow, transformer models, and LLM APIs. Languages Portuguese (native); English (fluent). Profiles ORCID · Google Scholar · OpenAlex · GitHub"
+    }
+  ],
+  "posts": [],
+  "generatedAt": "2026-08-01T22:41:13.035Z"
+}
