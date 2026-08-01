@@ -13,7 +13,7 @@ export function SiteFooter() {
       <div className="shell site-footer__grid">
         <div>
           <div className="site-footer__name">Filipi Nascimento Silva</div>
-          <p>Networks, AI, and visual systems for understanding science and technology.</p>
+          <p>Research on networks, scientific change, and usable computational tools.</p>
         </div>
         <div className="site-footer__position">
           <GraduationCap size={18} aria-hidden="true" />

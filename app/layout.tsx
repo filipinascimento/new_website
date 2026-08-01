@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "Filipi Nascimento Silva",
-    description: "Networks, AI, and visual systems for understanding science and technology.",
+    description: "Research on networks, scientific change, and usable computational tools.",
     url: "https://filipinascimento.github.io/new_website/",
     siteName: "Filipi Nascimento Silva",
     images: [
@@ -42,14 +42,14 @@ export const metadata: Metadata = {
         url: socialImage,
         width: 1200,
         height: 630,
-        alt: "Filipi Nascimento Silva — networks, AI, and visual systems for understanding science",
+        alt: "Filipi Nascimento Silva — I study how knowledge moves",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Filipi Nascimento Silva",
-    description: "Networks, AI, and visual systems for understanding science and technology.",
+    description: "Research on networks, scientific change, and usable computational tools.",
     images: [socialImage],
   },
 };
