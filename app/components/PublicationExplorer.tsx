@@ -72,7 +72,7 @@ export function PublicationExplorer({ works }: { works: Publication[] }) {
       <ol className="publication-list">
         {shown.map((work) => (
           <li key={work.id}>
-            <div className="publication-list__year">{work.year || "—"}</div>
+            <div className="publication-list__year">{work.year || "Not dated"}</div>
             <div className="publication-list__content">
               <h3><a href={work.url} target="_blank" rel="noreferrer">{work.title}</a></h3>
               <p className="publication-list__authors">{authorLine(work.authors)}</p>

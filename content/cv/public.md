@@ -9,17 +9,17 @@ Research Assistant Professor at Northwestern University’s Kellogg School of Ma
 
 ## Appointments
 
-- **Research Assistant Professor**, Center for Science of Science & Innovation, Kellogg School of Management, Northwestern University — 2025–present
-- **Associate Research Scientist**, Observatory on Social Media, Indiana University — 2023–2025
-- **Assistant Research Scientist**, Indiana University Network Science Institute — 2019–2023
-- **Postdoctoral Fellow**, São Carlos Institute of Physics, University of São Paulo — 2015–2019
-- **Visiting Research Scholar**, Indiana University Bloomington — 2017–2018
+- **Research Assistant Professor**, Center for Science of Science & Innovation, Kellogg School of Management, Northwestern University, 2025–present
+- **Associate Research Scientist**, Observatory on Social Media, Indiana University, 2023–2025
+- **Assistant Research Scientist**, Indiana University Network Science Institute, 2019–2023
+- **Postdoctoral Fellow**, São Carlos Institute of Physics, University of São Paulo, 2015–2019
+- **Visiting Research Scholar**, Indiana University Bloomington, 2017–2018
 
 ## Education
 
-- **Ph.D. in Physics, Computational Physics**, São Carlos Institute of Physics, University of São Paulo — 2015
-- **M.Sc. in Physics, Computational Physics**, São Carlos Institute of Physics, University of São Paulo — 2009
-- **B.Sc. in Physics, Computational Physics**, São Carlos Institute of Physics, University of São Paulo — 2006
+- **Ph.D. in Physics, Computational Physics**, São Carlos Institute of Physics, University of São Paulo, 2015
+- **M.Sc. in Physics, Computational Physics**, São Carlos Institute of Physics, University of São Paulo, 2009
+- **B.Sc. in Physics, Computational Physics**, São Carlos Institute of Physics, University of São Paulo, 2006
 
 > University of São Paulo is ranked [#1 in Latin America in the Times Higher Education Latin America University Rankings 2026](https://www.timeshighereducation.com/world-university-rankings/2026/latin-america-university-rankings).
 >

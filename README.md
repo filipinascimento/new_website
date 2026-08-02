@@ -1,4 +1,4 @@
-# Filipi Nascimento Silva — research website
+# Filipi Nascimento Silva: research website
 
 A modern, Markdown-first research portfolio for [filipinascimento.github.io/new_website](https://filipinascimento.github.io/new_website/). It combines editorial content, a deduplicated publication record, curated software metadata, and a live Helios Web visualization.
 
@@ -6,12 +6,12 @@ A modern, Markdown-first research portfolio for [filipinascimento.github.io/new_
 
 The authored source of truth is under `content/`:
 
-- `content/site/` — profile and homepage copy
-- `content/projects/` — current and selected past projects
-- `content/software/` — curated software entries
-- `content/teaching/` — courses and teaching material
-- `content/cv/` — privacy-safe public web CV
-- `content/posts/` — prepared collection for future writing
+- `content/site/`: profile and homepage copy
+- `content/projects/`: current and selected past projects
+- `content/software/`: curated software entries
+- `content/teaching/`: courses and teaching material
+- `content/cv/`: privacy-safe public web CV
+- `content/posts/`: prepared collection for future writing
 
 Every entry is a plain `.md` file with YAML front matter. `npm run content:build` converts those collections into `data/content.json`; generated JSON should not be hand-edited.
 

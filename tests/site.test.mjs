@@ -109,6 +109,14 @@ test("keeps private contact fields out of the public site data", async () => {
   assert.doesNotMatch(publicCv, /Climate teleconnections|Didier Vega-Oliveros/i);
 });
 
+test("avoids em dashes in public website and CV copy", async () => {
+  const publicData = await readFile(new URL("data/content.json", root), "utf8");
+  const publicCv = await readFile(new URL("content/cv/public.md", root), "utf8");
+  const layout = await readFile(new URL("app/layout.tsx", root), "utf8");
+  const publications = await readFile(new URL("app/components/PublicationExplorer.tsx", root), "utf8");
+  assert.doesNotMatch(`${publicData}\n${publicCv}\n${layout}\n${publications}`, /—/);
+});
+
 test("vendors the current Helios browser runtime for static hosting", async () => {
   const packageJson = await json("package.json");
   assert.match(packageJson.dependencies["helios-web"], /0\.10/);
