@@ -7,11 +7,6 @@ order: 1
 featured: true
 accent: coral
 topics: [Agentic AI, Science of science, Materials, Devices]
-links:
-  - label: Public project explorer
-    url: https://filipinascimento.github.io/motifs/
-  - label: GitHub
-    url: https://github.com/filipinascimento/motifs
 ---
 
 Investigating how science-of-science methods can work with structured extraction pipelines, network analysis, embedding-based search, and domain knowledge to identify promising scientific and engineering opportunities. The work connects evidence across publications, materials, measurements, and device concepts while keeping early-stage technical directions deliberately high level.

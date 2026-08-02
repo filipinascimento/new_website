@@ -12,7 +12,7 @@ test("keeps the editorial content in Markdown collections", async () => {
   const content = await json("data/content.json");
   assert.equal(content.site.length, 1);
   assert.ok(content.projects.length >= 12);
-  assert.ok(content.software.length >= 8);
+  assert.ok(content.software.length >= 7);
   assert.equal(content.teaching.length, 2);
   assert.equal(content.posts.length, 0);
 
@@ -84,6 +84,7 @@ test("keeps private contact fields out of the public site data", async () => {
   assert.doesNotMatch(publicData, /reconciled scholarly works/i);
   assert.doesNotMatch(publicData, /64 distinct publications/i);
   assert.doesNotMatch(publicData, /recurring technical motifs/i);
+  assert.doesNotMatch(publicData, /Device Motif Atlas|filipinascimento\/motifs|github\.io\/motifs/i);
 });
 
 test("vendors the current Helios browser runtime for static hosting", async () => {

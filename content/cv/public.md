@@ -27,7 +27,7 @@ Research Assistant Professor at Northwestern University’s Kellogg School of Ma
 
 ## Selected projects
 
-- **Scientific and engineering discovery:** Research on how science-of-science methods can work with structured extraction pipelines, network analysis, embedding-based search, and domain knowledge to identify promising scientific and engineering opportunities. [Public project explorer](https://filipinascimento.github.io/motifs/) · [GitHub](https://github.com/filipinascimento/motifs)
+- **Scientific and engineering discovery:** Research on how science-of-science methods can work with structured extraction pipelines, network analysis, embedding-based search, and domain knowledge to identify promising scientific and engineering opportunities.
 - **[Mapping how science is funded](https://arxiv.org/abs/2603.24147):** Large-scale links between funding acknowledgments, organizations, publications, and the directions of scientific work.
 - **[Helios Web](https://heliosweb.io):** Browser-native visualization and exploration of large networks and embedding spaces. [GitHub](https://github.com/filipinascimento/helios-web)
 - **[Visualizing big science projects](https://bigscience.github.io/):** Interactive maps and reproducible data on the changing scale, collaboration structure, and topical reach of major scientific programs, developed with Katy Börner and Staša Milojević.

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import {
   Boxes,
-  CircuitBoard,
   Gauge,
   Globe2,
   Library,
@@ -18,7 +17,6 @@ const brandAssets: Record<string, string> = {
 
 const icons: Record<string, LucideIcon> = {
   "helios-web": Network,
-  motifs: CircuitBoard,
   openalexnet: Library,
   tpsimilarity: Waypoints,
   coordinationz: Radar,
@@ -29,7 +27,6 @@ const icons: Record<string, LucideIcon> = {
 
 const tones: Record<string, string> = {
   "helios-web": "blue",
-  motifs: "warm",
   openalexnet: "violet",
   tpsimilarity: "green",
   coordinationz: "rose",

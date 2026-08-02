@@ -27,17 +27,6 @@
       ]
     },
     {
-      "name": "motifs",
-      "description": "Static explorer for a hierarchical device-motif atlas",
-      "url": "https://github.com/filipinascimento/motifs",
-      "homepage": "https://filipinascimento.github.io/motifs/",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "pushedAt": "2026-07-30T20:03:31Z",
-      "topics": []
-    },
-    {
       "name": "openalexnet",
       "description": "OpenAlex Networks is a helper library to process and obtain data from the OpenAlex dataset via API. It also provides functionality to generate citation and coauthorship networks from queries.",
       "url": "https://github.com/filipinascimento/openalexnet",
