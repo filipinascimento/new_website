@@ -6,7 +6,6 @@ year: 2018–2024
 order: 6
 accent: green
 topics: [Science of science, Citations, Communities, Research careers]
-collaborators: [Santo Fortunato, Alessandro Flammini, Filippo Menczer, Staša Milojević, Diego Raphael Amancio]
 links:
   - label: Recency predicts bursts
     url: https://doi.org/10.1162/qss_a_00070

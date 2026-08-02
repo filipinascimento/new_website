@@ -1,17 +1,20 @@
 ---
-title: Network science for brainlife.io
+title: Biomedical and health applications of network science
 era: past
-status: Published · Open-source infrastructure
-year: 2020–2024
+status: Interdisciplinary research
+year: 2017–2026
 order: 3
 accent: violet
-topics: [Neuroscience, Reproducibility, Network analysis]
-collaborators: [Soichi Hayashi, Eleftherios Garyfallidis, brainlife.io contributors]
+topics: [Biomedical data, Single-cell genomics, Neuroscience, Scientific literature]
 links:
+  - label: Single-cell RNA sequencing
+    url: https://doi.org/10.1038/s41598-026-49033-w
+  - label: Wound-healing materials
+    url: https://doi.org/10.1016/j.ijbiomac.2025.141565
   - label: Nature Methods
     url: https://doi.org/10.1038/s41592-024-02237-2
-  - label: Network apps
-    url: https://brainlife.io/apps#network
+  - label: Biological networks
+    url: https://doi.org/10.1039/c7ib00161d
 ---
 
-Designed reusable applications and templates for turning connectivity matrices and time series into networks, measuring communities and network properties, generating null models, and producing reproducible reports inside the brainlife.io platform.
+Applied network science, machine learning, and scientific-data pipelines to problems in single-cell genomics, wound-healing materials, neuroscience, and biological networks. The work ranges from robust cell-type identification and literature-scale synthesis to reproducible cloud workflows, showing how shared computational representations can support very different biomedical questions.

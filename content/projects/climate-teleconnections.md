@@ -6,7 +6,6 @@ year: 2019–2021
 order: 1
 accent: cyan
 topics: [Climate networks, Granger causality, Complex systems]
-collaborators: [Didier Vega-Oliveros, Xiaoran Yan, Alessandro Flammini, Filippo Menczer, Filippo Radicchi, Ben Kravitz, Santo Fortunato]
 links:
   - label: Geophysical Research Letters
     url: https://doi.org/10.1029/2021GL094707

@@ -32,8 +32,8 @@ export default function ProjectsPage() {
       <section className="section section--tint">
         <div className="shell">
           <div className="section-label-row">
-            <h2>Selected past work</h2>
-            <span>Methods, infrastructure, and collaborations</span>
+            <h2>Interdisciplinary and earlier work</h2>
+            <span>Methods, applications, and research infrastructure</span>
           </div>
           <div className="project-grid">
             {past.map((project) => <ProjectCard project={project} key={project.slug} />)}

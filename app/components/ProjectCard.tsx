@@ -15,11 +15,6 @@ export function ProjectCard({ project }: { project: ProjectRecord }) {
           {project.topics.map((topic) => <span key={topic}>{topic}</span>)}
         </div>
       )}
-      {project.era === "past" && project.collaborators && (
-        <p className="project-card__collaborators">
-          <strong>Selected collaborators</strong> · {project.collaborators.join(", ")}
-        </p>
-      )}
       {project.links && (
         <div className="project-card__links">
           {project.links.map((link) => (

@@ -22,7 +22,6 @@ export type ProjectRecord = ContentRecord & {
   featured?: boolean;
   accent?: string;
   topics?: string[];
-  collaborators?: string[];
   links?: LinkItem[];
 };
 

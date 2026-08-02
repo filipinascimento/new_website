@@ -6,7 +6,6 @@ year: 2020–2022
 order: 2
 accent: gold
 topics: [Science of science, Collaboration networks, Interactive visualization]
-collaborators: [Katy Börner, Staša Milojević]
 links:
   - label: Nature Reviews Physics
     url: https://doi.org/10.1038/s42254-021-00374-7

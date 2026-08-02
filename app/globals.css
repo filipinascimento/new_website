@@ -324,6 +324,15 @@ a {
   text-decoration: underline;
 }
 
+.profile-sidebar__affiliation-links {
+  display: grid;
+  gap: 5px;
+}
+
+.profile-sidebar__affiliation-links a {
+  display: block;
+}
+
 .profile-sidebar__links {
   display: grid;
   margin-top: 17px;
@@ -360,13 +369,6 @@ a {
   padding-top: 3px;
 }
 
-.home-intro__role {
-  margin: 0 0 14px;
-  color: var(--teal);
-  font-size: 0.94rem;
-  font-weight: 650;
-}
-
 .home-intro h1 {
   margin: 0;
   font-family: var(--font-display);
@@ -376,19 +378,10 @@ a {
   line-height: 1.02;
 }
 
-.home-intro__research {
-  margin: 18px 0 0;
-  color: var(--ink);
-  font-family: var(--font-display);
-  font-size: 1.16rem;
-  font-weight: 500;
-  line-height: 1.48;
-}
-
-.home-intro > p:not(.home-intro__role):not(.home-intro__research) {
+.home-intro > p {
   margin: 20px 0 0;
   color: var(--ink-soft);
-  font-size: 0.98rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 
@@ -1030,17 +1023,6 @@ a {
 .software-card__body p,
 .course-card__body p {
   margin: 0 0 12px;
-}
-
-.project-card__collaborators {
-  margin: 17px 0 0;
-  color: var(--ink-faint);
-  font-size: 0.94rem;
-  line-height: 1.55;
-}
-
-.project-card__collaborators strong {
-  color: var(--ink-soft);
 }
 
 .project-card__links,

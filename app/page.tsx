@@ -17,7 +17,12 @@ type ProfileRecord = ContentRecord & {
   eyebrow: string;
   role: string;
   institution: string;
-  institutionUrl: string;
+  center: string;
+  centerUrl: string;
+  school: string;
+  schoolUrl: string;
+  university: string;
+  universityUrl: string;
   location: string;
   orcid: string;
   scholar: string;
@@ -61,7 +66,11 @@ export default function Home() {
           <dl className="profile-sidebar__facts">
             <div>
               <dt>Affiliation</dt>
-              <dd><a href={profile.institutionUrl} target="_blank" rel="noreferrer">Center for Science of Science &amp; Innovation</a></dd>
+              <dd className="profile-sidebar__affiliation-links">
+                <a href={profile.centerUrl} target="_blank" rel="noreferrer">{profile.center}</a>
+                <a href={profile.schoolUrl} target="_blank" rel="noreferrer">{profile.school}</a>
+                <a href={profile.universityUrl} target="_blank" rel="noreferrer">{profile.university}</a>
+              </dd>
             </div>
             <div>
               <dt>Location</dt>
@@ -80,9 +89,7 @@ export default function Home() {
         <div className="home-content">
           <section className="home-intro-grid" aria-labelledby="home-intro-title">
             <div className="home-intro">
-              <p className="home-intro__role">{profile.role} · Northwestern University</p>
-              <h1 id="home-intro-title">{profile.title}</h1>
-              <p className="home-intro__research">Network science, science of science, artificial intelligence, and visual computing.</p>
+              <h1 id="home-intro-title">{profile.headline}</h1>
               {introParagraphs.slice(0, 2).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               <div className="home-intro__actions">
                 <Link className="text-link" href="/projects">Research projects<ArrowRight size={15} aria-hidden="true" /></Link>

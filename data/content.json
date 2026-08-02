@@ -4,19 +4,24 @@
       "slug": "profile",
       "collection": "site",
       "title": "Filipi Nascimento Silva",
-      "headline": "Network science, science of science, artificial intelligence, and visual computing.",
+      "headline": "Networks, science, and AI across disciplines.",
       "eyebrow": "Network science · science of science · AI · visualization",
       "role": "Research Assistant Professor",
       "institution": "Center for Science of Science & Innovation, Kellogg School of Management, Northwestern University",
-      "institutionUrl": "https://www.kellogg.northwestern.edu/academics-research/science-of-science/faculty-and-contributors/",
+      "center": "Center for Science of Science & Innovation",
+      "centerUrl": "https://www.kellogg.northwestern.edu/academics-research/science-of-science/",
+      "school": "Kellogg School of Management",
+      "schoolUrl": "https://www.kellogg.northwestern.edu/",
+      "university": "Northwestern University",
+      "universityUrl": "https://www.northwestern.edu/",
       "location": "Evanston, Illinois",
       "orcid": "https://orcid.org/0000-0002-9151-6517",
       "scholar": "https://scholar.google.com/citations?user=fhWJEysAAAAJ",
       "github": "https://github.com/filipinascimento",
       "openalex": "https://openalex.org/A5025683130",
-      "markdown": "Across papers, collaborations, technologies, software, and public discourse, my work combines network science, machine learning, science of science, and visual computing to make complex systems easier to analyze and explore.\n\nAt Northwestern’s Center for Science of Science & Innovation, I develop data and AI systems for understanding scientific change and accelerating the path from research to useful technology. I also build open tools, including Helios Web, for interactive exploration of large networks and embedding spaces.\n\nAcross earlier work in computational physics, bioinformatics, climate science, information science, and computational social science, the recurring idea has been the same: build rigorous representations of complex systems, then make those representations usable.",
-      "html": "<p>Across papers, collaborations, technologies, software, and public discourse, my work combines network science, machine learning, science of science, and visual computing to make complex systems easier to analyze and explore.</p>\n<p>At Northwestern’s Center for Science of Science &amp; Innovation, I develop data and AI systems for understanding scientific change and accelerating the path from research to useful technology. I also build open tools, including Helios Web, for interactive exploration of large networks and embedding spaces.</p>\n<p>Across earlier work in computational physics, bioinformatics, climate science, information science, and computational social science, the recurring idea has been the same: build rigorous representations of complex systems, then make those representations usable.</p>\n",
-      "text": "Across papers, collaborations, technologies, software, and public discourse, my work combines network science, machine learning, science of science, and visual computing to make complex systems easier to analyze and explore. At Northwestern’s Center for Science of Science & Innovation, I develop data and AI systems for understanding scientific change and accelerating the path from research to useful technology. I also build open tools, including Helios Web, for interactive exploration of large networks and embedding spaces. Across earlier work in computational physics, bioinformatics, climate science, information science, and computational social science, the recurring idea has been the same: build rigorous representations of complex systems, then make those representations usable."
+      "markdown": "Trained as a physicist, I am an interdisciplinary researcher working across network science, science of science, artificial intelligence, and visual computing. I build networks, embeddings, and structured AI pipelines that connect evidence across scientific publications, technological designs, collaborations, and complex social and biological systems.\n\nAt Northwestern’s Center for Science of Science & Innovation, I study how ideas and technological capabilities develop: how fields change, how funding and collaboration shape discovery, and how research becomes useful technology. I combine large-scale data, network and language models, and domain knowledge—and build open tools such as Helios Web—to make these processes measurable, explorable, and useful.",
+      "html": "<p>Trained as a physicist, I am an interdisciplinary researcher working across network science, science of science, artificial intelligence, and visual computing. I build networks, embeddings, and structured AI pipelines that connect evidence across scientific publications, technological designs, collaborations, and complex social and biological systems.</p>\n<p>At Northwestern’s Center for Science of Science &amp; Innovation, I study how ideas and technological capabilities develop: how fields change, how funding and collaboration shape discovery, and how research becomes useful technology. I combine large-scale data, network and language models, and domain knowledge—and build open tools such as Helios Web—to make these processes measurable, explorable, and useful.</p>\n",
+      "text": "Trained as a physicist, I am an interdisciplinary researcher working across network science, science of science, artificial intelligence, and visual computing. I build networks, embeddings, and structured AI pipelines that connect evidence across scientific publications, technological designs, collaborations, and complex social and biological systems. At Northwestern’s Center for Science of Science & Innovation, I study how ideas and technological capabilities develop: how fields change, how funding and collaboration shape discovery, and how research becomes useful technology. I combine large scale data, network and language models, and domain knowledge—and build open tools such as Helios Web—to make these processes measurable, explorable, and useful."
     }
   ],
   "projects": [
@@ -53,15 +58,6 @@
         "Climate networks",
         "Granger causality",
         "Complex systems"
-      ],
-      "collaborators": [
-        "Didier Vega-Oliveros",
-        "Xiaoran Yan",
-        "Alessandro Flammini",
-        "Filippo Menczer",
-        "Filippo Radicchi",
-        "Ben Kravitz",
-        "Santo Fortunato"
       ],
       "links": [
         {
@@ -112,10 +108,6 @@
         "Collaboration networks",
         "Interactive visualization"
       ],
-      "collaborators": [
-        "Katy Börner",
-        "Staša Milojević"
-      ],
       "links": [
         {
           "label": "Nature Reviews Physics",
@@ -153,35 +145,39 @@
     {
       "slug": "brainlife-network-apps",
       "collection": "projects",
-      "title": "Network science for brainlife.io",
+      "title": "Biomedical and health applications of network science",
       "era": "past",
-      "status": "Published · Open-source infrastructure",
-      "year": "2020–2024",
+      "status": "Interdisciplinary research",
+      "year": "2017–2026",
       "order": 3,
       "accent": "violet",
       "topics": [
+        "Biomedical data",
+        "Single-cell genomics",
         "Neuroscience",
-        "Reproducibility",
-        "Network analysis"
-      ],
-      "collaborators": [
-        "Soichi Hayashi",
-        "Eleftherios Garyfallidis",
-        "brainlife.io contributors"
+        "Scientific literature"
       ],
       "links": [
+        {
+          "label": "Single-cell RNA sequencing",
+          "url": "https://doi.org/10.1038/s41598-026-49033-w"
+        },
+        {
+          "label": "Wound-healing materials",
+          "url": "https://doi.org/10.1016/j.ijbiomac.2025.141565"
+        },
         {
           "label": "Nature Methods",
           "url": "https://doi.org/10.1038/s41592-024-02237-2"
         },
         {
-          "label": "Network apps",
-          "url": "https://brainlife.io/apps#network"
+          "label": "Biological networks",
+          "url": "https://doi.org/10.1039/c7ib00161d"
         }
       ],
-      "markdown": "Designed reusable applications and templates for turning connectivity matrices and time series into networks, measuring communities and network properties, generating null models, and producing reproducible reports inside the brainlife.io platform.",
-      "html": "<p>Designed reusable applications and templates for turning connectivity matrices and time series into networks, measuring communities and network properties, generating null models, and producing reproducible reports inside the brainlife.io platform.</p>\n",
-      "text": "Designed reusable applications and templates for turning connectivity matrices and time series into networks, measuring communities and network properties, generating null models, and producing reproducible reports inside the brainlife.io platform."
+      "markdown": "Applied network science, machine learning, and scientific-data pipelines to problems in single-cell genomics, wound-healing materials, neuroscience, and biological networks. The work ranges from robust cell-type identification and literature-scale synthesis to reproducible cloud workflows, showing how shared computational representations can support very different biomedical questions.",
+      "html": "<p>Applied network science, machine learning, and scientific-data pipelines to problems in single-cell genomics, wound-healing materials, neuroscience, and biological networks. The work ranges from robust cell-type identification and literature-scale synthesis to reproducible cloud workflows, showing how shared computational representations can support very different biomedical questions.</p>\n",
+      "text": "Applied network science, machine learning, and scientific data pipelines to problems in single cell genomics, wound healing materials, neuroscience, and biological networks. The work ranges from robust cell type identification and literature scale synthesis to reproducible cloud workflows, showing how shared computational representations can support very different biomedical questions."
     },
     {
       "slug": "helios-web",
@@ -230,11 +226,6 @@
         "Computational social science",
         "Coordination",
         "Visualization"
-      ],
-      "collaborators": [
-        "Alessandro Flammini",
-        "Filippo Menczer",
-        "OSoMe collaborators"
       ],
       "links": [
         {
@@ -291,13 +282,6 @@
         "Symmetry",
         "Accessibility"
       ],
-      "collaborators": [
-        "Luciano da Fontoura Costa",
-        "César Henrique Comin",
-        "Henrique Ferraz de Arruda",
-        "Diego Raphael Amancio",
-        "Osvaldo Novais de Oliveira Jr."
-      ],
       "markdown": "Developed multiscale measurements for describing nodes and networks through concentric structure, accessibility, symmetry, and local dimension. The methods were applied to collaboration, text, biological, urban, transportation, and infrastructure networks and released with supporting software.",
       "html": "<p>Developed multiscale measurements for describing nodes and networks through concentric structure, accessibility, symmetry, and local dimension. The methods were applied to collaboration, text, biological, urban, transportation, and infrastructure networks and released with supporting software.</p>\n",
       "text": "Developed multiscale measurements for describing nodes and networks through concentric structure, accessibility, symmetry, and local dimension. The methods were applied to collaboration, text, biological, urban, transportation, and infrastructure networks and released with supporting software."
@@ -346,13 +330,6 @@
         "Citations",
         "Communities",
         "Research careers"
-      ],
-      "collaborators": [
-        "Santo Fortunato",
-        "Alessandro Flammini",
-        "Filippo Menczer",
-        "Staša Milojević",
-        "Diego Raphael Amancio"
       ],
       "links": [
         {

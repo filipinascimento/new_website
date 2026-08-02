@@ -1,10 +1,15 @@
 ---
 title: Filipi Nascimento Silva
-headline: Network science, science of science, artificial intelligence, and visual computing.
+headline: Networks, science, and AI across disciplines.
 eyebrow: Network science · science of science · AI · visualization
 role: Research Assistant Professor
 institution: Center for Science of Science & Innovation, Kellogg School of Management, Northwestern University
-institutionUrl: https://www.kellogg.northwestern.edu/academics-research/science-of-science/faculty-and-contributors/
+center: Center for Science of Science & Innovation
+centerUrl: https://www.kellogg.northwestern.edu/academics-research/science-of-science/
+school: Kellogg School of Management
+schoolUrl: https://www.kellogg.northwestern.edu/
+university: Northwestern University
+universityUrl: https://www.northwestern.edu/
 location: Evanston, Illinois
 orcid: https://orcid.org/0000-0002-9151-6517
 scholar: https://scholar.google.com/citations?user=fhWJEysAAAAJ
@@ -12,8 +17,6 @@ github: https://github.com/filipinascimento
 openalex: https://openalex.org/A5025683130
 ---
 
-Across papers, collaborations, technologies, software, and public discourse, my work combines network science, machine learning, science of science, and visual computing to make complex systems easier to analyze and explore.
+Trained as a physicist, I am an interdisciplinary researcher working across network science, science of science, artificial intelligence, and visual computing. I build networks, embeddings, and structured AI pipelines that connect evidence across scientific publications, technological designs, collaborations, and complex social and biological systems.
 
-At Northwestern’s Center for Science of Science & Innovation, I develop data and AI systems for understanding scientific change and accelerating the path from research to useful technology. I also build open tools, including Helios Web, for interactive exploration of large networks and embedding spaces.
-
-Across earlier work in computational physics, bioinformatics, climate science, information science, and computational social science, the recurring idea has been the same: build rigorous representations of complex systems, then make those representations usable.
+At Northwestern’s Center for Science of Science & Innovation, I study how ideas and technological capabilities develop: how fields change, how funding and collaboration shape discovery, and how research becomes useful technology. I combine large-scale data, network and language models, and domain knowledge—and build open tools such as Helios Web—to make these processes measurable, explorable, and useful.

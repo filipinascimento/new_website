@@ -6,7 +6,6 @@ year: 2019–2025
 order: 4
 accent: coral
 topics: [Computational social science, Coordination, Visualization]
-collaborators: [Alessandro Flammini, Filippo Menczer, OSoMe collaborators]
 links:
   - label: OSoMe tools
     url: https://osome.iu.edu/tools/
