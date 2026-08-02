@@ -3,7 +3,7 @@ import type { ProjectRecord } from "../lib/types";
 
 export function ProjectCard({ project }: { project: ProjectRecord }) {
   return (
-    <article className={`project-card project-card--${project.accent || "blue"}`}>
+    <article className="project-card">
       <div className="project-card__topline">
         <span>{project.status}</span>
         <span>{project.year}</span>

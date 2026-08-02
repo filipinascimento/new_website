@@ -1,4 +1,4 @@
-import { ArrowUpRight, GitFork, GitBranch, Star } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import type { GitHubRepo, SoftwareRecord } from "../lib/types";
 
 export function SoftwareCard({ software, repo }: { software: SoftwareRecord; repo?: GitHubRepo }) {
@@ -8,8 +8,7 @@ export function SoftwareCard({ software, repo }: { software: SoftwareRecord; rep
         <span className="software-card__status">{software.status}</span>
         {repo && (
           <span className="software-card__stats" aria-label={`${repo.stars} GitHub stars and ${repo.forks} forks`}>
-            <Star size={13} aria-hidden="true" /> {repo.stars}
-            <GitFork size={13} aria-hidden="true" /> {repo.forks}
+            {repo.stars} stars · {repo.forks} forks
           </span>
         )}
       </div>
@@ -23,7 +22,7 @@ export function SoftwareCard({ software, repo }: { software: SoftwareRecord; rep
       )}
       <div className="software-card__links">
         <a href={software.url} target="_blank" rel="noreferrer">
-          <GitBranch size={14} aria-hidden="true" /> Source
+          Source<ArrowUpRight size={14} aria-hidden="true" />
         </a>
         {software.homepage && (
           <a href={software.homepage} target="_blank" rel="noreferrer">

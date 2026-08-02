@@ -1,4 +1,4 @@
-import { ArrowUpRight, GitBranch, GraduationCap } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 const profiles = [
   ["GitHub", "https://github.com/filipinascimento"],
@@ -16,7 +16,6 @@ export function SiteFooter() {
           <p>Research on networks, scientific change, and usable computational tools.</p>
         </div>
         <div className="site-footer__position">
-          <GraduationCap size={18} aria-hidden="true" />
           <span>Research Assistant Professor · Northwestern University</span>
         </div>
         <div className="site-footer__links">
@@ -29,7 +28,7 @@ export function SiteFooter() {
       </div>
       <div className="shell site-footer__base">
         <span>© {new Date().getFullYear()} Filipi Nascimento Silva</span>
-        <span><GitBranch size={14} aria-hidden="true" /> Content in Markdown · data synced from public APIs</span>
+        <span>Content in Markdown · data synced from public APIs</span>
       </div>
     </footer>
   );

@@ -14,7 +14,6 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="site-header__inner shell">
         <Link className="wordmark" href="/" aria-label="Filipi Nascimento Silva, home">
-          <span className="wordmark__mark" aria-hidden="true">FN</span>
           <span className="wordmark__name">Filipi N. Silva</span>
         </Link>
         <nav className="site-nav" aria-label="Primary navigation">

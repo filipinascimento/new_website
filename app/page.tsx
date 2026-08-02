@@ -1,18 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  ArrowRight,
-  ArrowUpRight,
-  BookOpen,
-  Building2,
-  Code2,
-  FileText,
-  GraduationCap,
-  MapPin,
-  Network,
-  Orbit,
-} from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import contentJson from "@/data/content.json";
 import githubJson from "@/data/github/repos.json";
 import openAlexJson from "@/data/openalex/works.json";
@@ -71,85 +60,69 @@ export default function Home() {
           </div>
           <dl className="profile-sidebar__facts">
             <div>
-              <dt><Building2 size={15} aria-hidden="true" /> Affiliation</dt>
+              <dt>Affiliation</dt>
               <dd><a href={profile.institutionUrl} target="_blank" rel="noreferrer">Center for Science of Science &amp; Innovation</a></dd>
             </div>
             <div>
-              <dt><MapPin size={15} aria-hidden="true" /> Location</dt>
+              <dt>Location</dt>
               <dd>{profile.location}</dd>
             </div>
           </dl>
           <nav className="profile-sidebar__links" aria-label="Research profiles">
-            <a href={profile.github} target="_blank" rel="noreferrer"><Code2 size={15} aria-hidden="true" /> GitHub<ArrowUpRight size={12} /></a>
-            <a href={profile.scholar} target="_blank" rel="noreferrer"><GraduationCap size={15} aria-hidden="true" /> Google Scholar<ArrowUpRight size={12} /></a>
-            <a href={profile.orcid} target="_blank" rel="noreferrer"><Orbit size={15} aria-hidden="true" /> ORCID<ArrowUpRight size={12} /></a>
-            <a href={profile.openalex} target="_blank" rel="noreferrer"><Network size={15} aria-hidden="true" /> OpenAlex<ArrowUpRight size={12} /></a>
-            <Link href="/cv"><FileText size={15} aria-hidden="true" /> Curriculum vitae<ArrowRight size={12} /></Link>
+            <a href={profile.github} target="_blank" rel="noreferrer">GitHub<ArrowUpRight size={14} /></a>
+            <a href={profile.scholar} target="_blank" rel="noreferrer">Google Scholar<ArrowUpRight size={14} /></a>
+            <a href={profile.orcid} target="_blank" rel="noreferrer">ORCID<ArrowUpRight size={14} /></a>
+            <a href={profile.openalex} target="_blank" rel="noreferrer">OpenAlex<ArrowUpRight size={14} /></a>
+            <Link href="/cv">Curriculum vitae<ArrowRight size={14} /></Link>
           </nav>
         </aside>
 
         <div className="home-content">
-          <section className="home-intro" aria-labelledby="home-intro-title">
-            <div className="eyebrow">About</div>
-            <h1 id="home-intro-title">{profile.headline}</h1>
-            {introParagraphs.slice(0, 2).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-            <div className="home-intro__position">
-              <span>Currently</span>
-              <strong>{profile.role}</strong>
-              <a href={profile.institutionUrl} target="_blank" rel="noreferrer">{profile.institution}<ArrowUpRight size={13} /></a>
-            </div>
-            <div className="home-intro__actions">
-              <Link className="button button--primary" href="/projects">Current work<ArrowRight size={15} aria-hidden="true" /></Link>
-              <Link className="button button--secondary" href="/publications">Publications</Link>
-            </div>
-          </section>
-
-          <section className="home-section home-visualization" aria-labelledby="home-visualization-title">
-            <div className="home-section__heading home-section__heading--split">
-              <div>
-                <div className="eyebrow">Live visualization</div>
-                <h2 id="home-visualization-title">Helios Web</h2>
+          <section className="home-intro-grid" aria-labelledby="home-intro-title">
+            <div className="home-intro">
+              <p className="home-intro__role">{profile.role} · Northwestern University</p>
+              <h1 id="home-intro-title">{profile.title}</h1>
+              <p className="home-intro__research">Network science, science of science, artificial intelligence, and visual computing.</p>
+              {introParagraphs.slice(0, 2).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              <div className="home-intro__actions">
+                <Link className="text-link" href="/projects">Research projects<ArrowRight size={15} aria-hidden="true" /></Link>
+                <Link className="text-link" href="/publications">Publications<ArrowRight size={15} aria-hidden="true" /></Link>
               </div>
-              <p>The current Helios defaults: a 3D, 10,000-node Watts–Strogatz small world with the standard exploration controls.</p>
             </div>
-            <HeliosPreview />
+            <div className="home-helios">
+              <div className="home-helios__heading">
+                <h2>Helios Web</h2>
+                <p>Interactive network and embedding visualization in the browser.</p>
+              </div>
+              <HeliosPreview />
+            </div>
           </section>
 
           <section className="home-section" aria-labelledby="home-projects-title">
-            <div className="home-section__heading home-section__heading--split">
-              <div>
-                <div className="eyebrow">Research</div>
-                <h2 id="home-projects-title">Current work</h2>
-              </div>
+            <div className="home-section__heading">
+              <h2 id="home-projects-title">Current research</h2>
               <Link className="text-link" href="/projects">All projects<ArrowRight size={15} /></Link>
             </div>
-            <ol className="home-project-list">
-              {projects.map((project, index) => (
-                <li key={project.slug}>
-                  <div className="home-project-list__number">{String(index + 1).padStart(2, "0")}</div>
-                  <article>
-                    <div className="home-project-list__meta"><span>{project.status}</span><span>{project.year}</span></div>
-                    <h3>{project.title}</h3>
-                    <div className="home-project-list__body" dangerouslySetInnerHTML={{ __html: project.html }} />
-                    {project.topics && <div className="home-project-list__topics">{project.topics.map((topic) => <span key={topic}>{topic}</span>)}</div>}
-                  </article>
-                </li>
+            <div className="home-project-list">
+              {projects.map((project) => (
+                <article key={project.slug}>
+                  <div className="home-project-list__meta"><span>{project.status}</span><span>{project.year}</span></div>
+                  <h3>{project.title}</h3>
+                  <div className="home-project-list__body" dangerouslySetInnerHTML={{ __html: project.html }} />
+                  {project.topics && <div className="home-project-list__topics">{project.topics.map((topic) => <span key={topic}>{topic}</span>)}</div>}
+                </article>
               ))}
-            </ol>
+            </div>
           </section>
 
           <section className="home-section" aria-labelledby="home-publications-title">
-            <div className="home-section__heading home-section__heading--split">
-              <div>
-                <div className="eyebrow">Latest record</div>
-                <h2 id="home-publications-title">Recent publications</h2>
-              </div>
+            <div className="home-section__heading">
+              <h2 id="home-publications-title">Recent publications</h2>
               <Link className="text-link" href="/publications">Full record<ArrowRight size={15} /></Link>
             </div>
-            <ol className="recent-publications recent-publications--home">
-              {works.map((work, index) => (
+            <ul className="recent-publications recent-publications--home">
+              {works.map((work) => (
                 <li key={work.id}>
-                  <span className="recent-publications__index">{String(index + 1).padStart(2, "0")}</span>
                   <div>
                     <h3><a href={work.url} target="_blank" rel="noreferrer">{work.title}</a></h3>
                     <p>{authors(work.authors)}</p>
@@ -161,15 +134,12 @@ export default function Home() {
                   <a className="circle-link" href={work.url} target="_blank" rel="noreferrer" aria-label={`Open ${work.title}`}><ArrowUpRight size={16} /></a>
                 </li>
               ))}
-            </ol>
+            </ul>
           </section>
 
           <section className="home-section" aria-labelledby="home-software-title">
-            <div className="home-section__heading home-section__heading--split">
-              <div>
-                <div className="eyebrow">Selected software</div>
-                <h2 id="home-software-title">Tools and libraries</h2>
-              </div>
+            <div className="home-section__heading">
+              <h2 id="home-software-title">Selected software</h2>
               <Link className="text-link" href="/software">Software portfolio<ArrowRight size={15} /></Link>
             </div>
             <div className="home-software-list">
@@ -190,17 +160,14 @@ export default function Home() {
           </section>
 
           <section className="home-section home-teaching" aria-labelledby="home-teaching-title">
-            <div className="home-section__heading home-section__heading--split">
-              <div>
-                <div className="eyebrow"><BookOpen size={13} aria-hidden="true" /> Teaching</div>
-                <h2 id="home-teaching-title">Courses and materials</h2>
-              </div>
+            <div className="home-section__heading">
+              <h2 id="home-teaching-title">Teaching</h2>
               <Link className="text-link" href="/teaching">Teaching archive<ArrowRight size={15} /></Link>
             </div>
             <div className="home-course-list">
               {teaching.map((course) => (
                 <a href={course.url} target="_blank" rel="noreferrer" key={course.slug}>
-                  <span><strong>{course.title}</strong><small>{course.term} · {course.format}</small></span>
+                  <span><strong>{course.code ? `${course.code}: ` : ""}{course.title}</strong><small>{course.term} · {course.format}</small></span>
                   <ArrowUpRight size={16} aria-hidden="true" />
                 </a>
               ))}

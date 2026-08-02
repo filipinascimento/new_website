@@ -18,11 +18,11 @@ export default function SoftwarePage() {
     <main id="main-content">
       <header className="page-hero shell page-hero--split">
         <div>
-          <div className="eyebrow">Selected open source</div>
-          <h1>Software for exploring complex systems.</h1>
+          <div className="eyebrow">Open source</div>
+          <h1>Software</h1>
         </div>
         <div>
-          <p>This is a deliberately curated portfolio of research tools that are active, reusable, or tied to enduring published work—not a feed of every repository.</p>
+          <p>A curated selection of research tools that are active, reusable, or tied to published work.</p>
           <a className="text-link" href="https://github.com/filipinascimento" target="_blank" rel="noreferrer"><GitBranch size={15} /> All GitHub repositories<ArrowUpRight size={13} /></a>
         </div>
       </header>

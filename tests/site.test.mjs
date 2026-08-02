@@ -62,3 +62,12 @@ test("vendors the current Helios browser runtime for static hosting", async () =
   assert.doesNotMatch(helios, /"\/assets\/(?:layout|d3force3d)Worker/);
   await access(new URL("public/vendor/helios-network.inline.js", root));
 });
+
+test("keeps the home page academic, unnumbered, and free of implementation slogans", async () => {
+  const home = await readFile(new URL("app/page.tsx", root), "utf8");
+  const helios = await readFile(new URL("app/components/HeliosPreview.tsx", root), "utf8");
+  assert.match(home, /home-intro-grid/);
+  assert.match(home, /home-helios/);
+  assert.doesNotMatch(home, /padStart|Helios defaults|Live visualization/i);
+  assert.doesNotMatch(helios, /live GPU layout/i);
+});

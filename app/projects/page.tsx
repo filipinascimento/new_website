@@ -16,8 +16,8 @@ export default function ProjectsPage() {
   return (
     <main id="main-content">
       <header className="page-hero shell">
-        <div className="eyebrow">Research portfolio</div>
-        <h1>Projects that connect methods, evidence, and use.</h1>
+        <div className="eyebrow">Projects</div>
+        <h1>Research projects</h1>
         <p>Recent work is intentionally summarized at a high level. Selected earlier projects include more context and acknowledge important public collaborations.</p>
       </header>
       <section className="section shell section--first">

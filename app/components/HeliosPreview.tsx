@@ -61,7 +61,6 @@ export function HeliosPreview() {
         };
         const AttributeType = networkModule.AttributeType as { Float: unknown };
 
-        // These are the same synthetic-network defaults used by heliosweb.io/app/.
         const network = await HeliosNetwork.generateWattsStrogatz({
           nodeCount: 10_000,
           neighborLevel: 2,
@@ -70,8 +69,6 @@ export function HeliosPreview() {
           directed: false,
         });
 
-        // Numeric attributes keep the standard Mappers and Filters panels useful
-        // while leaving appearance, layout, camera, and interaction to Helios.
         network.defineNodeAttribute("weight", AttributeType.Float);
         network.defineEdgeAttribute("intensity", AttributeType.Float);
         const random = seededRandom(11);
@@ -89,8 +86,8 @@ export function HeliosPreview() {
           container,
           ui: true,
           networkSource: {
-            name: "Watts–Strogatz 10k",
-            baseName: "watts-strogatz-10k",
+            name: "Helios network demo",
+            baseName: "helios-network-demo",
           },
           autoCleanup: true,
           disposeNetworkOnDestroy: true,
@@ -123,14 +120,13 @@ export function HeliosPreview() {
     <figure className="helios-stage">
       <div className="helios-stage__viewport">
         <div className="helios-stage__loading" aria-hidden={status === "ready"}>
-          <span>{status === "fallback" ? "Open the full Helios app to explore the graph." : "Building a 10,000-node small world…"}</span>
+          <span>{status === "fallback" ? "Open Helios to explore the network." : "Loading interactive network…"}</span>
         </div>
-        <div ref={containerRef} className="helios-stage__canvas" aria-label="Interactive 10,000-node Watts–Strogatz network in Helios Web" />
+        <div ref={containerRef} className="helios-stage__canvas" aria-label="Interactive network preview in Helios Web" />
       </div>
       <figcaption className="helios-stage__caption">
-        <span>Watts–Strogatz · 10,000 nodes · live GPU layout</span>
         <a href="https://heliosweb.io/app/" target="_blank" rel="noreferrer">
-          Open Helios <ArrowUpRight size={13} aria-hidden="true" />
+          Open Helios Web <ArrowUpRight size={14} aria-hidden="true" />
         </a>
       </figcaption>
     </figure>
