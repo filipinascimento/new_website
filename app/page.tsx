@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import contentJson from "@/data/content.json";
-import githubJson from "@/data/github/repos.json";
 import openAlexJson from "@/data/openalex/works.json";
 import { HeliosPreview } from "./components/HeliosPreview";
-import type { ContentRecord, GitHubRepo, ProjectRecord, Publication, SoftwareRecord, TeachingRecord } from "./lib/types";
+import { SoftwareIcon } from "./components/SoftwareIcon";
+import type { ContentRecord, ProjectRecord, Publication, SoftwareRecord, TeachingRecord } from "./lib/types";
 
 export const metadata: Metadata = {
   title: { absolute: "Filipi Nascimento Silva · Research and software" },
@@ -39,7 +39,6 @@ export default function Home() {
   const software = (contentJson.software as SoftwareRecord[]).filter((item) => item.featured).slice(0, 3);
   const teaching = contentJson.teaching as TeachingRecord[];
   const works = (openAlexJson.works as Publication[]).slice(0, 5);
-  const repos = new Map((githubJson.featured as GitHubRepo[]).map((repo) => [repo.name, repo]));
   const introParagraphs = profile.markdown.split(/\n\s*\n/).filter(Boolean);
 
   return (
@@ -140,19 +139,16 @@ export default function Home() {
               <Link className="text-link" href="/software">Software portfolio<ArrowRight size={15} /></Link>
             </div>
             <div className="home-software-list">
-              {software.map((item) => {
-                const repo = repos.get(item.repo);
-                return (
-                  <article key={item.slug}>
-                    <div className="home-software-list__meta">
-                      <span>{item.status}</span>
-                      {repo && <span>{repo.stars} stars · {repo.forks} forks</span>}
-                    </div>
-                    <h3><a href={item.url} target="_blank" rel="noreferrer">{item.title}<ArrowUpRight size={14} /></a></h3>
-                    <p>{item.tagline}</p>
-                  </article>
-                );
-              })}
+              {software.map((item) => (
+                <article key={item.slug}>
+                  <div className="home-software-list__topline">
+                    <SoftwareIcon slug={item.slug} compact />
+                    <span>{item.status}</span>
+                  </div>
+                  <h3><a href={item.url} target="_blank" rel="noreferrer">{item.title}<ArrowUpRight size={14} /></a></h3>
+                  <p>{item.tagline}</p>
+                </article>
+              ))}
             </div>
           </section>
 

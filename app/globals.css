@@ -680,6 +680,84 @@ a {
   background: linear-gradient(145deg, color-mix(in srgb, var(--paper-raised) 58%, transparent), color-mix(in srgb, var(--paper) 34%, transparent));
 }
 
+.home-software-list__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--ink-faint);
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.software-icon {
+  display: grid;
+  width: 62px;
+  height: 62px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 28% 22%, color-mix(in srgb, currentColor 22%, transparent), transparent 58%),
+    color-mix(in srgb, var(--paper-raised) 54%, var(--wash-blue));
+}
+
+.software-icon svg {
+  width: 29px;
+  height: 29px;
+  stroke-width: 1.55;
+}
+
+.software-icon--compact {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+}
+
+.software-icon--compact svg {
+  width: 23px;
+  height: 23px;
+}
+
+.software-icon--blue {
+  color: var(--teal);
+}
+
+.software-icon--warm {
+  color: var(--gold);
+  background:
+    radial-gradient(circle at 28% 22%, color-mix(in srgb, currentColor 22%, transparent), transparent 58%),
+    color-mix(in srgb, var(--paper-raised) 54%, var(--wash-warm));
+}
+
+.software-icon--violet {
+  color: var(--violet);
+  background:
+    radial-gradient(circle at 28% 22%, color-mix(in srgb, currentColor 22%, transparent), transparent 58%),
+    color-mix(in srgb, var(--paper-raised) 54%, var(--wash-cool));
+}
+
+.software-icon--green {
+  color: #4f6b5d;
+  background:
+    radial-gradient(circle at 28% 22%, color-mix(in srgb, currentColor 22%, transparent), transparent 58%),
+    color-mix(in srgb, var(--paper-raised) 54%, #e5ebe6);
+}
+
+[data-theme="dark"] .software-icon--green {
+  color: #8eae9b;
+  background:
+    radial-gradient(circle at 28% 22%, color-mix(in srgb, currentColor 20%, transparent), transparent 58%),
+    #242a27;
+}
+
+.software-icon--rose {
+  color: var(--coral);
+  background:
+    radial-gradient(circle at 28% 22%, color-mix(in srgb, currentColor 22%, transparent), transparent 58%),
+    color-mix(in srgb, var(--paper-raised) 54%, var(--wash-warm));
+}
+
 .home-software-list h3 {
   margin: 14px 0 8px;
   font-family: var(--font-display);
@@ -883,6 +961,22 @@ a {
   background: linear-gradient(145deg, color-mix(in srgb, var(--wash-cool) 80%, transparent), color-mix(in srgb, var(--paper) 52%, transparent));
 }
 
+.software-card {
+  overflow: hidden;
+}
+
+.software-card__heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.software-card__status {
+  color: var(--ink-faint);
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
 .project-card h3,
 .software-card h3,
 .course-card h2 {
@@ -892,6 +986,10 @@ a {
   font-weight: 650;
   letter-spacing: -0.025em;
   line-height: 1.16;
+}
+
+.software-card__heading h3 {
+  margin: 5px 0 0;
 }
 
 .project-card__body,
@@ -929,14 +1027,10 @@ a {
 }
 
 .software-card__tagline {
-  margin: -2px 0 13px;
+  margin: 20px 0 13px;
   color: var(--teal);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 650;
-}
-
-.software-card__stats {
-  white-space: nowrap;
 }
 
 .course-card__meta,

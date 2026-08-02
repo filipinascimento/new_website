@@ -100,7 +100,7 @@ export function HeliosPreview() {
         if (cancelled) return;
         const instance = new Helios(network, {
           container,
-          ui: true,
+          ui: false,
           storage: false,
           session: false,
           autosyncInteractionIdleMs: false,

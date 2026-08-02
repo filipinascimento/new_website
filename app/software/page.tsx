@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import contentJson from "@/data/content.json";
-import githubJson from "@/data/github/repos.json";
 import { ArrowUpRight, GitBranch } from "lucide-react";
 import { SoftwareCard } from "../components/SoftwareCard";
-import type { GitHubRepo, SoftwareRecord } from "../lib/types";
+import type { SoftwareRecord } from "../lib/types";
 
 export const metadata: Metadata = {
   title: "Software",
@@ -12,8 +11,6 @@ export const metadata: Metadata = {
 
 export default function SoftwarePage() {
   const software = contentJson.software as SoftwareRecord[];
-  const repos = new Map((githubJson.featured as GitHubRepo[]).map((repo) => [repo.name, repo]));
-  const syncDate = new Intl.DateTimeFormat("en-US", { dateStyle: "medium" }).format(new Date(githubJson.fetchedAt));
   return (
     <main id="main-content">
       <header className="page-hero shell page-hero--split">
@@ -27,9 +24,9 @@ export default function SoftwarePage() {
         </div>
       </header>
       <section className="section shell section--first">
-        <div className="section-label-row"><h2>Featured tools</h2><span>Repository metadata synced {syncDate}</span></div>
+        <div className="section-label-row"><h2>Featured tools</h2><span>Open tools, libraries, and research applications</span></div>
         <div className="software-grid">
-          {software.map((item) => <SoftwareCard software={item} repo={repos.get(item.repo)} key={item.slug} />)}
+          {software.map((item) => <SoftwareCard software={item} key={item.slug} />)}
         </div>
       </section>
     </main>
