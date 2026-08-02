@@ -360,23 +360,29 @@ a {
 
 .home-intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(350px, 0.92fr);
-  align-items: start;
-  gap: clamp(34px, 4.2vw, 58px);
+  grid-template-columns: minmax(470px, 0.95fr) minmax(420px, 1.05fr);
+  align-items: stretch;
+  gap: 0;
+  min-height: 600px;
   padding-bottom: 82px;
 }
 
 .home-intro {
+  position: relative;
+  z-index: 2;
   padding-top: 3px;
+  padding-right: 18px;
 }
 
 .home-intro h1 {
+  max-width: 520px;
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 4vw, 3.25rem);
+  font-size: clamp(2.15rem, 3.25vw, 2.75rem);
   font-weight: 650;
   letter-spacing: -0.045em;
-  line-height: 1.02;
+  line-height: 1.04;
+  text-wrap: balance;
 }
 
 .home-intro > p {
@@ -394,16 +400,22 @@ a {
 }
 
 .home-helios {
+  position: relative;
+  z-index: 1;
   min-width: 0;
+  margin-left: -42px;
 }
 
 .helios-stage {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  height: 100%;
   margin: 0;
 }
 
 .helios-stage__viewport {
   position: relative;
-  height: clamp(360px, 35vw, 470px);
+  min-height: 0;
   overflow: hidden;
   background: var(--paper);
 }
@@ -1549,10 +1561,17 @@ a {
 @media (max-width: 1120px) {
   .home-intro-grid {
     grid-template-columns: 1fr;
+    min-height: 0;
+    gap: 34px;
   }
 
   .home-helios {
-    max-width: 680px;
+    max-width: none;
+    margin-left: 0;
+  }
+
+  .helios-stage {
+    height: auto;
   }
 
   .helios-stage__viewport {
