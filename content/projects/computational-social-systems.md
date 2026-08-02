@@ -7,6 +7,11 @@ order: 6
 featured: false
 accent: cyan
 topics: [Social media, Coordination, Information integrity, Public health]
+links:
+  - label: The Rise of Bluesky
+    url: https://arxiv.org/abs/2504.12902
+  - label: OSoMe tools
+    url: https://osome.iu.edu/tools/
 ---
 
 Studying coordinated behavior, information integrity, and public discourse across emerging social platforms. Current work combines network structure, text embeddings, topic models, and human validation to understand how collective behavior forms and changes online.

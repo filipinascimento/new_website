@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import contentJson from "@/data/content.json";
-import openAlexProfile from "@/data/openalex/profile.json";
 import scholarProfile from "@/data/scholar/profile.json";
 import { PrintButton } from "../components/PrintButton";
 import type { ContentRecord } from "../lib/types";
@@ -33,27 +32,18 @@ export default function CvPage() {
   ];
   const metrics = [
     {
-      value: openAlexProfile.mergedScholarlyWorksCount.toLocaleString("en-US"),
-      label: "Reconciled scholarly works",
-      source: "OpenAlex",
-      url: profile.openalex,
+      value: scholarProfile.publications.toLocaleString("en-US"),
+      label: "Publications",
+      url: profile.scholar,
     },
     {
       value: scholarProfile.citations.toLocaleString("en-US"),
       label: "Citations",
-      source: "Google Scholar",
       url: profile.scholar,
     },
     {
       value: scholarProfile.hIndex.toLocaleString("en-US"),
       label: "h-index",
-      source: "Google Scholar",
-      url: profile.scholar,
-    },
-    {
-      value: scholarProfile.i10Index.toLocaleString("en-US"),
-      label: "i10-index",
-      source: "Google Scholar",
       url: profile.scholar,
     },
   ];
@@ -85,9 +75,9 @@ export default function CvPage() {
           <a key={metric.label} href={metric.url} target="_blank" rel="noreferrer">
             <strong>{metric.value}</strong>
             <span>{metric.label}</span>
-            <small>{metric.source}</small>
           </a>
         ))}
+        <p>Google Scholar profile · publications audited</p>
       </section>
       <article className="cv-document shell" dangerouslySetInnerHTML={{ __html: cv.html }} />
     </main>

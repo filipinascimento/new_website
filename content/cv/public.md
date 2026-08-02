@@ -5,7 +5,7 @@ updated: 2026-08-01
 
 ## Profile
 
-Research Assistant Professor at Northwestern University’s Kellogg School of Management and the Center for Science of Science & Innovation. Network scientist, data scientist, and software developer working across science of science, complex systems, machine learning, computational social science, and interactive visualization. Creator of Helios Web, with a scholarly record spanning 85 reconciled works in OpenAlex.
+Research Assistant Professor at Northwestern University’s Kellogg School of Management and the Center for Science of Science & Innovation. Researcher, data scientist, and developer with expertise in dynamic complex networks, machine learning, science of science, computational social science, and interactive visualization. Creator of Helios Web and author of {{scholarPublications}} distinct publications, with {{scholarCitations}} citations and an h-index of {{scholarHIndex}} on Google Scholar. Ph.D. in Computational Physics with a strong interdisciplinary focus bridging physics, computer science, biology, and the social sciences.
 
 ## Appointments
 
@@ -21,7 +21,19 @@ Research Assistant Professor at Northwestern University’s Kellogg School of Ma
 - **M.Sc. in Physics, Computational Physics**, São Carlos Institute of Physics, University of São Paulo — 2009
 - **B.Sc. in Physics, Computational Physics**, São Carlos Institute of Physics, University of São Paulo — 2006
 
-The doctoral dissertation received a university-level honorable mention, ranking among the top three theses in the exact sciences.
+> University of São Paulo is ranked [#1 in Latin America in the Times Higher Education Latin America University Rankings 2026](https://www.timeshighereducation.com/world-university-rankings/2026/latin-america-university-rankings).
+>
+> Dissertation received a university-level Honorable Mention, ranking among the top three theses in the exact sciences.
+
+## Selected projects
+
+- **Scientific and engineering discovery:** Research on how science-of-science methods can work with structured extraction pipelines, network analysis, embedding-based search, and domain knowledge to identify promising scientific and engineering opportunities. [Public project explorer](https://filipinascimento.github.io/motifs/) · [GitHub](https://github.com/filipinascimento/motifs)
+- **[Mapping how science is funded](https://arxiv.org/abs/2603.24147):** Large-scale links between funding acknowledgments, organizations, publications, and the directions of scientific work.
+- **[Helios Web](https://heliosweb.io):** Browser-native visualization and exploration of large networks and embedding spaces. [GitHub](https://github.com/filipinascimento/helios-web)
+- **[Visualizing big science projects](https://bigscience.github.io/):** Interactive maps and reproducible data on the changing scale, collaboration structure, and topical reach of major scientific programs, developed with Katy Börner and Staša Milojević.
+- **[Climate teleconnections](https://doi.org/10.1029/2021GL094707):** Network methods for detecting statistically significant long-range relationships in climate time series, developed with Didier Vega-Oliveros, Xiaoran Yan, Alessandro Flammini, Filippo Menczer, Filippo Radicchi, Ben Kravitz, and Santo Fortunato.
+
+[Browse the full project portfolio](https://filipinascimento.github.io/new_website/projects/).
 
 ## Research areas
 

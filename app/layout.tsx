@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import "@fontsource-variable/roboto/wdth.css";
+import "@fontsource-variable/roboto/wdth-italic.css";
+import "@fontsource-variable/roboto-slab";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
 import "./globals.css";

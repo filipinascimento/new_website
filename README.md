@@ -1,6 +1,6 @@
 # Filipi Nascimento Silva — research website
 
-A modern, Markdown-first research portfolio for [filipinascimento.github.io/new_website](https://filipinascimento.github.io/new_website/). It combines editorial content, a reconciled publication record, curated software metadata, and a live Helios Web visualization.
+A modern, Markdown-first research portfolio for [filipinascimento.github.io/new_website](https://filipinascimento.github.io/new_website/). It combines editorial content, a deduplicated publication record, curated software metadata, and a live Helios Web visualization.
 
 ## What is generated and what is edited
 
@@ -73,4 +73,3 @@ The `/writing` route and `content/posts/` collection are already wired. Add the 
 ## Deployment
 
 `.github/workflows/pages.yml` builds the static export and deploys it with GitHub Pages. The same repository can also be built by OpenAI Sites through the existing vinext configuration; no database or private authentication is required.
-

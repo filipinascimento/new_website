@@ -7,7 +7,19 @@ import { marked } from "marked";
 const root = process.cwd();
 const contentRoot = path.join(root, "content");
 const collections = ["site", "projects", "software", "teaching", "cv", "posts"];
+const scholarProfile = JSON.parse(
+  await readFile(path.join(root, "data/scholar/profile.json"), "utf8"),
+);
+const templateValues = {
+  scholarPublications: scholarProfile.publications.toLocaleString("en-US"),
+  scholarCitations: scholarProfile.citations.toLocaleString("en-US"),
+  scholarHIndex: scholarProfile.hIndex.toLocaleString("en-US"),
+};
 marked.use({ gfm: true, breaks: false });
+
+function applyTemplate(source) {
+  return source.replace(/\{\{(scholarPublications|scholarCitations|scholarHIndex)\}\}/g, (_, key) => templateValues[key]);
+}
 
 function plainText(markdown = "") {
   return markdown
@@ -35,7 +47,7 @@ async function loadCollection(collection) {
   for (const entry of entries) {
     if (!entry.isFile() || !/\.mdx?$/.test(entry.name) || entry.name === "README.md") continue;
     const filePath = path.join(directory, entry.name);
-    const source = await readFile(filePath, "utf8");
+    const source = applyTemplate(await readFile(filePath, "utf8"));
     const parsed = matter(source);
     const slug = parsed.data.slug || entry.name.replace(/\.mdx?$/, "");
     records.push({

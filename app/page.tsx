@@ -53,6 +53,7 @@ export default function Home() {
             width={320}
             height={320}
             priority
+            unoptimized
           />
           <div className="profile-sidebar__identity">
             <h2 id="profile-sidebar-name">Filipi Nascimento Silva</h2>

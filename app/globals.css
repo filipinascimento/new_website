@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --font-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-display: Charter, "Bitstream Charter", "Sitka Text", Georgia, serif;
+  --font-sans: "Roboto Variable", Roboto, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Roboto Slab Variable", "Roboto Slab", Georgia, serif;
   --paper: #f3f4f2;
   --paper-raised: #ffffff;
   --paper-soft: #e8ebea;
@@ -182,7 +182,7 @@ a {
 
 .eyebrow {
   color: var(--teal);
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   font-weight: 700;
   letter-spacing: 0.065em;
   line-height: 1.4;
@@ -224,7 +224,7 @@ a {
   background: transparent;
   color: var(--ink);
   cursor: pointer;
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   font-weight: 650;
 }
 
@@ -294,7 +294,7 @@ a {
 
 .profile-sidebar__facts dt {
   color: var(--ink-faint);
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   font-weight: 700;
 }
 
@@ -462,7 +462,7 @@ a {
   align-items: center;
   gap: 5px;
   color: var(--teal);
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   font-weight: 650;
 }
 
@@ -540,7 +540,7 @@ a {
   justify-content: space-between;
   gap: 8px 18px;
   color: var(--ink-faint);
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   font-weight: 600;
 }
 
@@ -569,7 +569,7 @@ a {
   gap: 5px 0;
   margin-top: 15px;
   color: var(--ink-faint);
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   font-weight: 600;
 }
 
@@ -625,7 +625,7 @@ a {
   gap: 6px 15px;
   margin-top: 8px;
   color: var(--ink-faint);
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   font-weight: 600;
 }
 
@@ -730,7 +730,7 @@ a {
 .home-course-list small {
   margin-top: 3px;
   color: var(--ink-faint);
-  font-size: 0.84rem;
+  font-size: 0.86rem;
 }
 
 .page-hero {
@@ -812,7 +812,7 @@ a {
 .metric-card-grid span {
   margin-top: 7px;
   color: var(--ink-faint);
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   font-weight: 600;
   line-height: 1.35;
 }
@@ -832,7 +832,7 @@ a {
 
 .section-label-row > span {
   color: var(--ink-faint);
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   font-weight: 600;
 }
 
@@ -882,7 +882,7 @@ a {
 .project-card__collaborators {
   margin: 17px 0 0;
   color: var(--ink-faint);
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   line-height: 1.55;
 }
 
@@ -914,7 +914,7 @@ a {
 .course-card__meta,
 .course-card__code {
   color: var(--ink-faint);
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   font-weight: 650;
 }
 
@@ -965,7 +965,7 @@ a {
 
 .source-note p {
   margin: 4px 0 0;
-  font-size: 0.84rem;
+  font-size: 0.86rem;
 }
 
 .source-note__links {
@@ -1022,7 +1022,7 @@ a {
   background: transparent;
   color: var(--ink-faint);
   cursor: pointer;
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   font-weight: 650;
 }
 
@@ -1035,7 +1035,7 @@ a {
 .publication-result-count {
   padding: 15px 2px 9px;
   color: var(--ink-faint);
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   font-weight: 600;
 }
 
@@ -1139,7 +1139,7 @@ a {
 .cv-kicker {
   margin: 0 0 11px;
   color: var(--cv-muted);
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1182,7 +1182,7 @@ a {
 .cv-hero__actions p {
   margin: 0;
   color: var(--cv-muted);
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   font-weight: 600;
 }
 
@@ -1203,7 +1203,7 @@ a {
 
 .cv-profile-links a {
   color: var(--cv-body);
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   font-weight: 650;
   text-decoration: underline;
   text-decoration-color: #999;
@@ -1213,7 +1213,7 @@ a {
 .cv-metrics {
   display: grid;
   max-width: 940px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
   margin-top: 24px;
   border-block: 1px solid var(--cv-line);
 }
@@ -1240,14 +1240,19 @@ a {
 .cv-metrics span {
   margin-top: 4px;
   color: var(--cv-body);
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   font-weight: 650;
   line-height: 1.3;
 }
 
-.cv-metrics small {
+.cv-metrics > p {
+  align-self: center;
+  margin: 0;
+  padding: 17px 20px;
   color: var(--cv-muted);
-  font-size: 0.78rem;
+  font-size: 0.86rem;
+  font-weight: 650;
+  white-space: nowrap;
 }
 
 .cv-document {
@@ -1290,6 +1295,19 @@ a {
 
 .cv-document p {
   margin: 7px 0;
+}
+
+.cv-document blockquote {
+  margin: 10px 0 20px;
+  padding: 0;
+  border: 0;
+}
+
+.cv-document blockquote p {
+  margin: 5px 0;
+  color: var(--cv-muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
 }
 
 .cv-document ul {
@@ -1354,7 +1372,7 @@ a {
   align-items: center;
   gap: 4px;
   color: var(--ink-soft);
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   font-weight: 600;
 }
 
@@ -1371,7 +1389,7 @@ a {
   padding-top: 18px;
   border-top: 1px solid var(--line);
   color: var(--ink-faint);
-  font-size: 0.8rem;
+  font-size: 0.86rem;
 }
 
 .sr-only {
@@ -1492,15 +1510,13 @@ a {
   }
 
   .cv-metrics {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .cv-metrics a:nth-child(odd) {
-    border-left: 0;
-  }
-
-  .cv-metrics a:nth-child(n + 3) {
-    border-top: 1px solid var(--cv-line-light);
+  .cv-metrics > p {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    padding: 12px 20px 0;
   }
 }
 
@@ -1695,7 +1711,7 @@ a {
   }
 
   .cv-metrics {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     margin-top: 11pt;
   }
 
@@ -1703,16 +1719,12 @@ a {
     padding: 8pt 10pt;
   }
 
-  .cv-metrics a:nth-child(n + 3) {
-    border-top: 0;
-  }
-
-  .cv-metrics a:nth-child(odd) {
-    border-left: 1px solid var(--cv-line-light);
-  }
-
   .cv-metrics a:first-child {
     border-left: 0;
+  }
+
+  .cv-metrics > p {
+    display: none;
   }
 
   .cv-metrics strong {
@@ -1721,10 +1733,6 @@ a {
 
   .cv-metrics span {
     font-size: 6.8pt;
-  }
-
-  .cv-metrics small {
-    font-size: 5.9pt;
   }
 
   .cv-document {

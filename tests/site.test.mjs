@@ -21,22 +21,28 @@ test("keeps the editorial content in Markdown collections", async () => {
   await access(new URL("content/posts/README.md", root));
 });
 
-test("reconciles split OpenAlex identities without duplicate titles", async () => {
+test("merges split OpenAlex identities without duplicate titles", async () => {
   const config = await json("config/profile-sources.json");
   const profile = await json("data/openalex/profile.json");
   const works = await json("data/openalex/works.json");
+  const scholar = await json("data/scholar/profile.json");
   assert.equal(config.openalex.authorIds.length, 10);
   assert.equal(profile.authorIds.length, 10);
-  assert.ok(works.works.length >= 80);
+  assert.equal(works.works.length, scholar.publications);
+  assert.equal(profile.mergedScholarlyWorksCount, scholar.publications);
   assert.equal(new Set(works.works.map((work) => work.normalizedTitle)).size, works.works.length);
+  assert.ok(works.works.every((work) => work.type !== "preprint"));
   assert.ok(works.works.some((work) => work.doi === "https://doi.org/10.1103/4124-dyj8"));
-  assert.ok(works.works.some((work) => work.title.startsWith("Triadic Novelty")));
+  assert.ok(works.works.some((work) => work.doi === "https://doi.org/10.1016/j.ins.2026.123702"));
 });
 
 test("caches scholarly metrics and course identifiers", async () => {
   const scholar = await json("data/scholar/profile.json");
   const content = await json("data/content.json");
   assert.ok(scholar.citations >= 2500);
+  assert.equal(scholar.publications, 64);
+  assert.ok(scholar.profileEntries >= 118);
+  assert.match(scholar.publicationAudit.definition, /duplicate versions/i);
   assert.ok(scholar.hIndex >= 20);
   assert.ok(scholar.i10Index >= 40);
   assert.deepEqual(
@@ -50,6 +56,8 @@ test("keeps private contact fields out of the public site data", async () => {
   assert.doesNotMatch(publicData, /812[) .-]+369[ .-]+3201/);
   assert.doesNotMatch(publicData, /1800 Sherman Avenue/i);
   assert.doesNotMatch(publicData, /filipinascimento@gmail\.com/i);
+  assert.doesNotMatch(publicData, /reconciled scholarly works/i);
+  assert.doesNotMatch(publicData, /recurring technical motifs/i);
 });
 
 test("vendors the current Helios browser runtime for static hosting", async () => {

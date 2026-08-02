@@ -1,5 +1,7 @@
 {
   "profileUrl": "https://scholar.google.com/citations?user=fhWJEysAAAAJ&hl=en",
+  "publications": 64,
+  "profileEntries": 118,
   "citations": 2605,
   "citationsSince2021": 1929,
   "hIndex": 23,
@@ -7,5 +9,11 @@
   "i10Index": 42,
   "i10IndexSince2021": 35,
   "sinceYear": 2021,
-  "fetchedAt": "2026-08-02T02:42:00.568Z"
+  "publicationAudit": {
+    "auditedAt": "2026-08-01",
+    "definition": "Distinct published journal articles, conference papers, book chapters, editorials, and software papers. Unpublished preprints, duplicate versions, corrections, abstracts, datasets, theses, teaching materials, malformed records, and records belonging to other authors are excluded.",
+    "publishedProfileRows": 63,
+    "additionalPublishedRecords": 1
+  },
+  "fetchedAt": "2026-08-02T05:06:44.168Z"
 }

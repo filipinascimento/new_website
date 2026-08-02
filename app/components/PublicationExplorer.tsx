@@ -7,7 +7,6 @@ import type { Publication } from "../lib/types";
 const filters = [
   ["all", "All"],
   ["article", "Articles"],
-  ["preprint", "Preprints"],
   ["book-chapter", "Chapters"],
   ["editorial", "Editorials"],
 ] as const;
@@ -80,7 +79,6 @@ export function PublicationExplorer({ works }: { works: Publication[] }) {
                 <span>{work.source || work.type.replace("-", " ")}</span>
                 <span className="publication-type">{work.type.replace("-", " ")}</span>
                 {work.openAccess && <span className="open-access">Open access</span>}
-                {work.citedByCount > 0 && <span>{work.citedByCount} OpenAlex citations</span>}
                 <a href={work.url} target="_blank" rel="noreferrer" aria-label={`Open ${work.title}`}>
                   View<ArrowUpRight size={12} aria-hidden="true" />
                 </a>

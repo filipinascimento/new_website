@@ -10,7 +10,7 @@ The next version should make the visualization biographical and analytically mea
 
 Build a public research map with two visual layers:
 
-1. **Portfolio layer** — Filipi's reconciled OpenAlex works, highlighted and fully interactive.
+1. **Portfolio layer** — Filipi's combined, deduplicated OpenAlex works, highlighted and fully interactive.
 2. **Context layer** — a carefully sampled set of related works that places the portfolio within the broader structure of science.
 
 The initial view should be legible without opening a control panel. Hover and click can reveal titles, year, venue, citations, open-access status, topics, software, and project connections. The full controls can live in a dedicated `/map` page; the homepage can use a curated version of the same data and link to the larger explorer.
@@ -29,7 +29,7 @@ The initial view should be legible without opening a control panel. Hover and cl
 
 ### 1. Citation constellation
 
-Use the reconciled works in `data/openalex/works.json` as the seed set. Extend the OpenAlex pipeline to retain `referenced_works` and, where useful, a bounded sample of citing works. The visualization can switch between:
+Use the deduplicated works in `data/openalex/works.json` as the seed set. Extend the OpenAlex pipeline to retain `referenced_works` and, where useful, a bounded sample of citing works. The visualization can switch between:
 
 - citations among Filipi's papers;
 - a one-hop citation neighborhood;
@@ -134,7 +134,7 @@ The existing `openalexnet` software can help build citation and coauthorship nei
 
 ## Decision checkpoint
 
-Keep the 10k Watts–Strogatz network as the honest Helios demonstration until Phase A is ready. Do not replace it with a small hand-arranged or randomly clustered graph presented as a research map. The first personalized release should be grounded in the same reconciled OpenAlex record used by the publications page.
+Keep the 10k Watts–Strogatz network as the honest Helios demonstration until Phase A is ready. Do not replace it with a small hand-arranged or randomly clustered graph presented as a research map. The first personalized release should be grounded in the same deduplicated OpenAlex record used by the publications page.
 
 ## References
 
