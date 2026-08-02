@@ -77,7 +77,7 @@ export default function CvPage() {
             <span>{metric.label}</span>
           </a>
         ))}
-        <p>Google Scholar profile · publications audited</p>
+        <p>Google Scholar profile</p>
       </section>
       <article className="cv-document shell" dangerouslySetInnerHTML={{ __html: cv.html }} />
     </main>
