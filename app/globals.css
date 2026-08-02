@@ -403,7 +403,7 @@ a {
   position: relative;
   z-index: 1;
   min-width: 0;
-  margin-left: -42px;
+  margin-left: 0;
 }
 
 .helios-stage {
