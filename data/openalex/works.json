@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-02T05:14:36.854Z",
+  "fetchedAt": "2026-08-02T05:37:27.700Z",
   "works": [
     {
       "id": "https://openalex.org/W7162808524",
@@ -1213,6 +1213,46 @@
       "alternateUrls": []
     },
     {
+      "id": "https://openalex.org/W3107339397",
+      "title": "Associations between author-level metrics in subsequent time periods",
+      "normalizedTitle": "associations between author level metrics in subsequent time periods",
+      "publicationDate": "2021-09-23",
+      "year": 2021,
+      "type": "article",
+      "source": "Journal of Informetrics",
+      "doi": "https://doi.org/10.1016/j.joi.2021.101218",
+      "url": "http://arxiv.org/abs/2011.12479",
+      "citedByCount": 2,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "authors": [
+        {
+          "name": "Ana C.M. Brito",
+          "id": null
+        },
+        {
+          "name": "Filipi N. Silva",
+          "id": null
+        },
+        {
+          "name": "Diego R. Amancio",
+          "id": null
+        }
+      ],
+      "topics": [
+        "scientometrics and bibliometrics research",
+        "Innovation, Sustainability, Human-Machine Systems",
+        "Interdisciplinary Research and Collaboration"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W3107339397",
+        "https://openalex.org/W3203244220"
+      ],
+      "alternateUrls": [
+        "https://openalex.org/W3203244220"
+      ]
+    },
+    {
       "id": "https://openalex.org/W3111149875",
       "title": "Detecting climate teleconnections with Granger causality",
       "normalizedTitle": "detecting climate teleconnections with granger causality",
@@ -1386,6 +1426,58 @@
         "https://openalex.org/W3165355909"
       ],
       "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W3092569637",
+      "title": "Classification of abrupt changes along viewing profiles of scientific articles",
+      "normalizedTitle": "classification of abrupt changes along viewing profiles of scientific articles",
+      "publicationDate": "2021-03-19",
+      "year": 2021,
+      "type": "article",
+      "source": "Journal of Informetrics",
+      "doi": "https://doi.org/10.1016/j.joi.2021.101158",
+      "url": "http://arxiv.org/abs/2005.04512",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "authors": [
+        {
+          "name": "Ana C.M. Brito",
+          "id": null
+        },
+        {
+          "name": "Filipi N. Silva",
+          "id": null
+        },
+        {
+          "name": "Henrique F. de Arruda",
+          "id": null
+        },
+        {
+          "name": "Cesar H. Comin",
+          "id": null
+        },
+        {
+          "name": "Diego R. Amancio",
+          "id": null
+        },
+        {
+          "name": "Luciano da F. Costa",
+          "id": null
+        }
+      ],
+      "topics": [
+        "Academic Publishing and Open Access",
+        "scientometrics and bibliometrics research",
+        "Cell Image Analysis Techniques"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W3092569637",
+        "https://openalex.org/W3138527586"
+      ],
+      "alternateUrls": [
+        "https://openalex.org/W3138527586"
+      ]
     },
     {
       "id": "https://openalex.org/W3136215456",
@@ -2174,6 +2266,50 @@
       ]
     },
     {
+      "id": "https://openalex.org/W2521984931",
+      "title": "Patterns of authors contribution in scientific manuscripts",
+      "normalizedTitle": "patterns of authors contribution in scientific manuscripts",
+      "publicationDate": "2017-03-31",
+      "year": 2017,
+      "type": "article",
+      "source": "Journal of Informetrics",
+      "doi": "https://doi.org/10.1016/j.joi.2017.03.003",
+      "url": "https://doi.org/10.1016/j.joi.2017.03.003",
+      "citedByCount": 90,
+      "openAccess": true,
+      "openAccessStatus": "hybrid",
+      "authors": [
+        {
+          "name": "Edilson A. Corrêa Jr.",
+          "id": null
+        },
+        {
+          "name": "Filipi N. Silva",
+          "id": null
+        },
+        {
+          "name": "Luciano da F. Costa",
+          "id": null
+        },
+        {
+          "name": "Diego R. Amancio",
+          "id": null
+        }
+      ],
+      "topics": [
+        "scientometrics and bibliometrics research",
+        "Academic Writing and Publishing",
+        "Authorship Attribution and Profiling"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W2521984931",
+        "https://openalex.org/W3098930344"
+      ],
+      "alternateUrls": [
+        "https://openalex.org/W3098930344"
+      ]
+    },
+    {
       "id": "https://openalex.org/W2512437160",
       "title": "Seeking maximum linearity of transfer functions",
       "normalizedTitle": "seeking maximum linearity of transfer functions",
@@ -2246,6 +2382,54 @@
         "https://openalex.org/W2408300690"
       ],
       "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W1739599771",
+      "title": "Using network science and text analytics to produce surveys in a scientific topic",
+      "normalizedTitle": "using network science and text analytics to produce surveys in a scientific topic",
+      "publicationDate": "2016-04-27",
+      "year": 2016,
+      "type": "article",
+      "source": "Journal of Informetrics",
+      "doi": "https://doi.org/10.1016/j.joi.2016.03.008",
+      "url": "http://doi.org/10.1016/j.joi.2016.03.008",
+      "citedByCount": 121,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "authors": [
+        {
+          "name": "Filipi N. Silva",
+          "id": null
+        },
+        {
+          "name": "Diego R. Amancio",
+          "id": null
+        },
+        {
+          "name": "Maria Bardosova",
+          "id": null
+        },
+        {
+          "name": "Luciano da F. Costa",
+          "id": null
+        },
+        {
+          "name": "Osvaldo N. Oliveira",
+          "id": null
+        }
+      ],
+      "topics": [
+        "Complex Network Analysis Techniques",
+        "Photonic Crystals and Applications",
+        "Data Visualization and Analytics"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W1739599771",
+        "https://openalex.org/W3098278813"
+      ],
+      "alternateUrls": [
+        "https://openalex.org/W3098278813"
+      ]
     },
     {
       "id": "https://openalex.org/W2282533933",
@@ -2715,6 +2899,50 @@
       "alternateUrls": []
     },
     {
+      "id": "https://openalex.org/W2093567499",
+      "title": "Quantifying the interdisciplinarity of scientific journals and fields",
+      "normalizedTitle": "quantifying the interdisciplinarity of scientific journals and fields",
+      "publicationDate": "2013-03-05",
+      "year": 2013,
+      "type": "article",
+      "source": "Journal of Informetrics",
+      "doi": "https://doi.org/10.1016/j.joi.2013.01.007",
+      "url": "http://arxiv.org/abs/1203.4807",
+      "citedByCount": 68,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "authors": [
+        {
+          "name": "F.N. Silva",
+          "id": null
+        },
+        {
+          "name": "F.A. Rodrigues",
+          "id": null
+        },
+        {
+          "name": "O.N. Oliveira",
+          "id": null
+        },
+        {
+          "name": "L. da F. Costa",
+          "id": null
+        }
+      ],
+      "topics": [
+        "scientometrics and bibliometrics research",
+        "Interdisciplinary Research and Collaboration",
+        "Complex Network Analysis Techniques"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W2093567499",
+        "https://openalex.org/W3099355689"
+      ],
+      "alternateUrls": [
+        "https://openalex.org/W3099355689"
+      ]
+    },
+    {
       "id": "https://openalex.org/W1973716318",
       "title": "Investigating relationships within and between category networks in Wikipedia",
       "normalizedTitle": "investigating relationships within and between category networks in wikipedia",
@@ -2904,218 +3132,6 @@
       ],
       "openAlexIds": [
         "https://openalex.org/W2028525255"
-      ],
-      "alternateUrls": []
-    },
-    {
-      "id": "https://openalex.org/W3203244220",
-      "title": "Associations between author-level metrics in subsequent time periods",
-      "normalizedTitle": "associations between author level metrics in subsequent time periods",
-      "publicationDate": null,
-      "year": null,
-      "type": "article",
-      "source": "RePEc: Research Papers in Economics",
-      "doi": null,
-      "url": "https://openalex.org/W3203244220",
-      "citedByCount": 2,
-      "openAccess": false,
-      "openAccessStatus": "closed",
-      "authors": [
-        {
-          "name": "Ana Caroline Medeiros Brito",
-          "id": "https://openalex.org/A5023030519"
-        },
-        {
-          "name": "Filipi N. Silva",
-          "id": "https://openalex.org/A5025683130"
-        },
-        {
-          "name": "Diego R. Amancio",
-          "id": "https://openalex.org/A5074263397"
-        }
-      ],
-      "topics": [
-        "scientometrics and bibliometrics research",
-        "Complex Network Analysis Techniques"
-      ],
-      "openAlexIds": [
-        "https://openalex.org/W3203244220"
-      ],
-      "alternateUrls": []
-    },
-    {
-      "id": "https://openalex.org/W3138527586",
-      "title": "Classification of abrupt changes along viewing profiles of scientific articles",
-      "normalizedTitle": "classification of abrupt changes along viewing profiles of scientific articles",
-      "publicationDate": null,
-      "year": null,
-      "type": "article",
-      "source": "RePEc: Research Papers in Economics",
-      "doi": null,
-      "url": "https://openalex.org/W3138527586",
-      "citedByCount": 0,
-      "openAccess": false,
-      "openAccessStatus": "closed",
-      "authors": [
-        {
-          "name": "Ana Caroline Medeiros Brito",
-          "id": "https://openalex.org/A5023030519"
-        },
-        {
-          "name": "Filipi N. Silva",
-          "id": "https://openalex.org/A5025683130"
-        },
-        {
-          "name": "Henrique Ferraz de Arruda",
-          "id": "https://openalex.org/A5085599698"
-        },
-        {
-          "name": "César H. Comin",
-          "id": "https://openalex.org/A5076528057"
-        },
-        {
-          "name": "Diego R. Amancio",
-          "id": "https://openalex.org/A5074263397"
-        },
-        {
-          "name": "Costa, Luciano da F.",
-          "id": null
-        }
-      ],
-      "topics": [
-        "scientometrics and bibliometrics research",
-        "Data Visualization and Analytics",
-        "Data Analysis with R"
-      ],
-      "openAlexIds": [
-        "https://openalex.org/W3138527586"
-      ],
-      "alternateUrls": []
-    },
-    {
-      "id": "https://openalex.org/W3098930344",
-      "title": "Patterns of authors contribution in scientific manuscripts",
-      "normalizedTitle": "patterns of authors contribution in scientific manuscripts",
-      "publicationDate": null,
-      "year": null,
-      "type": "article",
-      "source": "RePEc: Research Papers in Economics",
-      "doi": null,
-      "url": "https://openalex.org/W3098930344",
-      "citedByCount": 57,
-      "openAccess": false,
-      "openAccessStatus": "closed",
-      "authors": [
-        {
-          "name": "Edilson A. Corrêa",
-          "id": "https://openalex.org/A5074924693"
-        },
-        {
-          "name": "Filipi N. Silva",
-          "id": "https://openalex.org/A5025683130"
-        },
-        {
-          "name": "Luciano da Fontoura Costa",
-          "id": "https://openalex.org/A5005669749"
-        },
-        {
-          "name": "Diego R. Amancio",
-          "id": "https://openalex.org/A5074263397"
-        }
-      ],
-      "topics": [
-        "scientometrics and bibliometrics research",
-        "Complex Network Analysis Techniques",
-        "Expert finding and Q&A systems"
-      ],
-      "openAlexIds": [
-        "https://openalex.org/W3098930344"
-      ],
-      "alternateUrls": []
-    },
-    {
-      "id": "https://openalex.org/W3099355689",
-      "title": "Quantifying the interdisciplinarity of scientific journals and fields",
-      "normalizedTitle": "quantifying the interdisciplinarity of scientific journals and fields",
-      "publicationDate": null,
-      "year": null,
-      "type": "article",
-      "source": "RePEc: Research Papers in Economics",
-      "doi": null,
-      "url": "https://openalex.org/W3099355689",
-      "citedByCount": 68,
-      "openAccess": false,
-      "openAccessStatus": "closed",
-      "authors": [
-        {
-          "name": "Filipi N. Silva",
-          "id": "https://openalex.org/A5025683130"
-        },
-        {
-          "name": "Francisco A. Rodrigues",
-          "id": "https://openalex.org/A5061851539"
-        },
-        {
-          "name": "Osvaldo N. Oliveira",
-          "id": "https://openalex.org/A5017451457"
-        },
-        {
-          "name": "Luciano da Fontoura Costa",
-          "id": "https://openalex.org/A5005669749"
-        }
-      ],
-      "topics": [
-        "Complex Network Analysis Techniques",
-        "Bioinformatics and Genomic Networks",
-        "Mental Health Research Topics"
-      ],
-      "openAlexIds": [
-        "https://openalex.org/W3099355689"
-      ],
-      "alternateUrls": []
-    },
-    {
-      "id": "https://openalex.org/W3098278813",
-      "title": "Using network science and text analytics to produce surveys in a scientific topic",
-      "normalizedTitle": "using network science and text analytics to produce surveys in a scientific topic",
-      "publicationDate": null,
-      "year": null,
-      "type": "article",
-      "source": "RePEc: Research Papers in Economics",
-      "doi": null,
-      "url": "https://openalex.org/W3098278813",
-      "citedByCount": 121,
-      "openAccess": false,
-      "openAccessStatus": "closed",
-      "authors": [
-        {
-          "name": "Filipi N. Silva",
-          "id": "https://openalex.org/A5025683130"
-        },
-        {
-          "name": "Diego R. Amancio",
-          "id": "https://openalex.org/A5074263397"
-        },
-        {
-          "name": "Maria Bardosova",
-          "id": "https://openalex.org/A5061150393"
-        },
-        {
-          "name": "Costa, Luciano da F.",
-          "id": null
-        },
-        {
-          "name": "Osvaldo N. Oliveira",
-          "id": "https://openalex.org/A5017451457"
-        }
-      ],
-      "topics": [
-        "Complex Network Analysis Techniques",
-        "Data Visualization and Analytics",
-        "Web visibility and informetrics"
-      ],
-      "openAlexIds": [
-        "https://openalex.org/W3098278813"
       ],
       "alternateUrls": []
     }

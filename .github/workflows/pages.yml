@@ -46,7 +46,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/openalex data/github content/publications/generated.md
+          git add data/openalex data/scholar data/github data/content.json content/publications/generated.md
           git diff --cached --quiet || git commit -m "chore: refresh public research data"
           git push origin HEAD:main
 

@@ -5,7 +5,7 @@ updated: 2026-08-01
 
 ## Profile
 
-Research Assistant Professor at Northwestern University’s Kellogg School of Management and the Center for Science of Science & Innovation. Researcher, data scientist, and developer with expertise in dynamic complex networks, machine learning, science of science, computational social science, and interactive visualization. Creator of Helios Web and author of {{scholarPublications}} distinct publications, with {{scholarCitations}} citations and an h-index of {{scholarHIndex}} on Google Scholar. Ph.D. in Computational Physics with a strong interdisciplinary focus bridging physics, computer science, biology, and the social sciences.
+Research Assistant Professor at Northwestern University’s Kellogg School of Management and the Center for Science of Science & Innovation. Researcher, data scientist, and developer with expertise in dynamic complex networks, machine learning, science of science, computational social science, and interactive visualization. Creator of Helios Web and author of {{scholarPublications}} publications, with {{scholarCitations}} citations and an h-index of {{scholarHIndex}} on Google Scholar. Ph.D. in Computational Physics with a strong interdisciplinary focus bridging physics, computer science, biology, and the social sciences.
 
 ## Appointments
 

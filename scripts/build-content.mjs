@@ -11,7 +11,7 @@ const scholarProfile = JSON.parse(
   await readFile(path.join(root, "data/scholar/profile.json"), "utf8"),
 );
 const templateValues = {
-  scholarPublications: scholarProfile.publications.toLocaleString("en-US"),
+  scholarPublications: scholarProfile.publicationsDisplay,
   scholarCitations: scholarProfile.citations.toLocaleString("en-US"),
   scholarHIndex: scholarProfile.hIndex.toLocaleString("en-US"),
 };

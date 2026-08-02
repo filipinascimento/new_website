@@ -32,7 +32,7 @@ export default function CvPage() {
   ];
   const metrics = [
     {
-      value: scholarProfile.publications.toLocaleString("en-US"),
+      value: scholarProfile.publicationsDisplay,
       label: "Publications",
       url: profile.scholar,
     },

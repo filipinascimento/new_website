@@ -26,21 +26,46 @@ test("merges split OpenAlex identities without duplicate titles", async () => {
   const profile = await json("data/openalex/profile.json");
   const works = await json("data/openalex/works.json");
   const scholar = await json("data/scholar/profile.json");
+  const comparison = await json("data/scholar/source-comparison.json");
   assert.equal(config.openalex.authorIds.length, 10);
   assert.equal(profile.authorIds.length, 10);
   assert.equal(works.works.length, scholar.publications);
   assert.equal(profile.mergedScholarlyWorksCount, scholar.publications);
+  assert.equal(comparison.crosswalk.publicationsFoundInOpenAlex, scholar.publications);
+  assert.equal(comparison.openAlex.missingCanonicalPublications.length, 0);
+  assert.equal(comparison.openAlex.duplicateNormalizedTitles, 0);
+  assert.ok(comparison.openAlex.candidateWorksBeforePublicationAudit > scholar.publications);
   assert.equal(new Set(works.works.map((work) => work.normalizedTitle)).size, works.works.length);
   assert.ok(works.works.every((work) => work.type !== "preprint"));
   assert.ok(works.works.some((work) => work.doi === "https://doi.org/10.1103/4124-dyj8"));
   assert.ok(works.works.some((work) => work.doi === "https://doi.org/10.1016/j.ins.2026.123702"));
+  for (const doi of [
+    "https://doi.org/10.1016/j.joi.2021.101218",
+    "https://doi.org/10.1016/j.joi.2021.101158",
+    "https://doi.org/10.1016/j.joi.2017.03.003",
+    "https://doi.org/10.1016/j.joi.2016.03.008",
+    "https://doi.org/10.1016/j.joi.2013.01.007",
+  ]) {
+    assert.ok(works.works.some((work) => work.doi === doi));
+  }
 });
 
 test("caches scholarly metrics and course identifiers", async () => {
   const scholar = await json("data/scholar/profile.json");
+  const scholarEntries = await json("data/scholar/entries.json");
   const content = await json("data/content.json");
   assert.ok(scholar.citations >= 2500);
   assert.equal(scholar.publications, 64);
+  assert.equal(scholar.publicationsDisplay, "60+");
+  assert.equal(scholarEntries.count, scholar.profileEntries);
+  assert.equal(
+    new Set(
+      scholarEntries.entries
+        .filter((entry) => entry.matchesPublishedTitle)
+        .map((entry) => entry.normalizedTitle),
+    ).size,
+    63,
+  );
   assert.ok(scholar.profileEntries >= 118);
   assert.match(scholar.publicationAudit.definition, /duplicate versions/i);
   assert.ok(scholar.hIndex >= 20);
@@ -57,6 +82,7 @@ test("keeps private contact fields out of the public site data", async () => {
   assert.doesNotMatch(publicData, /1800 Sherman Avenue/i);
   assert.doesNotMatch(publicData, /filipinascimento@gmail\.com/i);
   assert.doesNotMatch(publicData, /reconciled scholarly works/i);
+  assert.doesNotMatch(publicData, /64 distinct publications/i);
   assert.doesNotMatch(publicData, /recurring technical motifs/i);
 });
 

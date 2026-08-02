@@ -5,6 +5,7 @@ import process from "node:process";
 const root = process.cwd();
 const outputDir = path.join(root, "data/scholar");
 const outputFile = path.join(outputDir, "profile.json");
+const entriesFile = path.join(outputDir, "entries.json");
 const auditFile = path.join(root, "config/scholar-publication-audit.json");
 const profileUrl = "https://scholar.google.com/citations?user=fhWJEysAAAAJ&hl=en";
 const pageSize = 100;
@@ -56,6 +57,7 @@ function parseMetrics(html, { publications, profileEntries, audit }) {
   return {
     profileUrl,
     publications,
+    publicationsDisplay: `${Math.floor(publications / 10) * 10}+`,
     profileEntries,
     citations: cells[0],
     citationsSince2021: cells[1],
@@ -95,7 +97,7 @@ async function refresh() {
   const audit = JSON.parse(await readFile(auditFile, "utf8"));
   const firstPage = await fetchPage();
   const firstEntries = parsePublicationEntries(firstPage);
-  const publicationIds = new Set(firstEntries.map((entry) => entry.id));
+  const publicationEntries = new Map(firstEntries.map((entry) => [entry.id, entry]));
   const publicationTitles = new Set(firstEntries.map((entry) => normalizeTitle(entry.title)));
   let pageCount = firstEntries.length;
   let cstart = pageSize;
@@ -104,12 +106,12 @@ async function refresh() {
     const entries = parsePublicationEntries(page);
     pageCount = entries.length;
     for (const entry of entries) {
-      publicationIds.add(entry.id);
+      publicationEntries.set(entry.id, entry);
       publicationTitles.add(normalizeTitle(entry.title));
     }
     cstart += pageSize;
   }
-  if (publicationIds.size === 0) {
+  if (publicationEntries.size === 0) {
     throw new Error("Google Scholar returned no publication entries.");
   }
   const missingAuditedTitles = audit.publishedProfileTitles.filter(
@@ -124,11 +126,25 @@ async function refresh() {
     audit.publishedProfileTitles.length + audit.additionalPublishedTitles.length;
   const metrics = parseMetrics(firstPage, {
     publications,
-    profileEntries: publicationIds.size,
+    profileEntries: publicationEntries.size,
     audit,
   });
+  const auditedTitles = new Set(audit.publishedProfileTitles.map(normalizeTitle));
+  const entries = {
+    profileUrl,
+    fetchedAt: metrics.fetchedAt,
+    count: publicationEntries.size,
+    entries: [...publicationEntries.values()].map((entry) => ({
+      ...entry,
+      normalizedTitle: normalizeTitle(entry.title),
+      matchesPublishedTitle: auditedTitles.has(normalizeTitle(entry.title)),
+    })),
+  };
   await mkdir(outputDir, { recursive: true });
-  await writeFile(outputFile, `${JSON.stringify(metrics, null, 2)}\n`, "utf8");
+  await Promise.all([
+    writeFile(outputFile, `${JSON.stringify(metrics, null, 2)}\n`, "utf8"),
+    writeFile(entriesFile, `${JSON.stringify(entries, null, 2)}\n`, "utf8"),
+  ]);
   console.log(
     `Updated Google Scholar metrics: ${metrics.publications} publications, ${metrics.citations} citations, h-index ${metrics.hIndex}.`,
   );

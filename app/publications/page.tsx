@@ -22,7 +22,7 @@ export default function PublicationsPage() {
           <p>An audited publication list populated from linked OpenAlex profiles and checked against Google Scholar, ORCID, arXiv, and publisher records. Citation and h-index metrics are from Google Scholar.</p>
         </div>
         <div className="metric-card-grid">
-          <div><strong>{scholarProfile.publications.toLocaleString()}</strong><span>Distinct publications</span></div>
+          <div><strong>{scholarProfile.publicationsDisplay}</strong><span>Publications</span></div>
           <div><strong>{scholarProfile.citations.toLocaleString()}</strong><span>Google Scholar citations</span></div>
           <div><strong>{scholarProfile.hIndex}</strong><span>Google Scholar h-index</span></div>
         </div>
@@ -31,7 +31,7 @@ export default function PublicationsPage() {
         <Database size={18} aria-hidden="true" />
         <div>
           <strong>OpenAlex pipeline · synced {date}</strong>
-          <p>The build imports only the 64 verified publications in the local audit, consolidating preprint and conference versions and excluding abstracts, datasets, theses, teaching materials, malformed records, and unrelated author matches.</p>
+          <p>The publication list combines linked OpenAlex profiles with a Google Scholar audit. Duplicate versions, unpublished preprints, abstracts, datasets, theses, teaching materials, malformed records, and unrelated author matches are not counted separately.</p>
         </div>
         <div className="source-note__links">
           <a href="https://openalex.org/A5025683130" target="_blank" rel="noreferrer">OpenAlex<ArrowUpRight size={12} /></a>
