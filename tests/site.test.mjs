@@ -33,6 +33,18 @@ test("reconciles split OpenAlex identities without duplicate titles", async () =
   assert.ok(works.works.some((work) => work.title.startsWith("Triadic Novelty")));
 });
 
+test("caches scholarly metrics and course identifiers", async () => {
+  const scholar = await json("data/scholar/profile.json");
+  const content = await json("data/content.json");
+  assert.ok(scholar.citations >= 2500);
+  assert.ok(scholar.hIndex >= 20);
+  assert.ok(scholar.i10Index >= 40);
+  assert.deepEqual(
+    content.teaching.map((course) => course.code).sort(),
+    ["INFO-I 513", "INFO-I 590"],
+  );
+});
+
 test("keeps private contact fields out of the public site data", async () => {
   const publicData = await readFile(new URL("data/content.json", root), "utf8");
   assert.doesNotMatch(publicData, /812[) .-]+369[ .-]+3201/);

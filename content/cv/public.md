@@ -1,12 +1,11 @@
 ---
 title: Curriculum vitae
-subtitle: Contact details omitted
 updated: 2026-08-01
 ---
 
 ## Profile
 
-Research Assistant Professor at Northwestern University’s Kellogg School of Management and the Center for Science of Science & Innovation. Network scientist, data scientist, and software developer working across science of science, complex systems, machine learning, computational social science, and interactive visualization. Creator of Helios Web and author of more than 50 scholarly works.
+Research Assistant Professor at Northwestern University’s Kellogg School of Management and the Center for Science of Science & Innovation. Network scientist, data scientist, and software developer working across science of science, complex systems, machine learning, computational social science, and interactive visualization. Creator of Helios Web, with a scholarly record spanning 85 reconciled works in OpenAlex.
 
 ## Appointments
 
@@ -30,8 +29,8 @@ Network science; science of science; complex systems; artificial intelligence an
 
 ## Selected teaching and mentorship
 
-- Instructor, **Data Visualization**, Indiana University, Spring 2025.
-- Instructor, **Usable Artificial Intelligence**, Indiana University, Spring 2025.
+- Instructor, **INFO-I 590: Data Visualization**, Luddy School of Informatics, Computing, and Engineering, Indiana University, Spring 2025; in person. A project-based course connecting visual perception and design to exploratory analysis, multidimensional data, maps, text and embeddings, networks, interaction, and web deployment using Python and JavaScript. [Course site](https://filipinascimento.github.io/dataviz/) · [Materials](https://github.com/filipinascimento/dataviz)
+- Instructor, **INFO-I 513: Usable Artificial Intelligence**, Luddy School of Informatics, Computing, and Engineering, Indiana University, Spring 2025; online. An applied introduction to data preparation, regression, classification, clustering, evaluation, feature selection, explainability, natural-language processing, embeddings, and responsible use of large language models in practical Python workflows. [Course site](https://filipinascimento.github.io/usable_ai/) · [Materials](https://github.com/filipinascimento/usable_ai)
 - Guest lecturer on complex-network visualization at the University of São Paulo.
 - Graduate and undergraduate research supervision in network visualization, embedding analysis, large-language-model interfaces, and scientific software.
 - Google Summer of Code mentor for Helios/FURY projects under the Python Software Foundation, 2021–2023.
@@ -53,4 +52,4 @@ Portuguese (native); English (fluent).
 
 ## Profiles
 
-[ORCID](https://orcid.org/0000-0002-9151-6517) · [Google Scholar](https://scholar.google.com/citations?user=fhWJEysAAAAJ) · [OpenAlex](https://openalex.org/A5025683130) · [GitHub](https://github.com/filipinascimento)
+[Website](https://filipinascimento.github.io) · [GitHub](https://github.com/filipinascimento) · [Google Scholar](https://scholar.google.com/citations?user=fhWJEysAAAAJ) · [ORCID](https://orcid.org/0000-0002-9151-6517) · [OpenAlex](https://openalex.org/A5025683130)

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import contentJson from "@/data/content.json";
+import openAlexProfile from "@/data/openalex/profile.json";
+import scholarProfile from "@/data/scholar/profile.json";
 import { PrintButton } from "../components/PrintButton";
 import type { ContentRecord } from "../lib/types";
 
@@ -9,12 +11,52 @@ export const metadata: Metadata = {
 };
 
 export default function CvPage() {
-  const cv = contentJson.cv[0] as ContentRecord & { subtitle: string; updated: string };
-  const profile = contentJson.site[0] as ContentRecord & { role: string; institution: string };
+  const cv = contentJson.cv[0] as ContentRecord & { updated: string };
+  const profile = contentJson.site[0] as ContentRecord & {
+    role: string;
+    institution: string;
+    github: string;
+    scholar: string;
+    orcid: string;
+    openalex: string;
+  };
   const updated = new Intl.DateTimeFormat("en-US", {
     dateStyle: "long",
     timeZone: "UTC",
   }).format(new Date(cv.updated));
+  const profileLinks = [
+    { label: "Website", url: "https://filipinascimento.github.io" },
+    { label: "GitHub", url: profile.github },
+    { label: "Google Scholar", url: profile.scholar },
+    { label: "ORCID", url: profile.orcid },
+    { label: "OpenAlex", url: profile.openalex },
+  ];
+  const metrics = [
+    {
+      value: openAlexProfile.mergedScholarlyWorksCount.toLocaleString("en-US"),
+      label: "Reconciled scholarly works",
+      source: "OpenAlex",
+      url: profile.openalex,
+    },
+    {
+      value: scholarProfile.citations.toLocaleString("en-US"),
+      label: "Citations",
+      source: "Google Scholar",
+      url: profile.scholar,
+    },
+    {
+      value: scholarProfile.hIndex.toLocaleString("en-US"),
+      label: "h-index",
+      source: "Google Scholar",
+      url: profile.scholar,
+    },
+    {
+      value: scholarProfile.i10Index.toLocaleString("en-US"),
+      label: "i10-index",
+      source: "Google Scholar",
+      url: profile.scholar,
+    },
+  ];
   return (
     <main id="main-content" className="cv-page">
       <header className="cv-hero shell">
@@ -31,10 +73,22 @@ export default function CvPage() {
           <PrintButton />
         </div>
       </header>
-      <aside className="privacy-note shell">
-        <strong>Public edition</strong>
-        <span>{cv.subtitle}. The complete ATS-readable Markdown, Word, and PDF versions are maintained locally.</span>
-      </aside>
+      <nav className="cv-profile-links shell" aria-label="Professional profiles">
+        {profileLinks.map((link) => (
+          <a key={link.label} href={link.url} target="_blank" rel="noreferrer">
+            {link.label}
+          </a>
+        ))}
+      </nav>
+      <section className="cv-metrics shell" aria-label="Scholarly metrics">
+        {metrics.map((metric) => (
+          <a key={metric.label} href={metric.url} target="_blank" rel="noreferrer">
+            <strong>{metric.value}</strong>
+            <span>{metric.label}</span>
+            <small>{metric.source}</small>
+          </a>
+        ))}
+      </section>
       <article className="cv-document shell" dangerouslySetInnerHTML={{ __html: cv.html }} />
     </main>
   );

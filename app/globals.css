@@ -1307,7 +1307,7 @@ a {
 
 .cv-hero {
   display: grid;
-  max-width: 900px;
+  max-width: 940px;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: end;
   gap: 42px;
@@ -1345,14 +1345,14 @@ a {
 }
 
 .cv-hero__role strong {
-  font-size: 0.92rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .cv-hero__role span {
   max-width: 650px;
   color: var(--cv-muted);
-  font-size: 0.75rem;
+  font-size: 0.82rem;
 }
 
 .cv-hero__actions {
@@ -1364,7 +1364,7 @@ a {
 .cv-hero__actions p {
   margin: 0;
   color: var(--cv-muted);
-  font-size: 0.66rem;
+  font-size: 0.72rem;
   font-weight: 650;
 }
 
@@ -1384,27 +1384,73 @@ a {
   background: #f7f7f7;
 }
 
-.cv-page .privacy-note {
-  max-width: 900px;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 18px;
-  padding: 13px 0;
-  border: 0;
+.cv-profile-links {
+  display: flex;
+  max-width: 940px;
+  flex-wrap: wrap;
+  gap: 9px 24px;
+  padding-block: 15px;
   border-bottom: 1px solid var(--cv-line-light);
-  color: var(--cv-muted);
-  font-size: 0.7rem;
 }
 
-.cv-page .privacy-note strong {
+.cv-profile-links a {
+  color: var(--cv-body);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #a4a4a4;
+  text-underline-offset: 3px;
+}
+
+.cv-profile-links a:hover {
   color: var(--cv-ink);
-  font-size: 0.64rem;
-  font-weight: 780;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  text-decoration-color: var(--cv-ink);
+}
+
+.cv-metrics {
+  display: grid;
+  max-width: 940px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 25px;
+  border-block: 1px solid var(--cv-line);
+}
+
+.cv-metrics a {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+  padding: 17px 20px 16px;
+  color: var(--cv-ink);
+}
+
+.cv-metrics a + a {
+  border-left: 1px solid var(--cv-line-light);
+}
+
+.cv-metrics strong {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
+.cv-metrics span {
+  margin-top: 4px;
+  color: var(--cv-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.cv-metrics small {
+  color: var(--cv-muted);
+  font-size: 0.62rem;
+  line-height: 1.35;
 }
 
 .cv-document {
-  max-width: 900px;
+  max-width: 940px;
   margin-top: 25px;
   padding: 58px 68px 96px;
   border: 1px solid var(--cv-line-light);
@@ -1418,7 +1464,7 @@ a {
   border-bottom: 1px solid var(--cv-line);
   color: var(--cv-ink);
   font-family: var(--font-display);
-  font-size: 1.45rem;
+  font-size: 1.55rem;
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.15;
@@ -1431,7 +1477,7 @@ a {
 .cv-document h3 {
   margin: 27px 0 6px;
   color: var(--cv-ink);
-  font-size: 0.84rem;
+  font-size: 0.92rem;
   font-weight: 760;
   line-height: 1.4;
 }
@@ -1439,8 +1485,8 @@ a {
 .cv-document p,
 .cv-document li {
   color: var(--cv-body);
-  font-size: 0.82rem;
-  line-height: 1.67;
+  font-size: 0.9rem;
+  line-height: 1.64;
 }
 
 .cv-document p {
@@ -2201,6 +2247,18 @@ a {
     justify-items: start;
   }
 
+  .cv-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cv-metrics a:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .cv-metrics a:nth-child(n + 3) {
+    border-top: 1px solid var(--cv-line-light);
+  }
+
   .cv-document {
     padding: 46px 36px 76px;
   }
@@ -2238,6 +2296,14 @@ a {
 
   .cv-document {
     padding: 38px 21px 62px;
+  }
+
+  .cv-profile-links {
+    gap: 9px 18px;
+  }
+
+  .cv-metrics a {
+    padding-inline: 13px;
   }
 
   .profile-links {
@@ -2549,6 +2615,48 @@ a {
     font-size: 7pt;
   }
 
+  .cv-profile-links {
+    padding-block: 7pt;
+    gap: 5pt 15pt;
+  }
+
+  .cv-profile-links a {
+    font-size: 7.5pt;
+  }
+
+  .cv-metrics {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 11pt;
+  }
+
+  .cv-metrics a {
+    padding: 8pt 10pt;
+  }
+
+  .cv-metrics a:nth-child(n + 3) {
+    border-top: 0;
+  }
+
+  .cv-metrics a:nth-child(odd) {
+    border-left: 1px solid var(--cv-line-light);
+  }
+
+  .cv-metrics a:first-child {
+    border-left: 0;
+  }
+
+  .cv-metrics strong {
+    font-size: 15pt;
+  }
+
+  .cv-metrics span {
+    font-size: 6.8pt;
+  }
+
+  .cv-metrics small {
+    font-size: 5.9pt;
+  }
+
   .cv-document {
     max-width: none;
     margin-top: 14pt;
@@ -2564,7 +2672,7 @@ a {
 
   .cv-document p,
   .cv-document li {
-    font-size: 9pt;
+    font-size: 9.5pt;
     line-height: 1.45;
   }
 
