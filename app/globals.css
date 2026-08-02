@@ -274,10 +274,11 @@ a {
 .profile-sidebar__identity h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.05rem;
   font-weight: 650;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
   line-height: 1.15;
+  white-space: nowrap;
 }
 
 .profile-sidebar__identity p {
