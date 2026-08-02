@@ -74,8 +74,16 @@ test("vendors the current Helios browser runtime for static hosting", async () =
 test("keeps the home page academic, unnumbered, and free of implementation slogans", async () => {
   const home = await readFile(new URL("app/page.tsx", root), "utf8");
   const helios = await readFile(new URL("app/components/HeliosPreview.tsx", root), "utf8");
+  const styles = await readFile(new URL("app/globals.css", root), "utf8");
   assert.match(home, /home-intro-grid/);
   assert.match(home, /home-helios/);
+  assert.doesNotMatch(home, /home-helios__heading/);
+  assert.doesNotMatch(home, /Interactive network and embedding visualization in the browser/);
   assert.doesNotMatch(home, /padStart|Helios defaults|Live visualization/i);
   assert.doesNotMatch(helios, /live GPU layout/i);
+  assert.match(helios, /getPropertyValue\("--paper"\)/);
+  assert.match(helios, /MutationObserver\(synchronizeBackground\)/);
+  assert.match(helios, /Helios Web visualization/);
+  assert.match(styles, /\.helios-stage__viewport\s*{[^}]*background:\s*var\(--paper\)/s);
+  assert.doesNotMatch(styles, /\.helios-stage__viewport\s*{[^}]*border:/s);
 });

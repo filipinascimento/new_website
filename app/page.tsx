@@ -91,10 +91,6 @@ export default function Home() {
               </div>
             </div>
             <div className="home-helios">
-              <div className="home-helios__heading">
-                <h2>Helios Web</h2>
-                <p>Interactive network and embedding visualization in the browser.</p>
-              </div>
               <HeliosPreview />
             </div>
           </section>

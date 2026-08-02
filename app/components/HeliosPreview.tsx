@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 type AttributeBuffer = { view: Float32Array };
@@ -19,6 +18,11 @@ type HeliosNetworkInstance = {
 type HeliosInstance = {
   ready: Promise<void>;
   frameNetwork: (options?: Record<string, unknown>) => void;
+  behavior?: {
+    appearance?: {
+      background: (value: string) => unknown;
+    };
+  };
   destroy?: () => void;
 };
 
@@ -39,6 +43,18 @@ export function HeliosPreview() {
     if (!container) return;
     let cancelled = false;
     let helios: HeliosInstance | null = null;
+    const root = document.documentElement;
+
+    const synchronizeBackground = () => {
+      const background = getComputedStyle(root).getPropertyValue("--paper").trim();
+      if (!background) return;
+      container.style.backgroundColor = background;
+      helios?.behavior?.appearance?.background(background);
+    };
+
+    const themeObserver = new MutationObserver(synchronizeBackground);
+    themeObserver.observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+    synchronizeBackground();
 
     async function initialize() {
       try {
@@ -98,6 +114,7 @@ export function HeliosPreview() {
           instance.destroy?.();
           return;
         }
+        synchronizeBackground();
         instance.frameNetwork({ animate: false });
         setStatus("ready");
       } catch (error) {
@@ -111,6 +128,7 @@ export function HeliosPreview() {
     initialize();
     return () => {
       cancelled = true;
+      themeObserver.disconnect();
       helios?.destroy?.();
       container.replaceChildren();
     };
@@ -125,9 +143,7 @@ export function HeliosPreview() {
         <div ref={containerRef} className="helios-stage__canvas" aria-label="Interactive network preview in Helios Web" />
       </div>
       <figcaption className="helios-stage__caption">
-        <a href="https://heliosweb.io/app/" target="_blank" rel="noreferrer">
-          Open Helios Web <ArrowUpRight size={14} aria-hidden="true" />
-        </a>
+        Helios Web visualization · <a href="https://heliosweb.io/" target="_blank" rel="noreferrer">Explore the tool at heliosweb.io</a>
       </figcaption>
     </figure>
   );
