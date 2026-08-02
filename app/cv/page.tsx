@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import contentJson from "@/data/content.json";
 import scholarProfile from "@/data/scholar/profile.json";
-import { PrintButton } from "../components/PrintButton";
+import { PdfButton } from "../components/PdfButton";
 import type { ContentRecord } from "../lib/types";
 
 export const metadata: Metadata = {
@@ -60,7 +60,7 @@ export default function CvPage() {
         </div>
         <div className="cv-hero__actions">
           <p>Updated {updated}</p>
-          <PrintButton />
+          <PdfButton />
         </div>
       </header>
       <nav className="cv-profile-links shell" aria-label="Professional profiles">

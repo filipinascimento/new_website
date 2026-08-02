@@ -1346,7 +1346,7 @@ a {
   font-weight: 600;
 }
 
-.cv-page .print-button {
+.cv-page .cv-pdf-button {
   border-color: #8b8b8b;
   background: #fff;
   color: var(--cv-ink);
@@ -1473,6 +1473,8 @@ a {
 .cv-document ul {
   margin: 8px 0 19px;
   padding-left: 20px;
+  list-style-position: outside;
+  list-style-type: disc;
 }
 
 .cv-document li {
@@ -1807,12 +1809,18 @@ a {
 @media print {
   @page {
     size: letter;
-    margin: 0.7in;
+    margin: 0.55in;
+  }
+
+  html,
+  body {
+    background: #fff !important;
   }
 
   .site-header,
   .site-footer,
-  .print-button {
+  .skip-link,
+  .cv-pdf-button {
     display: none !important;
   }
 
@@ -1903,12 +1911,18 @@ a {
 
   .cv-document p,
   .cv-document li {
-    font-size: 9.5pt;
-    line-height: 1.45;
+    font-size: 9pt;
+    line-height: 1.35;
+    orphans: 3;
+    widows: 3;
+  }
+
+  .cv-document li {
+    break-inside: avoid;
   }
 
   .cv-document h2 {
-    margin: 20pt 0 7pt;
+    margin: 14pt 0 5pt;
     font-size: 14pt;
   }
 

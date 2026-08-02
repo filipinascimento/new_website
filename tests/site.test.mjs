@@ -143,6 +143,11 @@ test("keeps the home page academic, unnumbered, and free of implementation sloga
   assert.doesNotMatch(footer, /Content in Markdown|data synced from public APIs/i);
   assert.doesNotMatch(publicationsPage, /Duplicate versions|OpenAlex pipeline|BookOpen|Database/);
   assert.match(publicationsPage, /Last updated/);
+  const pdfButton = await readFile(new URL("app/components/PdfButton.tsx", root), "utf8");
+  assert.match(pdfButton, /Filipi_Nascimento_Silva_CV\.pdf/);
+  assert.match(pdfButton, /View or download PDF/);
+  assert.doesNotMatch(pdfButton, /window\.print|Print \/ save as PDF/);
+  await access(new URL("public/cv/Filipi_Nascimento_Silva_CV.pdf", root));
   assert.match(styles, /\.helios-stage__viewport\s*{[^}]*background:\s*var\(--paper\)/s);
   assert.doesNotMatch(styles, /\.helios-stage__viewport\s*{[^}]*border:/s);
 });
