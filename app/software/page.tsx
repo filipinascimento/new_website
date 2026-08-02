@@ -19,7 +19,7 @@ export default function SoftwarePage() {
           <h1>Software</h1>
         </div>
         <div>
-          <p>A curated selection of research tools that are active, reusable, or tied to published work.</p>
+          <p>A curated selection of research tools connected to my work and publications.</p>
           <a className="text-link" href="https://github.com/filipinascimento" target="_blank" rel="noreferrer"><GitBranch size={15} /> All GitHub repositories<ArrowUpRight size={13} /></a>
         </div>
       </header>

@@ -101,6 +101,8 @@ export function HeliosPreview() {
         const instance = new Helios(network, {
           container,
           ui: false,
+          quickControls: false,
+          legends: { enabled: false },
           storage: false,
           session: false,
           autosyncInteractionIdleMs: false,

@@ -115,6 +115,8 @@ test("keeps the home page academic, unnumbered, and free of implementation sloga
   assert.match(helios, /MutationObserver\(synchronizeBackground\)/);
   assert.match(helios, /Helios Web visualization/);
   assert.match(helios, /ui:\s*false/);
+  assert.match(helios, /quickControls:\s*false/);
+  assert.match(helios, /legends:\s*\{\s*enabled:\s*false\s*\}/);
   assert.doesNotMatch(`${home}\n${softwarePage}\n${softwareCard}`, /\bstars\b|\bforks\b/i);
   assert.doesNotMatch(`${home}\n${softwareCard}`, /\{(?:item|software)\.status\}/);
   assert.match(softwareCard, /SoftwareIcon/);

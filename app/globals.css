@@ -263,7 +263,7 @@ a {
   height: auto;
   aspect-ratio: 1;
   border: 0;
-  border-radius: 10px;
+  border-radius: 4px;
   object-fit: cover;
 }
 
@@ -297,11 +297,12 @@ a {
 
 .profile-sidebar__facts > div {
   padding: 13px 14px 14px;
-  border-radius: 10px;
+  border-radius: 12px 2px 12px 2px;
   background: linear-gradient(135deg, color-mix(in srgb, var(--wash-neutral) 86%, transparent), color-mix(in srgb, var(--paper) 45%, transparent));
 }
 
 .profile-sidebar__facts > div:nth-child(even) {
+  border-radius: 2px 12px 2px 12px;
   background: linear-gradient(135deg, color-mix(in srgb, var(--wash-blue) 82%, transparent), color-mix(in srgb, var(--paper) 48%, transparent));
 }
 
@@ -466,7 +467,7 @@ a {
 .home-section {
   margin-inline: -32px;
   padding: 58px 32px;
-  border-radius: 18px;
+  border-radius: 20px 3px 20px 3px;
   background: linear-gradient(145deg, color-mix(in srgb, var(--wash-neutral) 82%, transparent), color-mix(in srgb, var(--paper) 62%, transparent) 72%);
 }
 
@@ -475,6 +476,7 @@ a {
 }
 
 .home-section:nth-of-type(3) {
+  border-radius: 3px 20px 3px 20px;
   background: linear-gradient(145deg, color-mix(in srgb, var(--wash-blue) 84%, transparent), color-mix(in srgb, var(--paper) 61%, transparent) 74%);
 }
 
@@ -483,6 +485,7 @@ a {
 }
 
 .home-section:nth-of-type(5) {
+  border-radius: 3px 20px 3px 20px;
   background: linear-gradient(145deg, color-mix(in srgb, var(--wash-cool) 84%, transparent), color-mix(in srgb, var(--paper) 62%, transparent) 74%);
 }
 
@@ -532,11 +535,12 @@ a {
 .home-project-list article {
   min-width: 0;
   padding: 24px;
-  border-radius: 12px;
+  border-radius: 14px 3px 14px 3px;
   background: linear-gradient(145deg, color-mix(in srgb, var(--paper-raised) 58%, transparent), color-mix(in srgb, var(--paper) 35%, transparent));
 }
 
 .home-project-list article:nth-child(even) {
+  border-radius: 3px 14px 3px 14px;
   background: linear-gradient(145deg, color-mix(in srgb, var(--paper-raised) 48%, transparent), color-mix(in srgb, var(--wash-blue) 30%, transparent));
 }
 
@@ -603,8 +607,12 @@ a {
   align-items: start;
   gap: 22px;
   padding: 20px 22px;
-  border-radius: 12px;
+  border-radius: 12px 2px 12px 2px;
   background: linear-gradient(120deg, color-mix(in srgb, var(--paper-raised) 54%, transparent), color-mix(in srgb, var(--paper) 34%, transparent));
+}
+
+.recent-publications li:nth-child(even) {
+  border-radius: 2px 12px 2px 12px;
 }
 
 .recent-publications h3 {
@@ -672,12 +680,16 @@ a {
 .home-software-list article {
   min-width: 0;
   padding: 23px;
-  border-radius: 12px;
+  border-radius: 14px 3px 14px 3px;
   background: linear-gradient(145deg, color-mix(in srgb, var(--paper-raised) 54%, transparent), color-mix(in srgb, var(--wash-warm) 32%, transparent));
 }
 
 .home-software-list article:first-child {
   background: linear-gradient(145deg, color-mix(in srgb, var(--paper-raised) 58%, transparent), color-mix(in srgb, var(--paper) 34%, transparent));
+}
+
+.home-software-list article:nth-child(even) {
+  border-radius: 3px 14px 3px 14px;
 }
 
 .software-icon {
@@ -806,8 +818,12 @@ a {
   align-items: center;
   gap: 24px;
   padding: 17px 20px;
-  border-radius: 12px;
+  border-radius: 12px 2px 12px 2px;
   background: linear-gradient(120deg, color-mix(in srgb, var(--paper-raised) 52%, transparent), color-mix(in srgb, var(--wash-cool) 28%, transparent));
+}
+
+.home-course-list a:nth-child(even) {
+  border-radius: 2px 12px 2px 12px;
 }
 
 .home-course-list a:hover strong {
@@ -892,8 +908,12 @@ a {
   flex-direction: column;
   justify-content: center;
   padding: 16px;
-  border-radius: 10px;
+  border-radius: 10px 2px 10px 2px;
   background: linear-gradient(145deg, color-mix(in srgb, var(--wash-blue) 76%, transparent), color-mix(in srgb, var(--paper) 45%, transparent));
+}
+
+.metric-card-grid > div:nth-child(even) {
+  border-radius: 2px 10px 2px 10px;
 }
 
 .metric-card-grid > div:last-child {
@@ -949,13 +969,14 @@ a {
   min-height: 0;
   flex-direction: column;
   padding: 27px 28px 30px;
-  border-radius: 14px;
+  border-radius: 16px 3px 16px 3px;
   background: linear-gradient(145deg, color-mix(in srgb, var(--wash-neutral) 78%, transparent), color-mix(in srgb, var(--paper) 52%, transparent));
 }
 
 .project-card:nth-child(4n + 2),
 .software-card:nth-child(4n + 2),
 .course-card:nth-child(4n + 2) {
+  border-radius: 3px 16px 3px 16px;
   background: linear-gradient(145deg, color-mix(in srgb, var(--wash-blue) 80%, transparent), color-mix(in srgb, var(--paper) 52%, transparent));
 }
 
@@ -968,6 +989,7 @@ a {
 .project-card:nth-child(4n),
 .software-card:nth-child(4n),
 .course-card:nth-child(4n) {
+  border-radius: 3px 16px 3px 16px;
   background: linear-gradient(145deg, color-mix(in srgb, var(--wash-cool) 80%, transparent), color-mix(in srgb, var(--paper) 52%, transparent));
 }
 
@@ -1076,7 +1098,7 @@ a {
   align-items: center;
   gap: 17px;
   padding: 20px 22px;
-  border-radius: 12px;
+  border-radius: 14px 3px 14px 3px;
   background: linear-gradient(120deg, color-mix(in srgb, var(--wash-neutral) 80%, transparent), color-mix(in srgb, var(--paper) 52%, transparent));
   color: var(--ink-soft);
 }
@@ -1109,7 +1131,7 @@ a {
   gap: 20px;
   padding: 17px;
   border: 0;
-  border-radius: 12px;
+  border-radius: 14px 3px 14px 3px;
   background: linear-gradient(120deg, color-mix(in srgb, var(--wash-blue) 72%, transparent), color-mix(in srgb, var(--paper-raised) 58%, transparent));
 }
 
@@ -1120,7 +1142,7 @@ a {
   gap: 11px;
   padding-inline: 13px;
   border: 0;
-  border-radius: 8px;
+  border-radius: 4px;
   background: color-mix(in srgb, var(--paper-raised) 72%, transparent);
   color: var(--ink-faint);
 }
@@ -1181,8 +1203,12 @@ a {
   grid-template-columns: 64px minmax(0, 1fr);
   gap: 24px;
   padding: 23px 22px;
-  border-radius: 12px;
+  border-radius: 12px 2px 12px 2px;
   background: linear-gradient(120deg, color-mix(in srgb, var(--wash-neutral) 78%, transparent), color-mix(in srgb, var(--paper) 48%, transparent));
+}
+
+.publication-list li:nth-child(even) {
+  border-radius: 2px 12px 2px 12px;
 }
 
 .publication-list__year {
@@ -1225,7 +1251,7 @@ a {
   margin: 27px auto 0;
   padding: 10px 15px;
   border: 0;
-  border-radius: 8px;
+  border-radius: 4px;
   background: var(--wash-neutral);
   cursor: pointer;
   font-size: 0.94rem;
@@ -1240,7 +1266,7 @@ a {
   margin-top: 24px;
   padding: 44px;
   border: 0;
-  border-radius: 12px;
+  border-radius: 14px 3px 14px 3px;
   background: var(--wash-neutral);
   color: var(--ink-faint);
   font-size: 1rem;
