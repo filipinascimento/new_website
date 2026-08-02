@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 const brandAssets: Record<string, string> = {
-  "helios-web": "/software-icons/helios-web.svg",
+  "helios-web": "/software-icons/helios-web-mark.svg",
 };
 
 const icons: Record<string, LucideIcon> = {
@@ -44,7 +44,7 @@ export function SoftwareIcon({ slug, compact = false }: { slug: string; compact?
   return (
     <span className={`software-icon software-icon--${brandAsset ? "brand" : tone}${compact ? " software-icon--compact" : ""}`} aria-hidden="true">
       {brandAsset ? (
-        <Image className="software-icon__asset" src={`${basePath}${brandAsset}`} alt="" width={142} height={60} unoptimized />
+        <Image className="software-icon__asset" src={`${basePath}${brandAsset}`} alt="" width={600} height={600} unoptimized />
       ) : (
         <Icon />
       )}

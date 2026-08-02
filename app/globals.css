@@ -761,23 +761,24 @@ a {
 }
 
 .software-icon--brand {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
-  padding: 3px;
+  display: grid;
+  overflow: visible;
+  padding: 5px;
+  place-items: center;
   background: color-mix(in srgb, var(--paper-raised) 72%, var(--wash-warm));
 }
 
 .software-icon__asset {
-  width: auto;
-  max-width: none;
-  height: 56px;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
   flex: 0 0 auto;
+  object-fit: contain;
 }
 
 .software-icon--compact .software-icon__asset {
-  height: 42px;
+  width: 100%;
+  height: 100%;
 }
 
 .home-software-list h3 {

@@ -137,7 +137,9 @@ test("keeps the home page academic, unnumbered, and free of implementation sloga
   assert.doesNotMatch(`${home}\n${softwareCard}`, /\{(?:item|software)\.status\}/);
   assert.match(softwareCard, /SoftwareIcon/);
   assert.match(softwareIcon, /lucide-react/);
-  assert.match(softwareIcon, /software-icons\/helios-web\.svg/);
+  assert.match(softwareIcon, /software-icons\/helios-web-mark\.svg/);
+  assert.match(styles, /\.software-icon__asset\s*\{[^}]*object-fit:\s*contain/s);
+  assert.doesNotMatch(styles, /\.software-icon--brand\s*\{[^}]*overflow:\s*hidden/s);
   assert.doesNotMatch(footer, /Content in Markdown|data synced from public APIs/i);
   assert.doesNotMatch(publicationsPage, /Duplicate versions|OpenAlex pipeline|BookOpen|Database/);
   assert.match(publicationsPage, /Last updated/);
