@@ -28,7 +28,6 @@ export function SiteFooter() {
       </div>
       <div className="shell site-footer__base">
         <span>© {new Date().getFullYear()} Filipi Nascimento Silva</span>
-        <span>Content in Markdown · data synced from public APIs</span>
       </div>
     </footer>
   );

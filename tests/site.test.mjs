@@ -74,6 +74,7 @@ test("vendors the current Helios browser runtime for static hosting", async () =
 test("keeps the home page academic, unnumbered, and free of implementation slogans", async () => {
   const home = await readFile(new URL("app/page.tsx", root), "utf8");
   const helios = await readFile(new URL("app/components/HeliosPreview.tsx", root), "utf8");
+  const footer = await readFile(new URL("app/components/SiteFooter.tsx", root), "utf8");
   const styles = await readFile(new URL("app/globals.css", root), "utf8");
   assert.match(home, /home-intro-grid/);
   assert.match(home, /home-helios/);
@@ -84,6 +85,7 @@ test("keeps the home page academic, unnumbered, and free of implementation sloga
   assert.match(helios, /getPropertyValue\("--paper"\)/);
   assert.match(helios, /MutationObserver\(synchronizeBackground\)/);
   assert.match(helios, /Helios Web visualization/);
+  assert.doesNotMatch(footer, /Content in Markdown|data synced from public APIs/i);
   assert.match(styles, /\.helios-stage__viewport\s*{[^}]*background:\s*var\(--paper\)/s);
   assert.doesNotMatch(styles, /\.helios-stage__viewport\s*{[^}]*border:/s);
 });
