@@ -101,6 +101,10 @@ export function HeliosPreview() {
         const instance = new Helios(network, {
           container,
           ui: true,
+          storage: false,
+          session: false,
+          autosyncInteractionIdleMs: false,
+          warnOnUnsavedSessionChanges: false,
           networkSource: {
             name: "Helios network demo",
             baseName: "helios-network-demo",
