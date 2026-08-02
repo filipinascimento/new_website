@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import openAlexProfile from "@/data/openalex/profile.json";
 import openAlexWorks from "@/data/openalex/works.json";
 import scholarProfile from "@/data/scholar/profile.json";
-import { ArrowUpRight, BookOpen, Database } from "lucide-react";
 import { PublicationExplorer } from "../components/PublicationExplorer";
 import type { Publication } from "../lib/types";
 
 export const metadata: Metadata = {
   title: "Publications",
-  description: "An audited publication record for Filipi Nascimento Silva, populated from OpenAlex.",
+  description: "Journal articles, conference papers, book chapters, and preprints by Filipi Nascimento Silva.",
 };
 
 export default function PublicationsPage() {
@@ -19,7 +18,7 @@ export default function PublicationsPage() {
         <div>
           <div className="eyebrow">Scholarly record</div>
           <h1>Publications</h1>
-          <p>An audited publication list populated from linked OpenAlex profiles and checked against Google Scholar, ORCID, arXiv, and publisher records. Citation and h-index metrics are from Google Scholar.</p>
+          <p>Journal articles, conference papers, book chapters, and preprints. Citation and h-index metrics are from Google Scholar.</p>
         </div>
         <div className="metric-card-grid">
           <div><strong>{scholarProfile.publicationsDisplay}</strong><span>Publications</span></div>
@@ -27,22 +26,10 @@ export default function PublicationsPage() {
           <div><strong>{scholarProfile.hIndex}</strong><span>Google Scholar h-index</span></div>
         </div>
       </header>
-      <section className="source-note shell">
-        <Database size={18} aria-hidden="true" />
-        <div>
-          <strong>OpenAlex pipeline · synced {date}</strong>
-          <p>The publication list combines linked OpenAlex profiles with a Google Scholar audit. Duplicate versions, unpublished preprints, abstracts, datasets, theses, teaching materials, malformed records, and unrelated author matches are not counted separately.</p>
-        </div>
-        <div className="source-note__links">
-          <a href="https://openalex.org/A5025683130" target="_blank" rel="noreferrer">OpenAlex<ArrowUpRight size={12} /></a>
-          <a href="https://scholar.google.com/citations?user=fhWJEysAAAAJ" target="_blank" rel="noreferrer">Google Scholar<ArrowUpRight size={12} /></a>
-          <a href="https://arxiv.org/search/?query=Filipi+Nascimento+Silva&searchtype=author" target="_blank" rel="noreferrer">arXiv<ArrowUpRight size={12} /></a>
-        </div>
-      </section>
       <section className="section shell section--first publication-section">
         <div className="section-label-row">
-          <h2><BookOpen size={20} aria-hidden="true" /> Publication list</h2>
-          <span>Search and filter the audited collection</span>
+          <h2>Publication list</h2>
+          <span>Last updated {date}</span>
         </div>
         <PublicationExplorer works={openAlexWorks.works as Publication[]} />
       </section>

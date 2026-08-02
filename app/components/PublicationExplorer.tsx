@@ -9,6 +9,7 @@ const filters = [
   ["article", "Articles"],
   ["book-chapter", "Chapters"],
   ["editorial", "Editorials"],
+  ["preprint", "Preprints"],
 ] as const;
 
 function authorLine(authors: Publication["authors"]) {
@@ -76,12 +77,19 @@ export function PublicationExplorer({ works }: { works: Publication[] }) {
               <h3><a href={work.url} target="_blank" rel="noreferrer">{work.title}</a></h3>
               <p className="publication-list__authors">{authorLine(work.authors)}</p>
               <div className="publication-list__meta">
-                <span>{work.source || work.type.replace("-", " ")}</span>
-                <span className="publication-type">{work.type.replace("-", " ")}</span>
+                <span>{work.publicationStatus === "preprint" ? "Preprint" : (work.source || work.type.replace("-", " "))}</span>
+                {work.publicationStatus === "published" && (
+                  <span className="publication-type">{work.type.replace("-", " ")}</span>
+                )}
                 {work.openAccess && <span className="open-access">Open access</span>}
                 <a href={work.url} target="_blank" rel="noreferrer" aria-label={`Open ${work.title}`}>
-                  View<ArrowUpRight size={12} aria-hidden="true" />
+                  {work.publicationStatus === "preprint" ? "View preprint" : "Published version"}<ArrowUpRight size={12} aria-hidden="true" />
                 </a>
+                {work.publicationStatus === "published" && work.preprintUrls?.[0] && (
+                  <a href={work.preprintUrls[0]} target="_blank" rel="noreferrer" aria-label={`Open preprint for ${work.title}`}>
+                    Preprint<ArrowUpRight size={12} aria-hidden="true" />
+                  </a>
+                )}
               </div>
             </div>
           </li>

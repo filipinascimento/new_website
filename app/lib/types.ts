@@ -66,7 +66,9 @@ export type Publication = {
   openAccessStatus: string | null;
   authors: PublicationAuthor[];
   topics: string[];
+  publicationStatus: "published" | "preprint";
   openAlexIds: string[];
+  preprintUrls: string[];
   alternateUrls: string[];
 };
 

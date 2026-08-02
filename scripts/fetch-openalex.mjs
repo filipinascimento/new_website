@@ -19,6 +19,7 @@ const scholarlyTypes = new Set([
   "report",
   "editorial",
   "letter",
+  "preprint",
 ]);
 const typePreference = new Map([
   ["article", 90],
@@ -100,8 +101,41 @@ function normalizeTitle(title = "") {
     .trim();
 }
 
+function normalizePreprintUrl(value = "") {
+  const raw = String(value).trim();
+  if (!raw) return null;
+  const arxivUrl = raw.match(/arxiv\.org\/(?:abs|pdf)\/([^?#]+)/i);
+  const arxivDoi = raw.match(/10\.48550\/arxiv\.([^?#]+)/i);
+  const identifier = (arxivUrl?.[1] || arxivDoi?.[1] || "")
+    .replace(/\.pdf$/i, "")
+    .replace(/v\d+$/i, "");
+  if (identifier) return `https://arxiv.org/abs/${identifier}`;
+  return raw.replace(/^http:\/\//i, "https://");
+}
+
+function preprintUrls(work) {
+  const locations = [work.primary_location, ...(work.locations || [])].filter(Boolean);
+  const candidates = [];
+  if (work.type === "preprint") candidates.push(work.doi);
+  for (const location of locations) {
+    const source = location.source?.display_name || "";
+    const urls = [location.landing_page_url, location.pdf_url].filter(Boolean);
+    if (
+      work.type === "preprint" ||
+      /arxiv|biorxiv|medrxiv|preprint/i.test(source) ||
+      urls.some((url) => /arxiv\.org|biorxiv\.org|medrxiv\.org/i.test(url))
+    ) {
+      candidates.push(...urls);
+    }
+  }
+  return [...new Set(candidates.map(normalizePreprintUrl).filter(Boolean))];
+}
+
 function preferredUrl(work) {
   const locations = [work.primary_location, ...(work.locations || [])].filter(Boolean);
+  if (work.type !== "preprint" && work.doi && !/10\.48550\/arxiv/i.test(work.doi)) {
+    return work.doi;
+  }
   return (
     work.best_oa_location?.landing_page_url ||
     work.best_oa_location?.pdf_url ||
@@ -136,6 +170,7 @@ function compactWork(work) {
     citedByCount: work.cited_by_count || 0,
     openAccess: Boolean(work.open_access?.is_oa),
     openAccessStatus: work.open_access?.oa_status || null,
+    preprintUrls: preprintUrls(work),
     authors,
     topics: (work.topics || []).slice(0, 3).map((topic) => topic.display_name),
   };
@@ -158,10 +193,12 @@ function mergeWorks(rawWorks) {
       const urls = [...new Set(versions.map((version) => version.url).filter(Boolean))];
       const openAlexIds = [...new Set(versions.map((version) => version.id))];
       const citedByCount = Math.max(...versions.map((version) => version.citedByCount || 0));
+      const linkedPreprints = [...new Set(versions.flatMap((version) => version.preprintUrls || []))];
       return {
         ...chosen,
         citedByCount,
         openAlexIds,
+        preprintUrls: linkedPreprints,
         alternateUrls: urls.filter((url) => url !== chosen.url),
       };
     })
@@ -175,10 +212,16 @@ function mergeWorks(rawWorks) {
 }
 
 function curatePublishedWorks(works, audit) {
-  const canonicalTitles = [
+  const publishedTitles = [
     ...audit.publishedProfileTitles,
     ...audit.additionalPublishedTitles,
   ];
+  const standalonePreprintTitles = audit.standalonePreprintTitles || [];
+  const canonicalTitles = [...publishedTitles, ...standalonePreprintTitles];
+  const publicationStatusByTitle = new Map([
+    ...publishedTitles.map((title) => [normalizeTitle(title), "published"]),
+    ...standalonePreprintTitles.map((title) => [normalizeTitle(title), "preprint"]),
+  ]);
   const canonicalByTitle = new Map(
     canonicalTitles.map((title) => [normalizeTitle(title), title]),
   );
@@ -198,7 +241,7 @@ function curatePublishedWorks(works, audit) {
 
   const missing = canonicalTitles.filter((title) => !groups.has(normalizeTitle(title)));
   if (missing.length > 0) {
-    throw new Error(`Audited publications missing from OpenAlex: ${missing.join("; ")}`);
+    throw new Error(`Audited publications or preprints missing from OpenAlex: ${missing.join("; ")}`);
   }
 
   return [...groups.entries()]
@@ -206,11 +249,24 @@ function curatePublishedWorks(works, audit) {
       versions.sort((a, b) => workScore(b) - workScore(a));
       const chosen = versions[0];
       const canonicalTitle = canonicalByTitle.get(canonicalKey) || chosen.title;
+      const linkedPreprints = [
+        ...new Set(
+          versions.flatMap((version) => [
+            ...(version.preprintUrls || []),
+            ...(version.type === "preprint" ? [version.url] : []),
+          ]).map(normalizePreprintUrl).filter(Boolean),
+        ),
+      ];
       return {
         ...chosen,
         title: canonicalTitle,
         normalizedTitle: canonicalKey,
+        publicationStatus: publicationStatusByTitle.get(canonicalKey) || "published",
+        url: publicationStatusByTitle.get(canonicalKey) === "preprint"
+          ? (linkedPreprints[0] || chosen.url)
+          : chosen.url,
         openAlexIds: [...new Set(versions.flatMap((version) => version.openAlexIds || [version.id]))],
+        preprintUrls: linkedPreprints,
         alternateUrls: [
           ...new Set(
             versions.flatMap((version) => [version.url, ...(version.alternateUrls || [])]).filter(Boolean),
@@ -237,7 +293,7 @@ function formatAuthors(authors) {
 }
 
 function publicationsMarkdown(profile, works, fetchedAt) {
-  const publicationLabel = `${Math.floor(profile.mergedScholarlyWorksCount / 10) * 10}+`;
+  const publicationLabel = `${Math.floor(profile.publishedWorksCount / 10) * 10}+`;
   const lines = [
     "---",
     "title: Publications",
@@ -248,7 +304,7 @@ function publicationsMarkdown(profile, works, fetchedAt) {
     "",
     "This file is generated by `npm run data:openalex`. Edit the author identifiers in `config/profile-sources.json`, not this file.",
     "",
-    `${publicationLabel} publications after title, version, and document-type review.`,
+    `${publicationLabel} published works plus selected standalone preprints.`,
     "",
   ];
   let currentYear = null;
@@ -258,10 +314,15 @@ function publicationsMarkdown(profile, works, fetchedAt) {
       lines.push(`## ${currentYear || "Undated"}`, "");
     }
     const venue = work.source ? ` *${work.source}*.` : "";
-    const doi = work.doi ? ` [DOI](${work.doi})` : ` [OpenAlex](${work.url})`;
+    const primaryLink = work.publicationStatus === "preprint"
+      ? ` [Preprint](${work.url})`
+      : (work.doi ? ` [DOI](${work.doi})` : ` [Publication](${work.url})`);
+    const preprintLink = work.publicationStatus === "published" && work.preprintUrls?.[0]
+      ? ` [Preprint](${work.preprintUrls[0]})`
+      : "";
     lines.push(
       `- **${work.title}**`,
-      `  ${formatAuthors(work.authors)}.${venue}${doi}`,
+      `  ${formatAuthors(work.authors)}.${venue}${primaryLink}${preprintLink}`,
       "",
     );
   }
@@ -298,8 +359,10 @@ const profile = {
   orcid: primary.orcid,
   worksCount: primary.works_count,
   rawUniqueWorksAcrossLinkedAuthors: new Set(rawAuthorWorks.map((work) => work.id)).size,
-  manuallyLinkedPublisherWorks: manuallyLinkedWorks.length,
+  manuallyLinkedWorks: manuallyLinkedWorks.length,
   candidateWorksBeforePublicationAudit: titleMergedScholarlyCandidates.length,
+  publishedWorksCount: works.filter((work) => work.publicationStatus === "published").length,
+  standalonePreprintsCount: works.filter((work) => work.publicationStatus === "preprint").length,
   mergedScholarlyWorksCount: works.length,
   citedByCount: primary.cited_by_count,
   hIndex: primary.summary_stats?.h_index || null,
@@ -321,5 +384,5 @@ await writeFile(
 );
 
 console.log(
-  `OpenAlex: ${authorIds.length} author records -> ${works.length} deduplicated scholarly works.`,
+  `OpenAlex: ${authorIds.length} author records -> ${works.length} deduplicated publications and preprints.`,
 );

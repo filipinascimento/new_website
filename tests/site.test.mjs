@@ -26,19 +26,33 @@ test("merges split OpenAlex identities without duplicate titles", async () => {
   const profile = await json("data/openalex/profile.json");
   const works = await json("data/openalex/works.json");
   const scholar = await json("data/scholar/profile.json");
+  const audit = await json("config/scholar-publication-audit.json");
   const comparison = await json("data/scholar/source-comparison.json");
+  const publishedWorks = works.works.filter((work) => work.publicationStatus === "published");
+  const standalonePreprints = works.works.filter((work) => work.publicationStatus === "preprint");
   assert.equal(config.openalex.authorIds.length, 10);
   assert.equal(profile.authorIds.length, 10);
-  assert.equal(works.works.length, scholar.publications);
-  assert.equal(profile.mergedScholarlyWorksCount, scholar.publications);
+  assert.equal(publishedWorks.length, scholar.publications);
+  assert.equal(standalonePreprints.length, audit.standalonePreprintTitles.length);
+  assert.equal(works.works.length, scholar.publications + audit.standalonePreprintTitles.length);
+  assert.equal(profile.mergedScholarlyWorksCount, works.works.length);
+  assert.equal(profile.publishedWorksCount, scholar.publications);
+  assert.equal(profile.standalonePreprintsCount, audit.standalonePreprintTitles.length);
   assert.equal(comparison.crosswalk.publicationsFoundInOpenAlex, scholar.publications);
   assert.equal(comparison.openAlex.missingCanonicalPublications.length, 0);
+  assert.equal(comparison.openAlex.missingCanonicalPreprints.length, 0);
   assert.equal(comparison.openAlex.duplicateNormalizedTitles, 0);
-  assert.ok(comparison.openAlex.candidateWorksBeforePublicationAudit > scholar.publications);
+  assert.ok(comparison.openAlex.candidateWorksBeforePublicationAudit > works.works.length);
   assert.equal(new Set(works.works.map((work) => work.normalizedTitle)).size, works.works.length);
-  assert.ok(works.works.every((work) => work.type !== "preprint"));
+  assert.ok(standalonePreprints.every((work) => work.type === "preprint"));
+  assert.ok(standalonePreprints.some((work) => work.title === "Linking Global Science Funding to Research Publications"));
+  assert.ok(publishedWorks.some((work) => work.preprintUrls.length > 0));
   assert.ok(works.works.some((work) => work.doi === "https://doi.org/10.1103/4124-dyj8"));
   assert.ok(works.works.some((work) => work.doi === "https://doi.org/10.1016/j.ins.2026.123702"));
+  assert.ok(
+    works.works.find((work) => work.doi === "https://doi.org/10.1016/j.ins.2026.123702")
+      .preprintUrls.includes("https://arxiv.org/abs/2508.07489"),
+  );
   for (const doi of [
     "https://doi.org/10.1016/j.joi.2021.101218",
     "https://doi.org/10.1016/j.joi.2021.101158",
@@ -104,6 +118,7 @@ test("keeps the home page academic, unnumbered, and free of implementation sloga
   const softwarePage = await readFile(new URL("app/software/page.tsx", root), "utf8");
   const softwareCard = await readFile(new URL("app/components/SoftwareCard.tsx", root), "utf8");
   const softwareIcon = await readFile(new URL("app/components/SoftwareIcon.tsx", root), "utf8");
+  const publicationsPage = await readFile(new URL("app/publications/page.tsx", root), "utf8");
   const footer = await readFile(new URL("app/components/SiteFooter.tsx", root), "utf8");
   const styles = await readFile(new URL("app/globals.css", root), "utf8");
   assert.match(home, /home-intro-grid/);
@@ -124,6 +139,8 @@ test("keeps the home page academic, unnumbered, and free of implementation sloga
   assert.match(softwareIcon, /lucide-react/);
   assert.match(softwareIcon, /software-icons\/helios-web\.svg/);
   assert.doesNotMatch(footer, /Content in Markdown|data synced from public APIs/i);
+  assert.doesNotMatch(publicationsPage, /Duplicate versions|OpenAlex pipeline|BookOpen|Database/);
+  assert.match(publicationsPage, /Last updated/);
   assert.match(styles, /\.helios-stage__viewport\s*{[^}]*background:\s*var\(--paper\)/s);
   assert.doesNotMatch(styles, /\.helios-stage__viewport\s*{[^}]*border:/s);
 });

@@ -70,13 +70,37 @@
   "additionalPublishedTitles": [
     "Text characterization based on recurrence networks"
   ],
+  "standalonePreprintTitles": [
+    "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok",
+    "Heuristic and exact modularity optimization with size-constrained communities",
+    "From Node2Vec to GPT-based GraphRAG: scientific impact prediction across graph and language models",
+    "Israel-Hamas War on X: A Case Study of Coordinated Campaigns and Information Integrity",
+    "Linking Global Science Funding to Research Publications",
+    "Triadic Novelty: A Typology and Measurement Framework for Recognizing Novel Contributions in Science",
+    "The Rise of Bluesky",
+    "Can Spatiality Promote Diversity?",
+    "Modular Dynamics of Financial Market Networks",
+    "Local Dimension of Complex Networks",
+    "Identifying Complex Networks by Random Walks"
+  ],
   "openAlexTitleAliases": {
     "Principal Component Analysis": "Principal component analysis: A natural approach to data exploration",
     "Mesoscopic representation of texts as complex networks.": "Representation of texts as complex networks: a mesoscopic approach",
     "Using network analysis and large-language models to obtain a landscape of the literature on dressing materials for wound healing: The predominance of chitosan and other biomacromolecules: A review": "Using network analysis and large-language models to obtain a landscape of the literature on dressing materials for wound healing: The predominance of chitosan and other …",
     "Editorial: Science of science: a complex network perspective": "Science of Science: a complex network perspective",
     "Obtaining the borders of urban areas": "A diffusion-based approach to obtaining the borders of urban areas",
-    "Recovering link-weight structure in complex networks with weight-aware random walks": "Recovering link-weight structure in complex networks with weight-aware walks"
+    "Recovering link-weight structure in complex networks with weight-aware random walks": "Recovering link-weight structure in complex networks with weight-aware walks",
+    "Cell Type Differentiation Using Network Clustering Algorithms": "Network clustering algorithms and preprocessing pipelines for robust cell type identification in single-cell RNA sequencing data",
+    "Comparing biased random walks in graph embedding and link prediction": "Comparing random walks in graph embedding and link prediction",
+    "Recovering network topology and dynamics via sequence characterization": "Recovering network topology and dynamics from sequences: A machine learning approach",
+    "Classification of network topology and dynamics via sequence characterization": "Recovering network topology and dynamics from sequences: A machine learning approach",
+    "A pattern recognition approach for distinguishing between prose and poetry": "Finding contrasting patterns in rhythmic properties between prose and poetry",
+    "Transistors: A Network Science-Based Historical Perspective": "Enriching and analyzing small citation networks: A case study on transistor’s history",
+    "How are scientific works viewed": "Classification of abrupt changes along viewing profiles of scientific articles",
+    "Network Information Science.": "Connecting Network Science and Information Theory",
+    "An Early Model of Transistors and Circuits": "Characterizing BJTs using the Early voltage in the forward active mode",
+    "Using Full-Text Content to Characterize and Identify Best Seller Books": "Using full-text content to characterize and identify best seller books: A study of early 20th-century literature",
+    "Concentric Characterization and Classification of Complex Network Nodes: Theory and Application to Institutional Collaboration": "Concentric characterization and classification of complex network nodes: Application to an institutional collaboration network"
   },
   "profileEntryAudit": {
     "rawRowsAtAudit": 118,

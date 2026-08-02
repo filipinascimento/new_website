@@ -1,6 +1,59 @@
 {
-  "fetchedAt": "2026-08-02T05:37:27.700Z",
+  "fetchedAt": "2026-08-02T06:35:38.880Z",
   "works": [
+    {
+      "id": "https://openalex.org/W7164499166",
+      "title": "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok",
+      "normalizedTitle": "the tone of awareness topic sentiment and toxicity maps during mental health month on tiktok",
+      "publicationDate": "2026-06-11",
+      "year": 2026,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2606.13581",
+      "url": "https://arxiv.org/abs/2606.13581",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2606.13581"
+      ],
+      "authors": [
+        {
+          "name": "Henrique Ferraz de Arruda",
+          "id": "https://openalex.org/A5137633459"
+        },
+        {
+          "name": "Andreia Sofia Teixeira",
+          "id": "https://openalex.org/A5026558834"
+        },
+        {
+          "name": "P Charantej Reddy",
+          "id": "https://openalex.org/A5110801829"
+        },
+        {
+          "name": "Anindya Mondal",
+          "id": "https://openalex.org/A5136156904"
+        },
+        {
+          "name": "Kleber A. Oliveira",
+          "id": "https://openalex.org/A5053518762"
+        },
+        {
+          "name": "F E Silva",
+          "id": "https://openalex.org/A5081862548"
+        }
+      ],
+      "topics": [
+        "Misinformation and Its Impacts",
+        "Mental Health via Writing",
+        "Social Media in Health Education"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W7164499166"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
+    },
     {
       "id": "https://openalex.org/W7162808524",
       "title": "Recovering link-weight structure in complex networks with weight-aware walks",
@@ -14,6 +67,9 @@
       "citedByCount": 0,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2508.07489"
+      ],
       "authors": [
         {
           "name": "Adilson Vital",
@@ -34,9 +90,99 @@
         "Bioinformatics and Genomic Networks"
       ],
       "openAlexIds": [
-        "https://openalex.org/W7162808524"
+        "https://openalex.org/W7162808524",
+        "https://openalex.org/W4416242217"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "https://arxiv.org/abs/2508.07489"
+      ],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://openalex.org/W7162444449",
+      "title": "Heuristic and exact modularity optimization with size-constrained communities",
+      "normalizedTitle": "heuristic and exact modularity optimization with size constrained communities",
+      "publicationDate": "2026-05-24",
+      "year": 2026,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2605.25248",
+      "url": "https://arxiv.org/abs/2605.25248",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2605.25248"
+      ],
+      "authors": [
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5053702199"
+        },
+        {
+          "name": "Samin Aref",
+          "id": "https://openalex.org/A5067809445"
+        },
+        {
+          "name": "Vincent Traag",
+          "id": "https://openalex.org/A5137006337"
+        },
+        {
+          "name": "Santo Fortunato",
+          "id": "https://openalex.org/A5135587706"
+        }
+      ],
+      "topics": [
+        "Complex Network Analysis Techniques",
+        "Advanced Clustering Algorithms Research",
+        "Mobile Crowdsensing and Crowdsourcing"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W7162444449"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
+    },
+    {
+      "id": "https://openalex.org/W7161680433",
+      "title": "From Node2Vec to GPT-based GraphRAG: scientific impact prediction across graph and language models",
+      "normalizedTitle": "from node2vec to gpt based graphrag scientific impact prediction across graph and language models",
+      "publicationDate": "2026-05-18",
+      "year": 2026,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2605.18410",
+      "url": "https://arxiv.org/abs/2605.18410",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2605.18410"
+      ],
+      "authors": [
+        {
+          "name": "Adilson Vital",
+          "id": "https://openalex.org/A5057382451"
+        },
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5053702199"
+        },
+        {
+          "name": "Diego Amancio",
+          "id": "https://openalex.org/A5130995587"
+        }
+      ],
+      "topics": [
+        "Advanced Graph Neural Networks",
+        "Topic Modeling",
+        "Biomedical Text Mining and Ontologies"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W7161680433"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
     },
     {
       "id": "https://openalex.org/W7161295041",
@@ -51,6 +197,12 @@
       "citedByCount": 0,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [
+        "https://doi.org/10.1101/2024.12.04.626793",
+        "https://www.biorxiv.org/content/biorxiv/early/2024/12/07/2024.12.04.626793.full.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/39677670",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/11643020"
+      ],
       "authors": [
         {
           "name": "Fatemeh Sadat Fatemi Nasrollahi",
@@ -103,9 +255,139 @@
         "Bioinformatics and Genomic Networks"
       ],
       "openAlexIds": [
-        "https://openalex.org/W7161295041"
+        "https://openalex.org/W7161295041",
+        "https://openalex.org/W4405133592"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "https://doi.org/10.1101/2024.12.04.626793"
+      ],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://openalex.org/W7154397648",
+      "title": "Israel-Hamas War on X: A Case Study of Coordinated Campaigns and Information Integrity",
+      "normalizedTitle": "israel hamas war on x a case study of coordinated campaigns and information integrity",
+      "publicationDate": "2026-04-12",
+      "year": 2026,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2604.10566",
+      "url": "https://arxiv.org/abs/2604.10566",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2604.10566",
+        "null"
+      ],
+      "authors": [
+        {
+          "name": "Tuğrulcan Elmas",
+          "id": "https://openalex.org/A5133590412"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5133555595"
+        },
+        {
+          "name": "Manita Pote",
+          "id": "https://openalex.org/A5133564365"
+        },
+        {
+          "name": "Priyanka Dey",
+          "id": "https://openalex.org/A5097821609"
+        },
+        {
+          "name": "Keng-Chi Chang",
+          "id": "https://openalex.org/A5077183666"
+        },
+        {
+          "name": "Jinyi Ye",
+          "id": "https://openalex.org/A5063853161"
+        },
+        {
+          "name": "Luca Luceri",
+          "id": "https://openalex.org/A5133566487"
+        },
+        {
+          "name": "Cody Buntain",
+          "id": "https://openalex.org/A5027163845"
+        },
+        {
+          "name": "Emilio Ferrara",
+          "id": "https://openalex.org/A5133615494"
+        },
+        {
+          "name": "Alessandro Flammini",
+          "id": "https://openalex.org/A5011228873"
+        },
+        {
+          "name": "Fil Menczer",
+          "id": "https://openalex.org/A5133560240"
+        }
+      ],
+      "topics": [
+        "Misinformation and Its Impacts",
+        "Terrorism, Counterterrorism, and Political Violence",
+        "Hate Speech and Cyberbullying Detection"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W7154397648",
+        "https://openalex.org/W7154538749"
+      ],
+      "alternateUrls": [
+        "https://arxiv.org/abs/2604.10566"
+      ],
+      "publicationStatus": "preprint"
+    },
+    {
+      "id": "https://openalex.org/W7140933321",
+      "title": "Linking Global Science Funding to Research Publications",
+      "normalizedTitle": "linking global science funding to research publications",
+      "publicationDate": "2026-03-25",
+      "year": 2026,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2603.24147",
+      "url": "https://arxiv.org/abs/2603.24147",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2603.24147",
+        "null"
+      ],
+      "authors": [
+        {
+          "name": "Jacob Aarup Dalsgaard",
+          "id": "https://openalex.org/A5040974039"
+        },
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Jin Ai",
+          "id": "https://openalex.org/A5101400523"
+        }
+      ],
+      "topics": [
+        "scientometrics and bibliometrics research",
+        "Research Data Management Practices",
+        "Academic Publishing and Open Access"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W7140933321",
+        "https://openalex.org/W7141772194",
+        "https://openalex.org/W7140712306",
+        "https://openalex.org/W7140845705"
+      ],
+      "alternateUrls": [
+        "http://arxiv.org/abs/2603.24147",
+        "https://doi.org/10.5281/zenodo.18895448",
+        "https://doi.org/10.5281/zenodo.18895449"
+      ],
+      "publicationStatus": "preprint"
     },
     {
       "id": "https://openalex.org/W4415036962",
@@ -120,6 +402,9 @@
       "citedByCount": 5,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2505.21162"
+      ],
       "authors": [
         {
           "name": "Davi A. Bezerra",
@@ -141,7 +426,8 @@
         "https://openalex.org/W4415036962",
         "https://openalex.org/W7131896683"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W7131428278",
@@ -156,6 +442,7 @@
       "citedByCount": 1,
       "openAccess": false,
       "openAccessStatus": "closed",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Filipi N. Silva",
@@ -186,7 +473,8 @@
       "openAlexIds": [
         "https://openalex.org/W7131428278"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4415936063",
@@ -197,10 +485,13 @@
       "type": "article",
       "source": "Physical review. E",
       "doi": "https://doi.org/10.1103/bt2h-b7kb",
-      "url": "http://arxiv.org/abs/2511.00214",
+      "url": "https://doi.org/10.1103/bt2h-b7kb",
       "citedByCount": 0,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2511.00214"
+      ],
       "authors": [
         {
           "name": "Filippo Radicchi",
@@ -232,9 +523,8 @@
         "https://openalex.org/W4415936063",
         "https://openalex.org/W7118992324"
       ],
-      "alternateUrls": [
-        "https://doi.org/10.1103/bt2h-b7kb"
-      ]
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4411957658",
@@ -249,6 +539,9 @@
       "citedByCount": 2,
       "openAccess": false,
       "openAccessStatus": "closed",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2407.19942"
+      ],
       "authors": [
         {
           "name": "Adilson Vital",
@@ -278,7 +571,114 @@
       ],
       "alternateUrls": [
         "http://arxiv.org/abs/2407.19942"
-      ]
+      ],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://openalex.org/W6891889291",
+      "title": "Triadic Novelty: A Typology and Measurement Framework for Recognizing Novel Contributions in Science",
+      "normalizedTitle": "triadic novelty a typology and measurement framework for recognizing novel contributions in science",
+      "publicationDate": "2025-06-21",
+      "year": 2025,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2506.17851",
+      "url": "https://arxiv.org/abs/2506.17851",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2506.17851"
+      ],
+      "authors": [
+        {
+          "name": "Ai, Jin",
+          "id": null
+        },
+        {
+          "name": "Steinberg, Richard S.",
+          "id": null
+        },
+        {
+          "name": "Guo, Chao",
+          "id": null
+        },
+        {
+          "name": "Silva, Filipi Nascimento",
+          "id": null
+        }
+      ],
+      "topics": [
+        "scientometrics and bibliometrics research",
+        "Innovation, Sustainability, Human-Machine Systems",
+        "Meta-analysis and systematic reviews"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W6891889291"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
+    },
+    {
+      "id": "https://openalex.org/W4417090746",
+      "title": "The Rise of Bluesky",
+      "normalizedTitle": "the rise of bluesky",
+      "publicationDate": "2025-04-17",
+      "year": 2025,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2504.12902",
+      "url": "https://arxiv.org/abs/2504.12902",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2504.12902"
+      ],
+      "authors": [
+        {
+          "name": "Ozgur Can Seckin",
+          "id": "https://openalex.org/A5056041083"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5120752287"
+        },
+        {
+          "name": "Bao Tran Truong",
+          "id": "https://openalex.org/A5090414289"
+        },
+        {
+          "name": "Sangyeon Kim",
+          "id": "https://openalex.org/A5101972123"
+        },
+        {
+          "name": "Fan Huang",
+          "id": "https://openalex.org/A5120752288"
+        },
+        {
+          "name": "Nick Liu",
+          "id": "https://openalex.org/A5069717687"
+        },
+        {
+          "name": "Alessandro Flammini",
+          "id": "https://openalex.org/A5011228873"
+        },
+        {
+          "name": "Filippo Menczer",
+          "id": "https://openalex.org/A5021346979"
+        }
+      ],
+      "topics": [
+        "Persona Design and Applications",
+        "Personal Information Management and User Behavior",
+        "Big Data and Digital Economy"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W4417090746"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
     },
     {
       "id": "https://openalex.org/W4409345251",
@@ -293,6 +693,7 @@
       "citedByCount": 2,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Sandro M. Reia",
@@ -315,7 +716,8 @@
       "openAlexIds": [
         "https://openalex.org/W4409345251"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4407947128",
@@ -330,6 +732,7 @@
       "citedByCount": 11,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Jaromír Klarák",
@@ -374,7 +777,8 @@
       "openAlexIds": [
         "https://openalex.org/W4407947128"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4412401937",
@@ -389,6 +793,9 @@
       "citedByCount": 1,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2409.18240"
+      ],
       "authors": [
         {
           "name": "Attila Varga",
@@ -414,7 +821,8 @@
       ],
       "alternateUrls": [
         "http://arxiv.org/abs/2409.18240"
-      ]
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4404103503",
@@ -429,6 +837,9 @@
       "citedByCount": 4,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2308.03636"
+      ],
       "authors": [
         {
           "name": "Adilson Vital",
@@ -449,9 +860,13 @@
         "Bioinformatics and Genomic Networks"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4404103503"
+        "https://openalex.org/W4404103503",
+        "https://openalex.org/W4385682081"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "http://arxiv.org/abs/2308.03636"
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4395676868",
@@ -462,10 +877,11 @@
       "type": "article",
       "source": "PLoS ONE",
       "doi": "https://doi.org/10.1371/journal.pone.0302070",
-      "url": "http://dx.doi.org/10.1371/journal.pone.0302070",
+      "url": "https://doi.org/10.1371/journal.pone.0302070",
       "citedByCount": 0,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Giovana D. da Silva",
@@ -500,7 +916,8 @@
       "openAlexIds": [
         "https://openalex.org/W4395676868"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4379539304",
@@ -515,6 +932,9 @@
       "citedByCount": 70,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2306.02183"
+      ],
       "authors": [
         {
           "name": "Soichi Hayashi",
@@ -781,7 +1201,8 @@
       "openAlexIds": [
         "https://openalex.org/W4379539304"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4392136466",
@@ -796,6 +1217,9 @@
       "citedByCount": 3,
       "openAccess": false,
       "openAccessStatus": "closed",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2206.15190"
+      ],
       "authors": [
         {
           "name": "Lucas Guerreiro",
@@ -816,9 +1240,13 @@
         "Topological and Geometric Data Analysis"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4392136466"
+        "https://openalex.org/W4392136466",
+        "https://openalex.org/W4295108661"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "http://arxiv.org/abs/2206.15190"
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4391019881",
@@ -833,6 +1261,9 @@
       "citedByCount": 4,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2211.06657"
+      ],
       "authors": [
         {
           "name": "Lucas Guerreiro",
@@ -858,7 +1289,8 @@
       ],
       "alternateUrls": [
         "http://arxiv.org/abs/2211.06657"
-      ]
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4390750810",
@@ -873,6 +1305,7 @@
       "citedByCount": 7,
       "openAccess": true,
       "openAccessStatus": "bronze",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Ana Caroline Medeiros Brito",
@@ -903,7 +1336,8 @@
       "openAlexIds": [
         "https://openalex.org/W4390750810"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4379348298",
@@ -918,6 +1352,7 @@
       "citedByCount": 22,
       "openAccess": false,
       "openAccessStatus": "closed",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Ana Caroline Medeiros Brito",
@@ -947,7 +1382,8 @@
       "openAlexIds": [
         "https://openalex.org/W4379348298"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4376309372",
@@ -962,6 +1398,9 @@
       "citedByCount": 7,
       "openAccess": false,
       "openAccessStatus": "closed",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2201.06665"
+      ],
       "authors": [
         {
           "name": "Bárbara C. e Souza",
@@ -994,9 +1433,13 @@
         "Authorship Attribution and Profiling"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4376309372"
+        "https://openalex.org/W4376309372",
+        "https://openalex.org/W4229049996"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "http://arxiv.org/abs/2201.06665"
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4323364208",
@@ -1011,6 +1454,9 @@
       "citedByCount": 13,
       "openAccess": false,
       "openAccessStatus": "closed",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2112.06607"
+      ],
       "authors": [
         {
           "name": "Ana Caroline Medeiros Brito",
@@ -1035,7 +1481,8 @@
       ],
       "alternateUrls": [
         "http://arxiv.org/abs/2112.06607"
-      ]
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W3159190144",
@@ -1050,6 +1497,9 @@
       "citedByCount": 8,
       "openAccess": false,
       "openAccessStatus": "closed",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2105.01693"
+      ],
       "authors": [
         {
           "name": "Alexandre Benatti",
@@ -1083,7 +1533,8 @@
       ],
       "alternateUrls": [
         "http://arxiv.org/abs/2105.01693"
-      ]
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W3204399149",
@@ -1094,10 +1545,13 @@
       "type": "article",
       "source": "Physical review. E",
       "doi": "https://doi.org/10.1103/physreve.105.054308",
-      "url": "http://arxiv.org/abs/2110.02297",
+      "url": "https://doi.org/10.1103/physreve.105.054308",
       "citedByCount": 10,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2110.02297"
+      ],
       "authors": [
         {
           "name": "Filipi N. Silva",
@@ -1128,7 +1582,8 @@
       "openAlexIds": [
         "https://openalex.org/W3204399149"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W4224106798",
@@ -1143,6 +1598,9 @@
       "citedByCount": 6,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2107.08512"
+      ],
       "authors": [
         {
           "name": "Henrique Ferraz de Arruda",
@@ -1171,9 +1629,13 @@
         "Data Visualization and Analytics"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4224106798"
+        "https://openalex.org/W4224106798",
+        "https://openalex.org/W3184496899"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "http://arxiv.org/abs/2107.08512"
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W3204957649",
@@ -1188,6 +1650,7 @@
       "citedByCount": 17,
       "openAccess": false,
       "openAccessStatus": "closed",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Katy Börner",
@@ -1210,7 +1673,8 @@
       "openAlexIds": [
         "https://openalex.org/W3204957649"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W3107339397",
@@ -1221,10 +1685,13 @@
       "type": "article",
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2021.101218",
-      "url": "http://arxiv.org/abs/2011.12479",
+      "url": "https://doi.org/10.1016/j.joi.2021.101218",
       "citedByCount": 2,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2011.12479"
+      ],
       "authors": [
         {
           "name": "Ana C.M. Brito",
@@ -1250,7 +1717,8 @@
       ],
       "alternateUrls": [
         "https://openalex.org/W3203244220"
-      ]
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W3111149875",
@@ -1261,10 +1729,13 @@
       "type": "article",
       "source": "Geophysical Research Letters",
       "doi": "https://doi.org/10.1029/2021gl094707",
-      "url": "http://arxiv.org/abs/2012.03848",
+      "url": "https://doi.org/10.1029/2021gl094707",
       "citedByCount": 51,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2012.03848"
+      ],
       "authors": [
         {
           "name": "Filipi N. Silva",
@@ -1307,7 +1778,8 @@
       "openAlexIds": [
         "https://openalex.org/W3111149875"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W3187100106",
@@ -1322,6 +1794,7 @@
       "citedByCount": 16,
       "openAccess": true,
       "openAccessStatus": "diamond",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Eleftherios Garyfallidis",
@@ -1372,7 +1845,8 @@
       "openAlexIds": [
         "https://openalex.org/W3187100106"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W3165355909",
@@ -1387,6 +1861,9 @@
       "citedByCount": 483,
       "openAccess": false,
       "openAccessStatus": "closed",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1804.02502"
+      ],
       "authors": [
         {
           "name": "Felipe L. Gewers",
@@ -1423,9 +1900,13 @@
         "Advanced Statistical Methods and Models"
       ],
       "openAlexIds": [
-        "https://openalex.org/W3165355909"
+        "https://openalex.org/W3165355909",
+        "https://openalex.org/W2796210736"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "http://arxiv.org/abs/1804.02502"
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W3092569637",
@@ -1436,10 +1917,14 @@
       "type": "article",
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2021.101158",
-      "url": "http://arxiv.org/abs/2005.04512",
+      "url": "https://doi.org/10.1016/j.joi.2021.101158",
       "citedByCount": 0,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2005.04512",
+        "null"
+      ],
       "authors": [
         {
           "name": "Ana C.M. Brito",
@@ -1473,11 +1958,14 @@
       ],
       "openAlexIds": [
         "https://openalex.org/W3092569637",
-        "https://openalex.org/W3138527586"
+        "https://openalex.org/W3138527586",
+        "https://openalex.org/W3022452255"
       ],
       "alternateUrls": [
-        "https://openalex.org/W3138527586"
-      ]
+        "https://openalex.org/W3138527586",
+        "https://arxiv.org/abs/2005.04512"
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W3136215456",
@@ -1492,6 +1980,9 @@
       "citedByCount": 2,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2008.03134"
+      ],
       "authors": [
         {
           "name": "Alexandre Benatti",
@@ -1516,9 +2007,13 @@
         "Data Visualization and Analytics"
       ],
       "openAlexIds": [
-        "https://openalex.org/W3136215456"
+        "https://openalex.org/W3136215456",
+        "https://openalex.org/W3047768173"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "http://arxiv.org/abs/2008.03134"
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2980538567",
@@ -1533,6 +2028,9 @@
       "citedByCount": 8,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1910.06487"
+      ],
       "authors": [
         {
           "name": "Henrique Ferraz de Arruda",
@@ -1563,7 +2061,8 @@
       "openAlexIds": [
         "https://openalex.org/W2980538567"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W3043880351",
@@ -1578,6 +2077,9 @@
       "citedByCount": 17,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2007.12028"
+      ],
       "authors": [
         {
           "name": "Lucas Guerreiro",
@@ -1600,7 +2102,8 @@
       "openAlexIds": [
         "https://openalex.org/W3043880351"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2991003614",
@@ -1615,6 +2118,9 @@
       "citedByCount": 8,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1911.11926"
+      ],
       "authors": [
         {
           "name": "Filipi Nascimento Silva",
@@ -1653,7 +2159,8 @@
       "openAlexIds": [
         "https://openalex.org/W2991003614"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2434350671",
@@ -1668,6 +2175,9 @@
       "citedByCount": 9,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1606.05400"
+      ],
       "authors": [
         {
           "name": "César H. Comin",
@@ -1702,7 +2212,8 @@
       "openAlexIds": [
         "https://openalex.org/W2434350671"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W3012543558",
@@ -1717,6 +2228,9 @@
       "citedByCount": 27,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1909.02346"
+      ],
       "authors": [
         {
           "name": "Ana Caroline Medeiros Brito",
@@ -1739,7 +2253,8 @@
       "openAlexIds": [
         "https://openalex.org/W3012543558"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2943199437",
@@ -1750,10 +2265,13 @@
       "type": "article",
       "source": "Journal of Statistical Mechanics Theory and Experiment",
       "doi": "https://doi.org/10.1088/1742-5468/ab6de3",
-      "url": "http://arxiv.org/abs/1905.00867",
+      "url": "https://doi.org/10.1088/1742-5468/ab6de3",
       "citedByCount": 17,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1905.00867"
+      ],
       "authors": [
         {
           "name": "Alexandre Benatti",
@@ -1784,7 +2302,8 @@
       "openAlexIds": [
         "https://openalex.org/W2943199437"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2897856032",
@@ -1795,10 +2314,13 @@
       "type": "article",
       "source": "Journal of Statistical Mechanics Theory and Experiment",
       "doi": "https://doi.org/10.1088/1742-5468/ab2ad1",
-      "url": "http://arxiv.org/abs/1810.09602",
+      "url": "https://doi.org/10.1088/1742-5468/ab2ad1",
       "citedByCount": 2,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1810.09602"
+      ],
       "authors": [
         {
           "name": "Filipi N. Silva",
@@ -1821,7 +2343,8 @@
       "openAlexIds": [
         "https://openalex.org/W2897856032"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2961916675",
@@ -1836,6 +2359,7 @@
       "citedByCount": 7,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Sílvia Yumi Bando",
@@ -1882,7 +2406,8 @@
       "openAlexIds": [
         "https://openalex.org/W2961916675"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2627843632",
@@ -1893,10 +2418,14 @@
       "type": "article",
       "source": "Physica A Statistical Mechanics and its Applications",
       "doi": "https://doi.org/10.1016/j.physa.2018.10.005",
-      "url": "http://arxiv.org/abs/1704.03091",
+      "url": "https://doi.org/10.1016/j.physa.2018.10.005",
       "citedByCount": 17,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1704.03091",
+        "null"
+      ],
       "authors": [
         {
           "name": "Henrique Ferraz de Arruda",
@@ -1925,9 +2454,58 @@
         "Fractal and DNA sequence analysis"
       ],
       "openAlexIds": [
-        "https://openalex.org/W2627843632"
+        "https://openalex.org/W2627843632",
+        "https://openalex.org/W2607598495"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "https://arxiv.org/pdf/1704.03091"
+      ],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://openalex.org/W2891753045",
+      "title": "Can Spatiality Promote Diversity?",
+      "normalizedTitle": "can spatiality promote diversity",
+      "publicationDate": "2018-09-03",
+      "year": 2018,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.1809.00729",
+      "url": "https://arxiv.org/abs/1809.00729",
+      "citedByCount": 2,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1809.00729"
+      ],
+      "authors": [
+        {
+          "name": "Bruno Messias",
+          "id": "https://openalex.org/A5049924459"
+        },
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "César H. Comin",
+          "id": "https://openalex.org/A5076528057"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        }
+      ],
+      "topics": [
+        "Opinion Dynamics and Social Influence",
+        "Evolutionary Game Theory and Cooperation",
+        "Complex Network Analysis Techniques"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W2891753045"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
     },
     {
       "id": "https://openalex.org/W2789151723",
@@ -1938,10 +2516,13 @@
       "type": "article",
       "source": "Chaos An Interdisciplinary Journal of Nonlinear Science",
       "doi": "https://doi.org/10.1063/1.5027007",
-      "url": "http://arxiv.org/abs/1802.09337",
+      "url": "https://doi.org/10.1063/1.5027007",
       "citedByCount": 17,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1802.09337"
+      ],
       "authors": [
         {
           "name": "Thales S. Lima",
@@ -1976,7 +2557,8 @@
       "openAlexIds": [
         "https://openalex.org/W2789151723"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2760570940",
@@ -1987,10 +2569,13 @@
       "type": "article",
       "source": "Journal of Statistical Mechanics Theory and Experiment",
       "doi": "https://doi.org/10.1088/1742-5468/aad365",
-      "url": "http://arxiv.org/abs/1709.08244",
+      "url": "https://doi.org/10.1088/1742-5468/aad365",
       "citedByCount": 13,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1709.08244"
+      ],
       "authors": [
         {
           "name": "Guilherme S. Domingues",
@@ -2017,7 +2602,8 @@
       "openAlexIds": [
         "https://openalex.org/W2760570940"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2796775613",
@@ -2028,10 +2614,13 @@
       "type": "article",
       "source": "International Journal of Circuit Theory and Applications",
       "doi": "https://doi.org/10.1002/cta.2450",
-      "url": "http://doi.org/10.1002/cta.2450",
+      "url": "https://doi.org/10.1002/cta.2450",
       "citedByCount": 4,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1701.02269"
+      ],
       "authors": [
         {
           "name": "Luciano da Fontoura Costa",
@@ -2052,9 +2641,13 @@
         "Model Reduction and Neural Networks"
       ],
       "openAlexIds": [
-        "https://openalex.org/W2796775613"
+        "https://openalex.org/W2796775613",
+        "https://openalex.org/W2574460741"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "http://arxiv.org/abs/1701.02269"
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2740971051",
@@ -2069,6 +2662,9 @@
       "citedByCount": 0,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1708.00469"
+      ],
       "authors": [
         {
           "name": "Luciano da Fontoura Costa",
@@ -2094,7 +2690,8 @@
       ],
       "alternateUrls": [
         "http://arxiv.org/abs/1708.00469"
-      ]
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2766717180",
@@ -2105,10 +2702,11 @@
       "type": "article",
       "source": "Integrative Biology",
       "doi": "https://doi.org/10.1039/c7ib00161d",
-      "url": "http://dx.doi.org/10.1039/c7ib00161d",
+      "url": "https://doi.org/10.1039/c7ib00161d",
       "citedByCount": 2,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Paulo E. P. Burke",
@@ -2135,7 +2733,8 @@
       "openAlexIds": [
         "https://openalex.org/W2766717180"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2604444759",
@@ -2150,6 +2749,9 @@
       "citedByCount": 76,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1703.03366"
+      ],
       "authors": [
         {
           "name": "Henrique Ferraz de Arruda",
@@ -2176,7 +2778,8 @@
       "openAlexIds": [
         "https://openalex.org/W2604444759"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2596836281",
@@ -2187,10 +2790,14 @@
       "type": "article",
       "source": "Journal of Complex Networks",
       "doi": "https://doi.org/10.1093/comnet/cnx023",
-      "url": "http://arxiv.org/abs/1606.09636",
+      "url": "https://doi.org/10.1093/comnet/cnx023",
       "citedByCount": 34,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1606.09636",
+        "null"
+      ],
       "authors": [
         {
           "name": "Henrique Ferraz de Arruda",
@@ -2219,9 +2826,13 @@
         "Complex Network Analysis Techniques"
       ],
       "openAlexIds": [
-        "https://openalex.org/W2596836281"
+        "https://openalex.org/W2596836281",
+        "https://openalex.org/W2473532923"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "https://arxiv.org/pdf/1606.09636"
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2552257038",
@@ -2232,10 +2843,14 @@
       "type": "article",
       "source": "Electrical Engineering",
       "doi": "https://doi.org/10.1007/s00202-017-0573-8",
-      "url": "http://dx.doi.org/10.1007/s00202-017-0573-8",
+      "url": "https://doi.org/10.1007/s00202-017-0573-8",
       "citedByCount": 5,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1611.06356",
+        "null"
+      ],
       "authors": [
         {
           "name": "Luciano da Fontoura Costa",
@@ -2263,7 +2878,8 @@
       "alternateUrls": [
         "http://arxiv.org/abs/1611.06356",
         "http://arxiv.org/pdf/1611.06356.pdf"
-      ]
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2521984931",
@@ -2278,6 +2894,9 @@
       "citedByCount": 90,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1609.05545"
+      ],
       "authors": [
         {
           "name": "Edilson A. Corrêa Jr.",
@@ -2307,7 +2926,8 @@
       ],
       "alternateUrls": [
         "https://openalex.org/W3098930344"
-      ]
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2512437160",
@@ -2318,10 +2938,13 @@
       "type": "article",
       "source": "Review of Scientific Instruments",
       "doi": "https://doi.org/10.1063/1.4969058",
-      "url": "http://arxiv.org/abs/1608.04008",
+      "url": "https://doi.org/10.1063/1.4969058",
       "citedByCount": 6,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1608.04008"
+      ],
       "authors": [
         {
           "name": "Filipi N. Silva",
@@ -2344,7 +2967,8 @@
       "openAlexIds": [
         "https://openalex.org/W2512437160"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2408300690",
@@ -2355,10 +2979,14 @@
       "type": "article",
       "source": "Journal of Statistical Mechanics Theory and Experiment",
       "doi": "https://doi.org/10.1088/1742-5468/2016/05/053205",
-      "url": "http://arxiv.org/abs/1510.06326",
+      "url": "https://doi.org/10.1088/1742-5468/2016/05/053205",
       "citedByCount": 2,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1510.06326",
+        "null"
+      ],
       "authors": [
         {
           "name": "Cesar Henrique Comin",
@@ -2379,9 +3007,13 @@
         "Human Mobility and Location-Based Analysis"
       ],
       "openAlexIds": [
-        "https://openalex.org/W2408300690"
+        "https://openalex.org/W2408300690",
+        "https://openalex.org/W1787041985"
       ],
-      "alternateUrls": []
+      "alternateUrls": [
+        "https://arxiv.org/abs/1510.06326"
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W1739599771",
@@ -2392,10 +3024,13 @@
       "type": "article",
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2016.03.008",
-      "url": "http://doi.org/10.1016/j.joi.2016.03.008",
+      "url": "https://doi.org/10.1016/j.joi.2016.03.008",
       "citedByCount": 121,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1506.05690"
+      ],
       "authors": [
         {
           "name": "Filipi N. Silva",
@@ -2429,7 +3064,8 @@
       ],
       "alternateUrls": [
         "https://openalex.org/W3098278813"
-      ]
+      ],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2282533933",
@@ -2444,6 +3080,7 @@
       "citedByCount": 25,
       "openAccess": true,
       "openAccessStatus": "diamond",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Carlos Alberto Moreira‐Filho",
@@ -2494,7 +3131,8 @@
       "openAlexIds": [
         "https://openalex.org/W2282533933"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W1663952007",
@@ -2509,6 +3147,9 @@
       "citedByCount": 14,
       "openAccess": true,
       "openAccessStatus": "hybrid",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1407.0224"
+      ],
       "authors": [
         {
           "name": "Filipi N. Silva",
@@ -2551,7 +3192,8 @@
       "openAlexIds": [
         "https://openalex.org/W1663952007"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2185756138",
@@ -2562,10 +3204,13 @@
       "type": "article",
       "source": "Physical Review E",
       "doi": "https://doi.org/10.1103/physreve.92.032810",
-      "url": "http://arxiv.org/abs/1512.01418",
+      "url": "https://doi.org/10.1103/physreve.92.032810",
       "citedByCount": 39,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1512.01418"
+      ],
       "authors": [
         {
           "name": "Cheng Ye",
@@ -2608,7 +3253,8 @@
       "openAlexIds": [
         "https://openalex.org/W2185756138"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W1824082194",
@@ -2619,10 +3265,13 @@
       "type": "article",
       "source": "Europhysics Letters (EPL)",
       "doi": "https://doi.org/10.1209/0295-5075/110/68002",
-      "url": "http://arxiv.org/abs/1412.7367",
+      "url": "https://doi.org/10.1209/0295-5075/110/68002",
       "citedByCount": 3,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1412.7367"
+      ],
       "authors": [
         {
           "name": "Cesar H. Comin",
@@ -2645,7 +3294,8 @@
       "openAlexIds": [
         "https://openalex.org/W1824082194"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W1933573347",
@@ -2656,10 +3306,13 @@
       "type": "article",
       "source": "Europhysics Letters (EPL)",
       "doi": "https://doi.org/10.1209/0295-5075/110/68001",
-      "url": "http://arxiv.org/abs/1504.02162",
+      "url": "https://doi.org/10.1209/0295-5075/110/68001",
       "citedByCount": 50,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1504.02162"
+      ],
       "authors": [
         {
           "name": "Diego R. Amancio",
@@ -2682,7 +3335,8 @@
       "openAlexIds": [
         "https://openalex.org/W1933573347"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W1687913548",
@@ -2697,6 +3351,7 @@
       "citedByCount": 23,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Carlos Alberto Moreira‐Filho",
@@ -2743,7 +3398,69 @@
       "openAlexIds": [
         "https://openalex.org/W1687913548"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://openalex.org/W1508289301",
+      "title": "Modular Dynamics of Financial Market Networks",
+      "normalizedTitle": "modular dynamics of financial market networks",
+      "publicationDate": "2015-01-21",
+      "year": 2015,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.1501.05040",
+      "url": "https://arxiv.org/abs/1501.05040",
+      "citedByCount": 13,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1501.05040"
+      ],
+      "authors": [
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "César H. Comin",
+          "id": "https://openalex.org/A5076528057"
+        },
+        {
+          "name": "Thomas Peron",
+          "id": "https://openalex.org/A5002933889"
+        },
+        {
+          "name": "Francisco A. Rodrigues",
+          "id": "https://openalex.org/A5061851539"
+        },
+        {
+          "name": "Cheng Ye",
+          "id": "https://openalex.org/A5100741781"
+        },
+        {
+          "name": "Richard C. Wilson",
+          "id": "https://openalex.org/A5032741413"
+        },
+        {
+          "name": "Edwin R. Hancock",
+          "id": "https://openalex.org/A5074364400"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        }
+      ],
+      "topics": [
+        "Complex Systems and Time Series Analysis",
+        "Nonlinear Dynamics and Pattern Formation",
+        "Ecosystem dynamics and resilience"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W1508289301"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
     },
     {
       "id": "https://openalex.org/W326057588",
@@ -2754,10 +3471,11 @@
       "type": "book-chapter",
       "source": "",
       "doi": "https://doi.org/10.1007/978-3-319-11985-4_4",
-      "url": "http://dx.doi.org/10.1007/978-3-319-11985-4_4",
+      "url": "https://doi.org/10.1007/978-3-319-11985-4_4",
       "citedByCount": 12,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Carlos Alberto Moreira‐Filho",
@@ -2788,7 +3506,8 @@
       "openAlexIds": [
         "https://openalex.org/W326057588"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W83987728",
@@ -2799,10 +3518,11 @@
       "type": "book-chapter",
       "source": "",
       "doi": "https://doi.org/10.1007/978-3-319-11985-4_7",
-      "url": "http://dx.doi.org/10.1007/978-3-319-11985-4_7",
+      "url": "https://doi.org/10.1007/978-3-319-11985-4_7",
       "citedByCount": 3,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Carlos Alberto Moreira‐Filho",
@@ -2835,7 +3555,8 @@
       "openAlexIds": [
         "https://openalex.org/W83987728"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2007196711",
@@ -2850,6 +3571,7 @@
       "citedByCount": 36,
       "openAccess": true,
       "openAccessStatus": "gold",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Sílvia Yumi Bando",
@@ -2896,7 +3618,8 @@
       "openAlexIds": [
         "https://openalex.org/W2007196711"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2093567499",
@@ -2907,10 +3630,13 @@
       "type": "article",
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2013.01.007",
-      "url": "http://arxiv.org/abs/1203.4807",
+      "url": "https://doi.org/10.1016/j.joi.2013.01.007",
       "citedByCount": 68,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1203.4807"
+      ],
       "authors": [
         {
           "name": "F.N. Silva",
@@ -2940,7 +3666,44 @@
       ],
       "alternateUrls": [
         "https://openalex.org/W3099355689"
-      ]
+      ],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://openalex.org/W1924444246",
+      "title": "Local Dimension of Complex Networks",
+      "normalizedTitle": "local dimension of complex networks",
+      "publicationDate": "2012-09-12",
+      "year": 2012,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.1209.2476",
+      "url": "https://arxiv.org/abs/1209.2476",
+      "citedByCount": 16,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/1209.2476"
+      ],
+      "authors": [
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        }
+      ],
+      "topics": [
+        "Complex Network Analysis Techniques",
+        "Graph theory and applications"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W1924444246"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
     },
     {
       "id": "https://openalex.org/W1973716318",
@@ -2951,10 +3714,11 @@
       "type": "article",
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2011.03.003",
-      "url": "http://doi.org/10.1016/j.joi.2011.03.003",
+      "url": "https://doi.org/10.1016/j.joi.2011.03.003",
       "citedByCount": 30,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Filipi N. Silva",
@@ -2981,7 +3745,8 @@
       "openAlexIds": [
         "https://openalex.org/W1973716318"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W1967545017",
@@ -2992,10 +3757,11 @@
       "type": "article",
       "source": "Journal of Statistical Mechanics Theory and Experiment",
       "doi": "https://doi.org/10.1088/1742-5468/2010/11/p11015",
-      "url": "http://dx.doi.org/10.1088/1742-5468/2010/11/P11015",
+      "url": "https://doi.org/10.1088/1742-5468/2010/11/p11015",
       "citedByCount": 30,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Luciano da Fontoura Costa",
@@ -3022,7 +3788,8 @@
       "openAlexIds": [
         "https://openalex.org/W1967545017"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W2054925329",
@@ -3037,6 +3804,7 @@
       "citedByCount": 16,
       "openAccess": false,
       "openAccessStatus": "closed",
+      "preprintUrls": [],
       "authors": [
         {
           "name": "Filipi N. Silva",
@@ -3063,7 +3831,8 @@
       "openAlexIds": [
         "https://openalex.org/W2054925329"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     },
     {
       "id": "https://openalex.org/W1842007447",
@@ -3074,10 +3843,13 @@
       "type": "article",
       "source": "Physica A Statistical Mechanics and its Applications",
       "doi": "https://doi.org/10.1016/j.physa.2008.06.034",
-      "url": "http://arxiv.org/abs/0710.1857",
+      "url": "https://doi.org/10.1016/j.physa.2008.06.034",
       "citedByCount": 23,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/0710.1857"
+      ],
       "authors": [
         {
           "name": "Luciano da Fontoura Costa",
@@ -3100,7 +3872,47 @@
       "openAlexIds": [
         "https://openalex.org/W1842007447"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://openalex.org/W1592790501",
+      "title": "Identifying Complex Networks by Random Walks",
+      "normalizedTitle": "identifying complex networks by random walks",
+      "publicationDate": "2006-12-13",
+      "year": 2006,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.physics/0612121",
+      "url": "https://arxiv.org/abs/physics/0612121",
+      "citedByCount": 1,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/physics/0612121",
+        "https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.262.293",
+        "https://cds.cern.ch/record/1005402"
+      ],
+      "authors": [
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        }
+      ],
+      "topics": [
+        "Data Visualization and Analytics",
+        "Complex Network Analysis Techniques",
+        "Data Management and Algorithms"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W1592790501"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
     },
     {
       "id": "https://openalex.org/W2028525255",
@@ -3111,10 +3923,13 @@
       "type": "article",
       "source": "Journal of Statistical Physics",
       "doi": "https://doi.org/10.1007/s10955-006-9130-y",
-      "url": "http://arxiv.org/abs/cond-mat/0412761",
+      "url": "https://doi.org/10.1007/s10955-006-9130-y",
       "citedByCount": 96,
       "openAccess": true,
       "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/cond-mat/0412761"
+      ],
       "authors": [
         {
           "name": "Luciano da Fontoura Costa",
@@ -3133,7 +3948,8 @@
       "openAlexIds": [
         "https://openalex.org/W2028525255"
       ],
-      "alternateUrls": []
+      "alternateUrls": [],
+      "publicationStatus": "published"
     }
   ]
 }

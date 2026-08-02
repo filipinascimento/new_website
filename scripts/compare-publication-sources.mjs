@@ -26,6 +26,8 @@ const [audit, scholarProfile, scholarEntries, openAlexProfile, openAlexWorks] = 
 ]);
 
 const canonicalTitles = [...audit.publishedProfileTitles, ...audit.additionalPublishedTitles];
+const standalonePreprintTitles = audit.standalonePreprintTitles || [];
+const allCuratedTitles = [...canonicalTitles, ...standalonePreprintTitles];
 const scholarTitles = new Set(scholarEntries.entries.map((entry) => normalizeTitle(entry.title)));
 const openAlexTitles = new Set(openAlexWorks.works.map((work) => normalizeTitle(work.title)));
 const missingScholarPublishedRows = audit.publishedProfileTitles.filter(
@@ -33,6 +35,15 @@ const missingScholarPublishedRows = audit.publishedProfileTitles.filter(
 );
 const missingOpenAlexPublications = canonicalTitles.filter(
   (title) => !openAlexTitles.has(normalizeTitle(title)),
+);
+const missingOpenAlexPreprints = standalonePreprintTitles.filter(
+  (title) => !openAlexTitles.has(normalizeTitle(title)),
+);
+const curatedPublishedWorks = openAlexWorks.works.filter(
+  (work) => work.publicationStatus === "published",
+);
+const curatedStandalonePreprints = openAlexWorks.works.filter(
+  (work) => work.publicationStatus === "preprint",
 );
 const duplicateOpenAlexTitles = openAlexWorks.works
   .map((work) => normalizeTitle(work.title))
@@ -56,7 +67,15 @@ if (missingScholarPublishedRows.length > 0) {
 if (missingOpenAlexPublications.length > 0) {
   throw new Error(`Curated publications are missing from OpenAlex: ${missingOpenAlexPublications.join("; ")}`);
 }
-if (duplicateOpenAlexTitles.length > 0 || openAlexWorks.works.length !== canonicalTitles.length) {
+if (missingOpenAlexPreprints.length > 0) {
+  throw new Error(`Curated preprints are missing from OpenAlex: ${missingOpenAlexPreprints.join("; ")}`);
+}
+if (
+  duplicateOpenAlexTitles.length > 0 ||
+  openAlexWorks.works.length !== allCuratedTitles.length ||
+  curatedPublishedWorks.length !== canonicalTitles.length ||
+  curatedStandalonePreprints.length !== standalonePreprintTitles.length
+) {
   throw new Error("The curated OpenAlex bibliography contains a duplicate or unexpected record.");
 }
 
@@ -78,11 +97,13 @@ const comparison = {
   openAlex: {
     linkedAuthorRecords: openAlexProfile.authorIds.length,
     rawUniqueWorksAcrossLinkedAuthors: openAlexProfile.rawUniqueWorksAcrossLinkedAuthors,
-    manuallyLinkedPublisherWorks: openAlexProfile.manuallyLinkedPublisherWorks,
+    manuallyLinkedWorks: openAlexProfile.manuallyLinkedWorks,
     candidateWorksBeforePublicationAudit: openAlexProfile.candidateWorksBeforePublicationAudit,
-    curatedPublishedWorks: openAlexWorks.works.length,
+    curatedPublishedWorks: curatedPublishedWorks.length,
+    curatedStandalonePreprints: curatedStandalonePreprints.length,
     duplicateNormalizedTitles: duplicateOpenAlexTitles.length,
     missingCanonicalPublications: missingOpenAlexPublications,
+    missingCanonicalPreprints: missingOpenAlexPreprints,
     primaryAuthorCitations: openAlexProfile.citedByCount,
     primaryAuthorHIndex: openAlexProfile.hIndex,
   },
