@@ -92,6 +92,7 @@ test("caches scholarly metrics and course identifiers", async () => {
 
 test("keeps private contact fields out of the public site data", async () => {
   const publicData = await readFile(new URL("data/content.json", root), "utf8");
+  const publicCv = await readFile(new URL("content/cv/public.md", root), "utf8");
   assert.doesNotMatch(publicData, /812[) .-]+369[ .-]+3201/);
   assert.doesNotMatch(publicData, /1800 Sherman Avenue/i);
   assert.doesNotMatch(publicData, /filipinascimento@gmail\.com/i);
@@ -99,6 +100,8 @@ test("keeps private contact fields out of the public site data", async () => {
   assert.doesNotMatch(publicData, /64 distinct publications/i);
   assert.doesNotMatch(publicData, /recurring technical motifs/i);
   assert.doesNotMatch(publicData, /Device Motif Atlas|filipinascimento\/motifs|github\.io\/motifs/i);
+  assert.match(publicCv, /Technology capability maps:[\s\S]*embedding models[\s\S]*design choices/i);
+  assert.doesNotMatch(publicCv, /Climate teleconnections|Didier Vega-Oliveros/i);
 });
 
 test("vendors the current Helios browser runtime for static hosting", async () => {

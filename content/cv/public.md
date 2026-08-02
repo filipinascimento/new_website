@@ -1,6 +1,6 @@
 ---
 title: Curriculum vitae
-updated: 2026-08-01
+updated: 2026-08-02
 ---
 
 ## Profile
@@ -27,11 +27,11 @@ Research Assistant Professor at Northwestern University’s Kellogg School of Ma
 
 ## Selected projects
 
-- **Scientific and engineering discovery:** Research on how science-of-science methods can work with structured extraction pipelines, network analysis, embedding-based search, and domain knowledge to identify promising scientific and engineering opportunities.
-- **[Mapping how science is funded](https://arxiv.org/abs/2603.24147):** Large-scale links between funding acknowledgments, organizations, publications, and the directions of scientific work.
+- **Scientific and engineering discovery:** Combining science-of-science evidence, structured extraction pipelines, network analysis, embedding-based search, and domain knowledge to identify promising scientific and engineering opportunities.
+- **Technology capability maps:** Developing embedding models that represent design choices and technical attributes across papers and patents, predict technological capabilities, and identify interpretable directions aligned with measurable progress in materials and device platforms.
+- **[Graph and language models of scientific impact](https://arxiv.org/abs/2605.18410):** Comparing random-walk embeddings, transformer representations, and graph-retrieval methods to model scientific impact, research similarity, and scholarly trajectories.
+- **[Mapping how science is funded](https://arxiv.org/abs/2603.24147):** Linking funding acknowledgments to organizations and publications to study how different forms of support shape research directions.
 - **[Helios Web](https://heliosweb.io):** Browser-native visualization and exploration of large networks and embedding spaces. [GitHub](https://github.com/filipinascimento/helios-web)
-- **[Visualizing big science projects](https://bigscience.github.io/):** Interactive maps and reproducible data on the changing scale, collaboration structure, and topical reach of major scientific programs, developed with Katy Börner and Staša Milojević.
-- **[Climate teleconnections](https://doi.org/10.1029/2021GL094707):** Network methods for detecting statistically significant long-range relationships in climate time series, developed with Didier Vega-Oliveros, Xiaoran Yan, Alessandro Flammini, Filippo Menczer, Filippo Radicchi, Ben Kravitz, and Santo Fortunato.
 
 [Browse the full project portfolio](https://filipinascimento.github.io/new_website/projects/).
 
