@@ -116,8 +116,10 @@ test("keeps the home page academic, unnumbered, and free of implementation sloga
   assert.match(helios, /Helios Web visualization/);
   assert.match(helios, /ui:\s*false/);
   assert.doesNotMatch(`${home}\n${softwarePage}\n${softwareCard}`, /\bstars\b|\bforks\b/i);
+  assert.doesNotMatch(`${home}\n${softwareCard}`, /\{(?:item|software)\.status\}/);
   assert.match(softwareCard, /SoftwareIcon/);
   assert.match(softwareIcon, /lucide-react/);
+  assert.match(softwareIcon, /software-icons\/helios-web\.svg/);
   assert.doesNotMatch(footer, /Content in Markdown|data synced from public APIs/i);
   assert.match(styles, /\.helios-stage__viewport\s*{[^}]*background:\s*var\(--paper\)/s);
   assert.doesNotMatch(styles, /\.helios-stage__viewport\s*{[^}]*border:/s);

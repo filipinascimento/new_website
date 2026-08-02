@@ -7,10 +7,7 @@ export function SoftwareCard({ software }: { software: SoftwareRecord }) {
     <article className="software-card">
       <div className="software-card__heading">
         <SoftwareIcon slug={software.slug} />
-        <div>
-          <span className="software-card__status">{software.status}</span>
-          <h3>{software.title}</h3>
-        </div>
+        <h3>{software.title}</h3>
       </div>
       <p className="software-card__tagline">{software.tagline}</p>
       <div className="software-card__body" dangerouslySetInnerHTML={{ __html: software.html }} />

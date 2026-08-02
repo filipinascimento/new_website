@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Boxes,
   CircuitBoard,
@@ -10,6 +11,10 @@ import {
   Workflow,
   type LucideIcon,
 } from "lucide-react";
+
+const brandAssets: Record<string, string> = {
+  "helios-web": "/software-icons/helios-web.svg",
+};
 
 const icons: Record<string, LucideIcon> = {
   "helios-web": Network,
@@ -36,10 +41,16 @@ const tones: Record<string, string> = {
 export function SoftwareIcon({ slug, compact = false }: { slug: string; compact?: boolean }) {
   const Icon = icons[slug] ?? Workflow;
   const tone = tones[slug] ?? "blue";
+  const brandAsset = brandAssets[slug];
+  const basePath = process.env.GITHUB_PAGES === "true" ? "/new_website" : "";
 
   return (
-    <span className={`software-icon software-icon--${tone}${compact ? " software-icon--compact" : ""}`} aria-hidden="true">
-      <Icon />
+    <span className={`software-icon software-icon--${brandAsset ? "brand" : tone}${compact ? " software-icon--compact" : ""}`} aria-hidden="true">
+      {brandAsset ? (
+        <Image className="software-icon__asset" src={`${basePath}${brandAsset}`} alt="" width={142} height={60} unoptimized />
+      ) : (
+        <Icon />
+      )}
     </span>
   );
 }

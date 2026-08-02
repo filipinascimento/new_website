@@ -680,16 +680,6 @@ a {
   background: linear-gradient(145deg, color-mix(in srgb, var(--paper-raised) 58%, transparent), color-mix(in srgb, var(--paper) 34%, transparent));
 }
 
-.home-software-list__topline {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  color: var(--ink-faint);
-  font-size: 0.94rem;
-  font-weight: 600;
-}
-
 .software-icon {
   display: grid;
   width: 62px;
@@ -756,6 +746,26 @@ a {
   background:
     radial-gradient(circle at 28% 22%, color-mix(in srgb, currentColor 22%, transparent), transparent 58%),
     color-mix(in srgb, var(--paper-raised) 54%, var(--wash-warm));
+}
+
+.software-icon--brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 3px;
+  background: color-mix(in srgb, var(--paper-raised) 72%, var(--wash-warm));
+}
+
+.software-icon__asset {
+  width: auto;
+  max-width: none;
+  height: 56px;
+  flex: 0 0 auto;
+}
+
+.software-icon--compact .software-icon__asset {
+  height: 42px;
 }
 
 .home-software-list h3 {
@@ -971,12 +981,6 @@ a {
   gap: 18px;
 }
 
-.software-card__status {
-  color: var(--ink-faint);
-  font-size: 0.94rem;
-  font-weight: 600;
-}
-
 .project-card h3,
 .software-card h3,
 .course-card h2 {
@@ -989,7 +993,7 @@ a {
 }
 
 .software-card__heading h3 {
-  margin: 5px 0 0;
+  margin: 0;
 }
 
 .project-card__body,

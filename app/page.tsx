@@ -141,10 +141,7 @@ export default function Home() {
             <div className="home-software-list">
               {software.map((item) => (
                 <article key={item.slug}>
-                  <div className="home-software-list__topline">
-                    <SoftwareIcon slug={item.slug} compact />
-                    <span>{item.status}</span>
-                  </div>
+                  <SoftwareIcon slug={item.slug} compact />
                   <h3><a href={item.url} target="_blank" rel="noreferrer">{item.title}<ArrowUpRight size={14} /></a></h3>
                   <p>{item.tagline}</p>
                 </article>
