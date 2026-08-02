@@ -128,6 +128,21 @@ test("vendors the current Helios browser runtime for static hosting", async () =
   await access(new URL("public/vendor/helios-network.inline.js", root));
 });
 
+test("matches the UI-free Helios landing preview", async () => {
+  const preview = await readFile(new URL("app/components/HeliosPreview.tsx", root), "utf8");
+  assert.match(preview, /nodeCount:\s*2_000/);
+  assert.match(preview, /seed:\s*17/);
+  assert.match(preview, /mode:\s*"3d"/);
+  assert.match(preview, /projection:\s*"perspective"/);
+  assert.match(preview, /linkDistance:\s*6/);
+  assert.match(preview, /orbit:\s*true/);
+  assert.match(preview, /orbitSpeed:\s*0\.04/);
+  assert.match(preview, /orbitAngle:\s*16/);
+  assert.match(preview, /orbitAxis:\s*\[0\.83,\s*0\.75,\s*0\]/);
+  assert.match(preview, /ui:\s*false/);
+  assert.match(preview, /quickControls:\s*false/);
+});
+
 test("keeps the home page academic, unnumbered, and free of implementation slogans", async () => {
   const home = await readFile(new URL("app/page.tsx", root), "utf8");
   const helios = await readFile(new URL("app/components/HeliosPreview.tsx", root), "utf8");

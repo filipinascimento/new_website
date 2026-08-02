@@ -2,22 +2,24 @@
 
 import { useEffect, useRef, useState } from "react";
 
-type AttributeBuffer = { view: Float32Array };
-type HeliosNetworkInstance = {
-  nodeCount: number;
-  edgeCount: number;
-  nodeIndices: Uint32Array;
-  edgeIndices: Uint32Array;
-  defineNodeAttribute: (name: string, type: unknown, size?: number) => void;
-  defineEdgeAttribute: (name: string, type: unknown, size?: number) => void;
-  getNodeAttributeBuffer: (name: string) => AttributeBuffer;
-  getEdgeAttributeBuffer: (name: string) => AttributeBuffer;
-  withBufferAccess: (callback: () => void, options?: Record<string, boolean>) => void;
+type HeliosLayoutInstance = {
+  setSettings?: (
+    settings: Record<string, unknown>,
+    options?: Record<string, unknown>,
+  ) => unknown;
 };
 
 type HeliosInstance = {
   ready: Promise<void>;
-  frameNetwork: (options?: Record<string, unknown>) => void;
+  layout?: () => HeliosLayoutInstance | null;
+  nodeSizeScale?: (value: number) => unknown;
+  edgeWidthScale?: (value: number) => unknown;
+  legends?: (value: boolean) => unknown;
+  setCameraPose?: (
+    pose: Record<string, unknown>,
+    options?: Record<string, unknown>,
+  ) => unknown;
+  cameraControls?: (options: Record<string, unknown>) => unknown;
   behavior?: {
     appearance?: {
       background: (value: string) => unknown;
@@ -25,14 +27,6 @@ type HeliosInstance = {
   };
   destroy?: () => void;
 };
-
-function seededRandom(seed = 1) {
-  let state = seed >>> 0;
-  return () => {
-    state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
-    return state / 4294967296;
-  };
-}
 
 export function HeliosPreview() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -73,44 +67,37 @@ export function HeliosPreview() {
           options: Record<string, unknown>,
         ) => HeliosInstance;
         const HeliosNetwork = networkModule.default as {
-          generateWattsStrogatz: (options: Record<string, unknown>) => Promise<HeliosNetworkInstance>;
+          generateWattsStrogatz: (options: Record<string, unknown>) => Promise<object>;
         };
-        const AttributeType = networkModule.AttributeType as { Float: unknown };
 
         const network = await HeliosNetwork.generateWattsStrogatz({
-          nodeCount: 10_000,
+          nodeCount: 2_000,
           neighborLevel: 2,
           rewiringProbability: 0.006,
-          seed: 1,
           directed: false,
+          seed: 17,
         });
-
-        network.defineNodeAttribute("weight", AttributeType.Float);
-        network.defineEdgeAttribute("intensity", AttributeType.Float);
-        const random = seededRandom(11);
-        network.withBufferAccess(() => {
-          const weights = network.getNodeAttributeBuffer("weight").view;
-          for (const nodeId of network.nodeIndices) weights[nodeId] = random();
-        }, { nodeIndices: true });
-        network.withBufferAccess(() => {
-          const intensities = network.getEdgeAttributeBuffer("intensity").view;
-          for (const edgeId of network.edgeIndices) intensities[edgeId] = random();
-        }, { edgeIndices: true });
 
         if (cancelled) return;
         const instance = new Helios(network, {
           container,
+          mode: "3d",
+          projection: "perspective",
           ui: false,
           quickControls: false,
-          legends: { enabled: false },
+          debug: false,
           storage: false,
           session: false,
+          startup: {
+            hideCanvasUntilFirstFrame: false,
+            layoutIterations: 0,
+            layoutDurationMs: 0,
+            initialCameraFit: false,
+          },
           autosyncInteractionIdleMs: false,
           warnOnUnsavedSessionChanges: false,
-          networkSource: {
-            name: "Helios network demo",
-            baseName: "helios-network-demo",
-          },
+          legends: { enabled: false },
+          behaviors: { legends: false },
           autoCleanup: true,
           disposeNetworkOnDestroy: true,
         });
@@ -121,7 +108,26 @@ export function HeliosPreview() {
           return;
         }
         synchronizeBackground();
-        instance.frameNetwork({ animate: false });
+        instance.layout?.()?.setSettings?.(
+          { linkDistance: 6 },
+          { reheat: true, reason: "portfolio-preview" },
+        );
+        instance.nodeSizeScale?.(2);
+        instance.edgeWidthScale?.(3);
+        instance.legends?.(false);
+        instance.setCameraPose?.(
+          { distance: 1000, target: [0, 0, 0] },
+          { applyState: false },
+        );
+        instance.cameraControls?.({
+          autoFit: true,
+          autoFitPaddingRatio: 0.04,
+          animation: true,
+          orbit: true,
+          orbitSpeed: 0.04,
+          orbitAngle: 16,
+          orbitAxis: [0.83, 0.75, 0],
+        });
         setStatus("ready");
       } catch (error) {
         console.error("Helios preview failed to initialize", error);
