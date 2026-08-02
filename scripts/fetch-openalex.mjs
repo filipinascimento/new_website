@@ -92,6 +92,28 @@ function cleanText(value = "") {
     .trim();
 }
 
+function readableRawAuthorName(value = "") {
+  const rawName = cleanText(value);
+  const parts = rawName.split(",").map((part) => part.trim()).filter(Boolean);
+  return parts.length === 2 ? `${parts[1]} ${parts[0]}` : rawName;
+}
+
+function authorName(authorship = {}) {
+  const displayName = cleanText(authorship.author?.display_name);
+  const rawName = readableRawAuthorName(authorship.raw_author_name);
+  const informationScore = (value) => value.replace(/[^\p{L}\p{N}]/gu, "").length;
+  const hasInitial = (value) => value
+    .split(/\s+/)
+    .some((part) => part.replace(/[^\p{L}\p{N}]/gu, "").length === 1);
+  return (
+    informationScore(rawName) > informationScore(displayName) &&
+    hasInitial(displayName) &&
+    !hasInitial(rawName)
+  )
+    ? rawName
+    : (displayName || rawName || "Unknown author");
+}
+
 function normalizeTitle(title = "") {
   return cleanText(title)
     .normalize("NFKD")
@@ -154,7 +176,7 @@ function workScore(work) {
 
 function compactWork(work) {
   const authors = (work.authorships || []).map((authorship) => ({
-    name: authorship.author?.display_name || "Unknown author",
+    name: authorName(authorship),
     id: authorship.author?.id || null,
   }));
   return {

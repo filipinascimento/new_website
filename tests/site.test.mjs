@@ -46,6 +46,11 @@ test("merges split OpenAlex identities without duplicate titles", async () => {
   assert.equal(new Set(works.works.map((work) => work.normalizedTitle)).size, works.works.length);
   assert.ok(standalonePreprints.every((work) => work.type === "preprint"));
   assert.ok(standalonePreprints.some((work) => work.title === "Linking Global Science Funding to Research Publications"));
+  const toneOfAwareness = standalonePreprints.find(
+    (work) => work.title === "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok",
+  );
+  assert.equal(toneOfAwareness.authors.at(-1).name, "Filipi Nascimento Silva");
+  assert.doesNotMatch(toneOfAwareness.authors.map((author) => author.name).join(", "), /\bF E Silva\b/);
   assert.ok(publishedWorks.some((work) => work.preprintUrls.length > 0));
   assert.ok(works.works.some((work) => work.doi === "https://doi.org/10.1103/4124-dyj8"));
   assert.ok(works.works.some((work) => work.doi === "https://doi.org/10.1016/j.ins.2026.123702"));
