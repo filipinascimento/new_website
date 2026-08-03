@@ -1660,34 +1660,61 @@ a {
     position: static;
     display: grid;
     grid-template-columns: 150px minmax(0, 1fr);
+    grid-template-areas:
+      "portrait identity"
+      "portrait facts"
+      ". links";
     gap: 0 28px;
     padding-bottom: 34px;
   }
 
   .profile-sidebar__portrait {
-    grid-row: 1 / span 3;
+    grid-area: portrait;
     width: 150px;
   }
 
   .profile-sidebar__identity {
+    grid-area: identity;
     margin-top: 0;
   }
 
   .profile-sidebar__facts {
+    grid-area: facts;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 17px;
+    grid-template-columns: 1fr;
+    gap: 11px;
+    margin-top: 16px;
   }
 
   .profile-sidebar__facts > div {
-    padding: 12px 14px;
+    align-self: start;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .profile-sidebar__facts > div:nth-child(even) {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    border-radius: 0;
+    background: none;
+  }
+
+  .profile-sidebar__facts > div:nth-child(even) dt {
+    font-size: 0.86rem;
+  }
+
+  .profile-sidebar__facts > div:nth-child(even) dd {
+    margin-top: 0;
   }
 
   .profile-sidebar__links {
+    grid-area: links;
     display: flex;
     flex-wrap: wrap;
     gap: 5px 22px;
-    margin-top: 10px;
+    margin-top: 16px;
   }
 
   .profile-sidebar__links a {
@@ -1737,24 +1764,24 @@ a {
   }
 
   .profile-sidebar {
-    grid-template-columns: 108px minmax(0, 1fr);
-    gap: 0 20px;
+    grid-template-columns: clamp(112px, 30vw, 140px) minmax(0, 1fr);
+    grid-template-areas:
+      "portrait identity"
+      "facts facts"
+      "links links";
+    column-gap: 20px;
+    row-gap: 0;
   }
 
   .profile-sidebar__portrait {
-    width: 108px;
+    width: clamp(112px, 30vw, 140px);
   }
 
   .profile-sidebar__facts {
-    grid-template-columns: 1fr;
-  }
-
-  .profile-sidebar__facts > div:last-child {
-    display: none;
+    margin-top: 22px;
   }
 
   .profile-sidebar__links {
-    grid-column: 1 / -1;
     margin-top: 18px;
   }
 

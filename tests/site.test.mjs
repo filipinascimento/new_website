@@ -258,3 +258,11 @@ test("keeps the home page academic, unnumbered, and free of implementation sloga
   assert.match(styles, /\.helios-stage__viewport\s*{[^}]*background:\s*var\(--paper\)/s);
   assert.doesNotMatch(styles, /\.helios-stage__viewport\s*{[^}]*border:/s);
 });
+
+test("keeps the compact profile aligned without an oversized location panel", async () => {
+  const styles = await readFile(new URL("app/globals.css", root), "utf8");
+  assert.match(styles, /@media \(max-width: 860px\)[\s\S]*grid-template-areas:[\s\S]*"portrait identity"[\s\S]*"portrait facts"[\s\S]*"\. links"/);
+  assert.match(styles, /\.profile-sidebar__facts > div:nth-child\(even\)\s*\{[^}]*display:\s*flex[^}]*background:\s*none/s);
+  assert.match(styles, /@media \(max-width: 680px\)[\s\S]*grid-template-areas:[\s\S]*"portrait identity"[\s\S]*"facts facts"[\s\S]*"links links"/);
+  assert.doesNotMatch(styles, /\.profile-sidebar__facts > div:last-child\s*\{[^}]*display:\s*none/s);
+});
