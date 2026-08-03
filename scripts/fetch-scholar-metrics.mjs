@@ -14,6 +14,10 @@ function parseNumber(value) {
   return Number(String(value).replace(/[^0-9]/g, ""));
 }
 
+function approximateHundreds(value) {
+  return `${(Math.floor(value / 100) * 100).toLocaleString("en-US")}+`;
+}
+
 function decodeHtml(value) {
   return value
     .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(Number.parseInt(code, 16)))
@@ -54,12 +58,14 @@ function parseMetrics(html, { publications, profileEntries, audit }) {
     throw new Error("Google Scholar returned an unexpected metrics table.");
   }
   const yearMatch = html.match(/Citations since (\d{4})/i);
+  const citations = cells[0];
   return {
     profileUrl,
     publications,
     publicationsDisplay: `${Math.floor(publications / 10) * 10}+`,
     profileEntries,
-    citations: cells[0],
+    citations,
+    citationsDisplay: approximateHundreds(citations),
     citationsSince2021: cells[1],
     hIndex: cells[2],
     hIndexSince2021: cells[3],

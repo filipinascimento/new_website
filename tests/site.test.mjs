@@ -120,6 +120,7 @@ test("caches scholarly metrics and course identifiers", async () => {
   const scholarEntries = await json("data/scholar/entries.json");
   const content = await json("data/content.json");
   assert.ok(scholar.citations >= 2500);
+  assert.equal(scholar.citationsDisplay, "2,600+");
   assert.equal(scholar.publications, 64);
   assert.equal(scholar.publicationsDisplay, "60+");
   assert.equal(scholarEntries.count, scholar.profileEntries);
@@ -139,6 +140,23 @@ test("caches scholarly metrics and course identifiers", async () => {
     content.teaching.map((course) => course.code).sort(),
     ["INFO-I 513", "INFO-I 590"],
   );
+});
+
+test("keeps public citation metrics approximate and pins recent publications in Markdown", async () => {
+  const scholar = await json("data/scholar/profile.json");
+  const content = await json("data/content.json");
+  const publicationsPage = await readFile(new URL("app/publications/page.tsx", root), "utf8");
+  const cvPage = await readFile(new URL("app/cv/page.tsx", root), "utf8");
+  const home = await readFile(new URL("app/page.tsx", root), "utf8");
+  const profileSource = await readFile(new URL("content/site/profile.md", root), "utf8");
+
+  assert.equal(content.site[0].recentPublications.length, 5);
+  assert.match(home, /profile\.recentPublications/);
+  assert.match(profileSource, /recentPublications:/);
+  assert.match(publicationsPage, /scholarProfile\.citationsDisplay/);
+  assert.match(cvPage, /scholarProfile\.citationsDisplay/);
+  assert.match(content.cv[0].markdown, /2,600\+ citations/);
+  assert.doesNotMatch(content.cv[0].markdown, new RegExp(`${scholar.citations.toLocaleString("en-US")} citations`));
 });
 
 test("keeps private contact fields out of the public site data", async () => {

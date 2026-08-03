@@ -12,7 +12,7 @@ const scholarProfile = JSON.parse(
 );
 const templateValues = {
   scholarPublications: scholarProfile.publicationsDisplay,
-  scholarCitations: scholarProfile.citations.toLocaleString("en-US"),
+  scholarCitations: scholarProfile.citationsDisplay,
   scholarHIndex: scholarProfile.hIndex.toLocaleString("en-US"),
 };
 marked.use({ gfm: true, breaks: false });

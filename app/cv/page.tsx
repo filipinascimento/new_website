@@ -37,7 +37,7 @@ export default function CvPage() {
       url: profile.scholar,
     },
     {
-      value: scholarProfile.citations.toLocaleString("en-US"),
+      value: scholarProfile.citationsDisplay,
       label: "Citations",
       url: profile.scholar,
     },

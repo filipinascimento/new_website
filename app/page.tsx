@@ -28,6 +28,7 @@ type ProfileRecord = ContentRecord & {
   scholar: string;
   github: string;
   openalex: string;
+  recentPublications: string[];
 };
 
 function authors(authorsList: Publication["authors"]) {
@@ -43,7 +44,14 @@ export default function Home() {
     .slice(0, 4);
   const software = (contentJson.software as SoftwareRecord[]).filter((item) => item.featured).slice(0, 3);
   const teaching = contentJson.teaching as TeachingRecord[];
-  const works = (openAlexJson.works as Publication[]).slice(0, 5);
+  const allWorks = openAlexJson.works as Publication[];
+  const workByTitle = new Map(allWorks.map((work) => [work.title, work]));
+  const pinnedWorks = profile.recentPublications
+    .map((title) => workByTitle.get(title))
+    .filter((work): work is Publication => Boolean(work));
+  const works = pinnedWorks.length === profile.recentPublications.length
+    ? pinnedWorks
+    : allWorks.slice(0, 5);
   const introParagraphs = profile.markdown.split(/\n\s*\n/).filter(Boolean);
 
   return (
