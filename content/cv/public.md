@@ -1,6 +1,6 @@
 ---
 title: Curriculum vitae
-updated: 2026-08-02
+updated: 2026-08-03
 ---
 
 ## Profile
@@ -34,6 +34,14 @@ Research Assistant Professor at Northwestern University’s Kellogg School of Ma
 - **[Helios Web](https://heliosweb.io):** Browser-native visualization and exploration of large networks and embedding spaces. [GitHub](https://github.com/filipinascimento/helios-web)
 
 [Browse the full project portfolio](https://filipinascimento.github.io/new_website/projects/).
+
+## Grant writing and funded projects
+
+- **APTO: Global Observatory and Virtual Laboratory for Science and Technology**, National Science Foundation, Senior Personnel, 2024–2026. Contributed goals, methodology, data integration, and analytical strategy during proposal development for the $7.5M funded program.
+- **Integrative Study of Local Microbiome Function in Chronic Rhinosinusitis**, National Institutes of Health, Senior Personnel, 2024–2027. Contributed network-methods conceptualization and writing during development of the funded proposal.
+- **UPSCALE: Universal Population Segmentation and Characterization Algorithms for Online Environments**, DARPA, Researcher, 2023–2024. Participated in the funded program and developed computational and network methods for large-scale online environments.
+- **A National Network for Critical Technology Assessment: A First-Year Pilot**, National Science Foundation, Senior Personnel, 2022–2023. Participated in the funded pilot and contributed technology-assessment and science-of-science methods.
+- **Science Genome: A Scholarly Graph Embedding Framework**, U.S. Department of Defense Minerva Research Initiative, Researcher, 2020–2024. Participated in the funded program and developed network and embedding representations of science.
 
 ## Research areas
 

@@ -197,6 +197,19 @@ test("keeps private contact fields out of the public site data", async () => {
   assert.doesNotMatch(publicCv, /Climate teleconnections|Didier Vega-Oliveros/i);
 });
 
+test("lists only successful funded programs in the CV grant section", async () => {
+  const publicCv = await readFile(new URL("content/cv/public.md", root), "utf8");
+  const grantSection = publicCv.match(/## Grant writing and funded projects([\s\S]*?)\n## /i)?.[1] ?? "";
+
+  assert.match(grantSection, /APTO: Global Observatory/);
+  assert.match(grantSection, /Integrative Study of Local Microbiome Function/);
+  assert.match(grantSection, /UPSCALE: Universal Population Segmentation/);
+  assert.match(grantSection, /A National Network for Critical Technology Assessment/);
+  assert.match(grantSection, /Science Genome: A Scholarly Graph Embedding Framework/);
+  assert.equal((grantSection.match(/^-/gm) ?? []).length, 5);
+  assert.doesNotMatch(grantSection, /planned|submitted|resubmission|not funded|HeliosChat|HNDS-I|ADvance-Net|VIIME/i);
+});
+
 test("avoids em dashes in public website and CV copy", async () => {
   const publicData = await readFile(new URL("data/content.json", root), "utf8");
   const publicCv = await readFile(new URL("content/cv/public.md", root), "utf8");
