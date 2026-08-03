@@ -349,3 +349,19 @@ test("renders publication figures on white surfaces", async () => {
   assert.match(styles, /\.recent-publications__figure\s*\{[^}]*background:\s*#fff/s);
   assert.match(styles, /\.publication-list__figure\s*\{[^}]*background:\s*#fff/s);
 });
+
+test("normalizes featured project figures and uses concise homepage summaries", async () => {
+  const content = await json("data/content.json");
+  const home = await readFile(new URL("app/page.tsx", root), "utf8");
+  const styles = await readFile(new URL("app/globals.css", root), "utf8");
+  const featured = content.projects.filter((project) => project.featured && project.era === "current").slice(0, 4);
+
+  assert.ok(featured.length >= 4);
+  assert.ok(featured.every((project) => project.summary?.length >= 100));
+  assert.ok(featured.every((project) => project.figure.src.startsWith("/figures/projects/normalized/")));
+  for (const project of featured) await access(new URL(`public${project.figure.src}`, root));
+  assert.match(home, /project\.summary \|\| project\.text/);
+  assert.match(styles, /\.home-project-list__figure img\s*\{[^}]*aspect-ratio:\s*3 \/ 2/s);
+  assert.match(styles, /\.project-card__figure img\s*\{[^}]*aspect-ratio:\s*3 \/ 2/s);
+  assert.match(styles, /\.home-project-list__topics,[\s\S]*?\.tag-list\s*\{[^}]*font-size:\s*1rem[^}]*font-weight:\s*500/s);
+});

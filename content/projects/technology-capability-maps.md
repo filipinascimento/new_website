@@ -6,9 +6,11 @@ year: 2025–present
 order: 3
 featured: true
 accent: blue
+summary: >-
+  Developing embedding models that represent design choices and technical attributes, reveal interpretable directions aligned with measurable progress, and help predict how technological capabilities evolve across materials and device platforms.
 topics: [Technology forecasting, Embeddings, Materials, Design spaces]
 figure:
-  src: /figures/projects/technology-capability-map.png
+  src: /figures/projects/normalized/technology-capability-map.png
   alt: "Embedding map representing technical designs and performance signals."
   fit: contain
 ---

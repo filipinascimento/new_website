@@ -13,6 +13,7 @@
     "data:compare": "node scripts/compare-publication-sources.mjs",
     "data:github": "node scripts/fetch-github.mjs",
     "data:figures": "node scripts/fetch-publication-figures.mjs",
+    "figures:projects": "node scripts/build-project-thumbnails.mjs",
     "data:refresh": "npm run data:scholar && npm run data:openalex && npm run data:compare && npm run data:github && npm run data:figures && npm run content:build",
     "predev": "npm run content:build && npm run vendor:helios",
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext dev",

@@ -6,6 +6,8 @@ year: 2021–present
 order: 4
 featured: true
 accent: violet
+summary: >-
+  A browser-first platform for interactive exploration of large networks and embedding spaces, combining GPU rendering, a WebAssembly graph store, real-time layouts, and analysis across browsers, notebooks, and desktop workflows.
 topics: [Network visualization, WebGPU, WebAssembly, Embeddings]
 links:
   - label: Launch Helios
@@ -15,7 +17,7 @@ links:
   - label: GitHub
     url: https://github.com/filipinascimento/helios-web
 figure:
-  src: /software-icons/helios-web-mark.svg
+  src: /figures/projects/normalized/helios-web.png
   alt: "Helios Web network visualization mark."
   sourceUrl: https://heliosweb.io/
 ---

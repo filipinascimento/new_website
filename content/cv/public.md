@@ -33,7 +33,7 @@ Research Assistant Professor at Northwestern University’s Kellogg School of Ma
 - **[Mapping how science is funded](https://arxiv.org/abs/2603.24147):** Linking funding acknowledgments to organizations and publications to study how different forms of support shape research directions.
 - **[Helios Web](https://heliosweb.io):** Browser-native visualization and exploration of large networks and embedding spaces. [GitHub](https://github.com/filipinascimento/helios-web)
 
-[Browse the full project portfolio](https://filipinascimento.github.io/new_website/projects/).
+[Browse the full project portfolio](https://filipinascimento.github.io/projects/).
 
 ## Grant writing and funded projects
 

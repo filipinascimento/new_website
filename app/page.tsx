@@ -158,7 +158,7 @@ export default function Home() {
                         />
                       </div>
                     ) : null}
-                    <div className="home-project-list__body" dangerouslySetInnerHTML={{ __html: project.html }} />
+                    <div className="home-project-list__body"><p>{project.summary || project.text}</p></div>
                   </div>
                   {project.topics && <div className="home-project-list__topics">{project.topics.map((topic) => <span key={topic}>{topic}</span>)}</div>}
                 </article>

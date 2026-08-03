@@ -20,6 +20,7 @@ export type ProjectRecord = ContentRecord & {
   status: string;
   year: string;
   featured?: boolean;
+  summary?: string;
   accent?: string;
   topics?: string[];
   links?: LinkItem[];

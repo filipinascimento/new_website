@@ -6,9 +6,11 @@ year: 2026–present
 order: 1
 featured: true
 accent: coral
+summary: >-
+  Combining science-of-science evidence with structured extraction, network analysis, embedding search, and domain knowledge to identify promising scientific and engineering opportunities across publications, materials, measurements, and device concepts.
 topics: [Agentic AI, Science of science, Materials, Devices]
 figure:
-  src: /figures/publications/from-node2vec-to-gpt-based-graphrag-scientific-impact-prediction-across-grap.png
+  src: /figures/projects/normalized/agentic-scientific-design.png
   alt: "Graph and language-model representations used in an AI research pipeline."
   fit: contain
 ---
