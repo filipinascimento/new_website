@@ -146,8 +146,9 @@ a {
 
 .site-nav a {
   color: var(--ink-soft);
-  font-size: 0.94rem;
+  font-size: 1rem;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .site-nav a:hover {
@@ -1646,9 +1647,12 @@ a {
   .site-nav {
     order: 3;
     grid-column: 1 / -1;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 9px 26px;
+    min-width: 0;
     padding: 10px 0 13px;
-    overflow-x: auto;
+    overflow: visible;
     background: linear-gradient(90deg, color-mix(in srgb, var(--wash-neutral) 52%, transparent), transparent);
   }
 
@@ -1757,6 +1761,13 @@ a {
 @media (max-width: 680px) {
   .shell {
     width: min(100% - 36px, 1240px);
+  }
+
+  .site-nav {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    width: 100%;
   }
 
   .home {

@@ -266,3 +266,11 @@ test("keeps the compact profile aligned without an oversized location panel", as
   assert.match(styles, /@media \(max-width: 680px\)[\s\S]*grid-template-areas:[\s\S]*"portrait identity"[\s\S]*"facts facts"[\s\S]*"links links"/);
   assert.doesNotMatch(styles, /\.profile-sidebar__facts > div:last-child\s*\{[^}]*display:\s*none/s);
 });
+
+test("keeps every navigation link visible at compact widths", async () => {
+  const styles = await readFile(new URL("app/globals.css", root), "utf8");
+  assert.match(styles, /\.site-nav a\s*\{[^}]*font-size:\s*1rem[^}]*white-space:\s*nowrap/s);
+  assert.match(styles, /@media \(max-width: 860px\)[\s\S]*?\.site-nav\s*\{[^}]*flex-wrap:\s*wrap[^}]*overflow:\s*visible/s);
+  assert.match(styles, /@media \(max-width: 680px\)[\s\S]*?\.site-nav\s*\{[^}]*grid-template-columns:\s*repeat\(3, max-content\)[^}]*justify-content:\s*space-between/s);
+  assert.doesNotMatch(styles, /\.site-nav\s*\{[^}]*overflow-x:\s*auto/s);
+});
