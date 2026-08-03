@@ -1,7 +1,7 @@
 ---
 title: Publications
 description: "An audited publication record populated from Filipi Nascimento Silva's linked OpenAlex author profiles."
-generatedAt: "2026-08-03T00:33:22.695Z"
+generatedAt: "2026-08-03T11:42:00.542Z"
 source: "OpenAlex"
 ---
 
