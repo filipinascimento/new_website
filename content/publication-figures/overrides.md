@@ -57,11 +57,16 @@ figures:
     localPath: content/publication-figures/assets/dynamic-gene-network.png
     alt: "Dynamic gene-network analysis workflow for Caco-2 cell response."
     sourceUrl: https://doi.org/10.3390/microorganisms7070195
+  - title: "A pattern recognition approach to transistor array parameter variance"
+    localPath: content/publication-figures/assets/transistor-array-variance.png
+    alt: "Principal component analysis of transistor-array measurements and their density distributions."
+    caption: "Principal component analysis of transistor-array measurements with marginal density estimates."
+    sourceUrl: https://doi.org/10.1016/j.physa.2018.02.011
   - title: "Biological network border detection"
-    src: /figures/publications/a-diffusion-based-approach-to-obtaining-the-borders-of-urban-areas.png
-    alt: "Network-border detection through accessibility and diffusion structure."
+    localPath: content/publication-figures/assets/biological-network-border-detection.png
+    alt: "Protein-interaction networks colored by node accessibility for two Mycoplasma species."
+    caption: "Protein-interaction networks colored by node accessibility for Mycoplasma species."
     sourceUrl: https://doi.org/10.1039/c7ib00161d
-    sourceLabel: Related author figure
   - title: "Modular transcriptional repertoire and MicroRNA target analyses characterize genomic dysregulation in the thymus of Down syndrome infants."
     remoteUrl: https://oncotarget-cdn.atl1.digitaloceanspaces.com/article/7120/figure/108096/7120-108096-1-PB.jpg
     alt: "Modular transcriptional and microRNA analysis of the thymus in Down syndrome."
@@ -75,34 +80,34 @@ figures:
     alt: "Gene coexpression networks for early- and late-onset temporal lobe epilepsy."
     sourceUrl: https://doi.org/10.1371/journal.pone.0128174
   - title: "Methods for gene coexpression network visualization and analysis"
-    localPath: content/publication-figures/assets/dynamic-gene-network.png
-    alt: "Gene coexpression network visualization and analysis."
+    localPath: content/publication-figures/assets/gene-coexpression-visualization.png
+    alt: "Gene coexpression networks for patient and control groups."
+    caption: "Gene coexpression networks for patient and control groups."
     sourceUrl: https://doi.org/10.1007/978-3-319-11985-4_4
-    sourceLabel: Related author figure
   - title: "Thymus gene coexpression networks: a comparative study in children with and without Down Syndrome"
-    remoteUrl: https://oncotarget-cdn.atl1.digitaloceanspaces.com/article/7120/figure/108096/7120-108096-1-PB.jpg
-    alt: "Thymus gene coexpression network analysis."
+    localPath: content/publication-figures/assets/thymus-gene-coexpression.png
+    alt: "Comparative thymus gene coexpression networks for Down syndrome and control groups."
+    caption: "Comparative thymus gene coexpression networks for Down syndrome and control groups."
     sourceUrl: https://doi.org/10.1007/978-3-319-11985-4_7
-    sourceLabel: Related author figure
   - title: "Complex network analysis of CA3 transcriptome reveals pathogenic and compensatory pathways in refractory temporal lobe epilepsy"
     remoteUrl: "https://journals.plos.org/plosone/article/figure/image?size=inline&id=10.1371/journal.pone.0079913.g001"
     alt: "CA3 transcriptome network associated with refractory temporal lobe epilepsy."
     sourceUrl: https://doi.org/10.1371/journal.pone.0079913
   - title: "Investigating relationships within and between category networks in Wikipedia"
-    src: /figures/publications/using-network-science-and-text-analytics-to-produce-surveys-in-a-scientific-.png
-    alt: "Category and knowledge networks used to map scientific relationships."
+    localPath: content/publication-figures/assets/wikipedia-category-networks.png
+    alt: "Wikipedia category networks for biology and mathematics."
+    caption: "Wikipedia category networks for biology and mathematics."
     sourceUrl: https://doi.org/10.1016/j.joi.2011.03.003
-    sourceLabel: Related author figure
   - title: "A pattern recognition approach to complex networks"
     src: /figures/publications/a-framework-for-evaluating-complex-networks-measurements.png
     alt: "Multivariate pattern-recognition view of complex-network measurements."
     sourceUrl: https://doi.org/10.1088/1742-5468/2010/11/p11015
     sourceLabel: Related author figure
   - title: "Identifying the borders of mathematical knowledge"
-    localPath: /Users/filsilva/Downloads/mapofscience/fig_Artboard 1.png
-    alt: "Map of scientific fields used to visualize the structure and boundaries of knowledge."
+    localPath: content/publication-figures/assets/identifying-borders-mathematical-knowledge.png
+    alt: "Theorem network colored by diversity entropy with central and frontier theorems identified."
+    caption: "Theorem network and diversity entropy used to identify central and frontier theorems."
     sourceUrl: https://doi.org/10.1088/1751-8113/43/32/325202
-    sourceLabel: Related author figure
 ---
 
 Curated publication figures are listed in the front matter. The automated pipeline fills the remaining entries from open preprints.

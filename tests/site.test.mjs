@@ -36,6 +36,28 @@ test("provides a figure for every audited publication and project", async () => 
   }
 });
 
+test("uses direct figures and correct links for the supplied publication PDFs", async () => {
+  const figures = await json("data/publication-figures.json");
+  const byTitle = new Map(figures.figures.map((figure) => [figure.title, figure]));
+  const expected = new Map([
+    ["A pattern recognition approach to transistor array parameter variance", "https://doi.org/10.1016/j.physa.2018.02.011"],
+    ["Biological network border detection", "https://doi.org/10.1039/c7ib00161d"],
+    ["Methods for gene coexpression network visualization and analysis", "https://doi.org/10.1007/978-3-319-11985-4_4"],
+    ["Thymus gene coexpression networks: a comparative study in children with and without Down Syndrome", "https://doi.org/10.1007/978-3-319-11985-4_7"],
+    ["Investigating relationships within and between category networks in Wikipedia", "https://doi.org/10.1016/j.joi.2011.03.003"],
+    ["Identifying the borders of mathematical knowledge", "https://doi.org/10.1088/1751-8113/43/32/325202"],
+  ]);
+
+  for (const [title, sourceUrl] of expected) {
+    const figure = byTitle.get(title);
+    assert.ok(figure, `${title} is missing its curated figure`);
+    assert.equal(figure.method, "curated");
+    assert.equal(figure.sourceLabel, "Paper figure");
+    assert.equal(figure.sourceUrl, sourceUrl);
+    assert.doesNotMatch(figure.src, /a-framework-for-evaluating|a-diffusion-based|dynamic-gene-network|using-network-science-and-text-analytics/);
+  }
+});
+
 test("applies the GitHub Pages base path to publication and project figures", async () => {
   const publicationsPage = await readFile(new URL("app/publications/page.tsx", root), "utf8");
   const publicationExplorer = await readFile(new URL("app/components/PublicationExplorer.tsx", root), "utf8");
