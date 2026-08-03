@@ -45,6 +45,24 @@ test("applies the GitHub Pages base path to publication and project figures", as
   assert.match(projectCard, /assetRoot.*figure\.src/);
 });
 
+test("keeps scientific figures intact and only links verified figure sources", async () => {
+  const figures = await json("data/publication-figures.json");
+  const projectCard = await readFile(new URL("app/components/ProjectCard.tsx", root), "utf8");
+  const publicationExplorer = await readFile(new URL("app/components/PublicationExplorer.tsx", root), "utf8");
+  const styles = await readFile(new URL("app/globals.css", root), "utf8");
+  const agenticProject = await readFile(new URL("content/projects/agentic-scientific-design.md", root), "utf8");
+  const technologyProject = await readFile(new URL("content/projects/technology-capability-maps.md", root), "utf8");
+
+  assert.ok(figures.figures.every((figure) => figure.fit === "contain"));
+  assert.match(styles, /\.project-card__figure img\s*\{[^}]*object-fit:\s*contain/s);
+  assert.match(styles, /\.publication-list__figure img\s*\{[^}]*object-fit:\s*contain/s);
+  assert.doesNotMatch(styles, /(?:project-card|publication-list)__figure:hover img/);
+  assert.match(projectCard, /project\.figure\.sourceUrl \?/);
+  assert.doesNotMatch(projectCard, /project\.links\?\.\[0\]\?\.url|\|\| "#"/);
+  assert.match(publicationExplorer, /objectPosition:\s*work\.figure\.position \|\| "center"/);
+  assert.doesNotMatch(`${agenticProject}\n${technologyProject}`, /sourceUrl:/);
+});
+
 test("merges split OpenAlex identities without duplicate titles", async () => {
   const config = await json("config/profile-sources.json");
   const profile = await json("data/openalex/profile.json");

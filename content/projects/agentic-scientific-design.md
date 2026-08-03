@@ -10,7 +10,7 @@ topics: [Agentic AI, Science of science, Materials, Devices]
 figure:
   src: /figures/publications/from-node2vec-to-gpt-based-graphrag-scientific-impact-prediction-across-grap.png
   alt: "Graph and language-model representations used in an AI research pipeline."
-  sourceUrl: https://arxiv.org/abs/2606.01333
+  fit: contain
 ---
 
 Investigating how science-of-science methods can work with structured extraction pipelines, network analysis, embedding-based search, and domain knowledge to identify promising scientific and engineering opportunities. The work connects evidence across publications, materials, measurements, and device concepts while keeping early-stage technical directions deliberately high level.

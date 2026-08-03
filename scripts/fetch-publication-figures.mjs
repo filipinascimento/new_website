@@ -116,6 +116,8 @@ async function saveOverride(work, override) {
     sourceUrl: override.sourceUrl || work.preprintUrls?.[0] || work.url,
     sourceLabel: override.sourceLabel || "Paper figure",
     method: "curated",
+    fit: override.fit || "contain",
+    position: override.position || "center",
   };
 }
 
@@ -140,6 +142,8 @@ async function fetchArxivFigure(work, identifier) {
       sourceUrl: `https://arxiv.org/abs/${identifier}`,
       sourceLabel: "Preprint figure",
       method: "ar5iv",
+      fit: "contain",
+      position: "center",
     };
   }
   throw new Error("No raster or SVG figure found in ar5iv HTML");
@@ -165,6 +169,8 @@ function generatedMarkdown(figures, missing, generatedAt) {
       `    sourceUrl: ${markdownValue(figure.sourceUrl)}`,
       `    sourceLabel: ${markdownValue(figure.sourceLabel)}`,
       `    method: ${markdownValue(figure.method)}`,
+      `    fit: ${markdownValue(figure.fit)}`,
+      `    position: ${markdownValue(figure.position)}`,
     );
   }
   lines.push("missing:");

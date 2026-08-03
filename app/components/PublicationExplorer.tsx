@@ -81,7 +81,15 @@ export function PublicationExplorer({ works, assetRoot = "" }: { works: Publicat
                 rel="noreferrer"
                 aria-label={`View figure source for ${work.title}`}
               >
-                <img src={`${assetRoot}${work.figure.src}`} alt={work.figure.alt} loading="lazy" />
+                <img
+                  src={`${assetRoot}${work.figure.src}`}
+                  alt={work.figure.alt}
+                  loading="lazy"
+                  style={{
+                    objectFit: work.figure.fit || "contain",
+                    objectPosition: work.figure.position || "center",
+                  }}
+                />
               </a>
             )}
             <div className="publication-list__content">

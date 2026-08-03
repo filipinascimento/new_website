@@ -3,6 +3,17 @@ import type { ProjectRecord } from "../lib/types";
 
 export function ProjectCard({ project }: { project: ProjectRecord }) {
   const assetRoot = process.env.GITHUB_PAGES === "true" ? "/new_website" : "";
+  const figureImage = project.figure ? (
+    <img
+      src={`${assetRoot}${project.figure.src}`}
+      alt={project.figure.alt}
+      loading="lazy"
+      style={{
+        objectFit: project.figure.fit || "contain",
+        objectPosition: project.figure.position || "center",
+      }}
+    />
+  ) : null;
   return (
     <article className="project-card">
       <div className="project-card__topline">
@@ -14,17 +25,19 @@ export function ProjectCard({ project }: { project: ProjectRecord }) {
           <h3>{project.title}</h3>
           <div className="project-card__body" dangerouslySetInnerHTML={{ __html: project.html }} />
         </div>
-        {project.figure && (
+        {project.figure && project.figure.sourceUrl ? (
           <a
             className="project-card__figure"
-            href={project.figure.sourceUrl || project.links?.[0]?.url || "#"}
+            href={project.figure.sourceUrl}
             target="_blank"
             rel="noreferrer"
             aria-label={`View figure source for ${project.title}`}
           >
-            <img src={`${assetRoot}${project.figure.src}`} alt={project.figure.alt} loading="lazy" />
+            {figureImage}
           </a>
-        )}
+        ) : project.figure ? (
+          <div className="project-card__figure">{figureImage}</div>
+        ) : null}
       </div>
       {project.topics && (
         <div className="tag-list" aria-label="Topics">

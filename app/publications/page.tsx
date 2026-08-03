@@ -4,7 +4,7 @@ import openAlexWorks from "@/data/openalex/works.json";
 import publicationFigures from "@/data/publication-figures.json";
 import scholarProfile from "@/data/scholar/profile.json";
 import { PublicationExplorer } from "../components/PublicationExplorer";
-import type { Publication } from "../lib/types";
+import type { Publication, PublicationFigure } from "../lib/types";
 
 export const metadata: Metadata = {
   title: "Publications",
@@ -19,7 +19,7 @@ export default function PublicationsPage() {
   );
   const works = (openAlexWorks.works as Publication[]).map((work) => ({
     ...work,
-    figure: figureByTitle.get(work.normalizedTitle),
+    figure: figureByTitle.get(work.normalizedTitle) as PublicationFigure | undefined,
   }));
   return (
     <main id="main-content">

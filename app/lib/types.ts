@@ -80,6 +80,8 @@ export type PublicationFigure = {
   sourceUrl?: string | null;
   sourceLabel?: string | null;
   method?: string;
+  fit?: "contain" | "cover";
+  position?: string;
 };
 
 export type GitHubRepo = {
