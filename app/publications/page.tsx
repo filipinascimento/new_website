@@ -31,8 +31,8 @@ export default function PublicationsPage() {
         </div>
         <div className="metric-card-grid">
           <div><strong>{scholarProfile.publicationsDisplay}</strong><span>Publications</span></div>
-          <div><strong>{scholarProfile.citationsDisplay}</strong><span>Google Scholar citations</span></div>
-          <div><strong>{scholarProfile.hIndex}</strong><span>Google Scholar h-index</span></div>
+          <div><strong>{scholarProfile.citationsDisplay}</strong><span>Citations</span></div>
+          <div><strong>{scholarProfile.hIndex}</strong><span>h-index</span></div>
         </div>
       </header>
       <section className="section shell section--first publication-section">

@@ -194,6 +194,7 @@ test("keeps public citation metrics approximate and pins recent publications in 
   assert.match(profileSource, /recentPublications:/);
   assert.match(publicationsPage, /scholarProfile\.citationsDisplay/);
   assert.match(cvPage, /scholarProfile\.citationsDisplay/);
+  assert.doesNotMatch(publicationsPage, /Google Scholar citations|Google Scholar h-index/);
   assert.match(content.cv[0].markdown, /2,600\+ citations/);
   assert.doesNotMatch(content.cv[0].markdown, new RegExp(`${scholar.citations.toLocaleString("en-US")} citations`));
 });
