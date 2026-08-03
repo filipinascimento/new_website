@@ -21,6 +21,21 @@ test("keeps the editorial content in Markdown collections", async () => {
   await access(new URL("content/posts/README.md", root));
 });
 
+test("provides a figure for every audited publication and project", async () => {
+  const figures = await json("data/publication-figures.json");
+  const works = await json("data/openalex/works.json");
+  const content = await json("data/content.json");
+  assert.equal(figures.count, works.works.length);
+  assert.equal(figures.missingCount, 0);
+  for (const figure of figures.figures) {
+    await access(new URL(`public${figure.src}`, root));
+  }
+  for (const project of content.projects) {
+    assert.ok(project.figure?.src, `${project.slug} is missing a figure`);
+    await access(new URL(`public${project.figure.src}`, root));
+  }
+});
+
 test("merges split OpenAlex identities without duplicate titles", async () => {
   const config = await json("config/profile-sources.json");
   const profile = await json("data/openalex/profile.json");
@@ -53,6 +68,10 @@ test("merges split OpenAlex identities without duplicate titles", async () => {
   assert.doesNotMatch(toneOfAwareness.authors.map((author) => author.name).join(", "), /\bF E Silva\b/);
   assert.ok(publishedWorks.some((work) => work.preprintUrls.length > 0));
   assert.ok(works.works.some((work) => work.doi === "https://doi.org/10.1103/4124-dyj8"));
+  assert.ok(
+    works.works.find((work) => work.doi === "https://doi.org/10.1103/4124-dyj8")
+      .preprintUrls.includes("https://arxiv.org/abs/2510.23964"),
+  );
   assert.ok(works.works.some((work) => work.doi === "https://doi.org/10.1016/j.ins.2026.123702"));
   assert.ok(
     works.works.find((work) => work.doi === "https://doi.org/10.1016/j.ins.2026.123702")

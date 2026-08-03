@@ -6,7 +6,7 @@ import { marked } from "marked";
 
 const root = process.cwd();
 const contentRoot = path.join(root, "content");
-const collections = ["site", "projects", "software", "teaching", "cv", "posts"];
+const collections = ["site", "projects", "software", "teaching", "cv", "posts", "publication-figures"];
 const scholarProfile = JSON.parse(
   await readFile(path.join(root, "data/scholar/profile.json"), "utf8"),
 );

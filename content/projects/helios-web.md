@@ -14,6 +14,10 @@ links:
     url: https://heliosweb.io/docs/
   - label: GitHub
     url: https://github.com/filipinascimento/helios-web
+figure:
+  src: /software-icons/helios-web-mark.svg
+  alt: "Helios Web network visualization mark."
+  sourceUrl: https://heliosweb.io/
 ---
 
 A browser-first platform for interactive graph visualization and embedding exploration. The current release combines a WebGPU renderer with WebGL2 fallback and a WebAssembly graph store, supporting real-time layouts and analysis at million-node scale across browsers, notebooks, desktop workflows, and agentic tools.

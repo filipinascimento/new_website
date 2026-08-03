@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-02T22:05:48.639Z",
+  "fetchedAt": "2026-08-03T00:33:22.695Z",
   "works": [
     {
       "id": "https://openalex.org/W7164499166",
@@ -277,8 +277,7 @@
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
-        "https://arxiv.org/abs/2604.10566",
-        "null"
+        "https://arxiv.org/abs/2604.10566"
       ],
       "authors": [
         {
@@ -354,8 +353,7 @@
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
-        "https://arxiv.org/abs/2603.24147",
-        "null"
+        "https://arxiv.org/abs/2603.24147"
       ],
       "authors": [
         {
@@ -442,7 +440,9 @@
       "citedByCount": 1,
       "openAccess": false,
       "openAccessStatus": "closed",
-      "preprintUrls": [],
+      "preprintUrls": [
+        "https://arxiv.org/abs/2510.23964"
+      ],
       "authors": [
         {
           "name": "Filipi N. Silva",
@@ -1922,8 +1922,7 @@
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
-        "https://arxiv.org/abs/2005.04512",
-        "null"
+        "https://arxiv.org/abs/2005.04512"
       ],
       "authors": [
         {
@@ -2423,8 +2422,7 @@
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
-        "https://arxiv.org/abs/1704.03091",
-        "null"
+        "https://arxiv.org/abs/1704.03091"
       ],
       "authors": [
         {
@@ -2795,8 +2793,7 @@
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
-        "https://arxiv.org/abs/1606.09636",
-        "null"
+        "https://arxiv.org/abs/1606.09636"
       ],
       "authors": [
         {
@@ -2848,8 +2845,7 @@
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
-        "https://arxiv.org/abs/1611.06356",
-        "null"
+        "https://arxiv.org/abs/1611.06356"
       ],
       "authors": [
         {
@@ -2984,8 +2980,7 @@
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
-        "https://arxiv.org/abs/1510.06326",
-        "null"
+        "https://arxiv.org/abs/1510.06326"
       ],
       "authors": [
         {

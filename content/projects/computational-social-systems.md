@@ -12,6 +12,10 @@ links:
     url: https://arxiv.org/abs/2504.12902
   - label: OSoMe tools
     url: https://osome.iu.edu/tools/
+figure:
+  src: /figures/publications/the-rise-of-bluesky.png
+  alt: "Network structure and growth patterns on Bluesky."
+  sourceUrl: https://arxiv.org/abs/2504.12902
 ---
 
 Studying coordinated behavior, information integrity, and public discourse across emerging social platforms. Current work combines network structure, text embeddings, topic models, and human validation to understand how collective behavior forms and changes online.
