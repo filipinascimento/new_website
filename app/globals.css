@@ -573,6 +573,33 @@ a {
   line-height: 1.18;
 }
 
+.home-project-list__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 132px;
+  gap: 20px;
+  align-items: start;
+}
+
+.home-project-list__figure {
+  display: block;
+  min-width: 0;
+  margin-top: 12px;
+  overflow: hidden;
+  border-radius: 9px 2px 9px 2px;
+  background: color-mix(in srgb, var(--paper) 68%, transparent);
+}
+
+.home-project-list article:nth-child(even) .home-project-list__figure {
+  border-radius: 2px 9px 2px 9px;
+}
+
+.home-project-list__figure img {
+  display: block;
+  width: 100%;
+  height: 122px;
+  object-fit: contain;
+}
+
 .home-project-list__body {
   color: var(--ink-soft);
   font-size: 1rem;
@@ -610,12 +637,36 @@ a {
 
 .recent-publications li {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 38px;
+  grid-template-columns: minmax(0, 1fr) 148px 38px;
   align-items: start;
   gap: 22px;
   padding: 20px 22px;
   border-radius: 12px 2px 12px 2px;
   background: linear-gradient(120deg, color-mix(in srgb, var(--paper-raised) 54%, transparent), color-mix(in srgb, var(--paper) 34%, transparent));
+}
+
+.recent-publications__content {
+  min-width: 0;
+}
+
+.recent-publications__figure {
+  display: block;
+  align-self: start;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 8px 2px 8px 2px;
+  background: color-mix(in srgb, var(--paper) 72%, transparent);
+}
+
+.recent-publications li:nth-child(even) .recent-publications__figure {
+  border-radius: 2px 8px 2px 8px;
+}
+
+.recent-publications__figure img {
+  display: block;
+  width: 100%;
+  height: 94px;
+  object-fit: contain;
 }
 
 .recent-publications li:nth-child(even) {
@@ -1835,6 +1886,23 @@ a {
   .home-project-list article,
   .home-project-list article:nth-child(even) {
     padding: 22px 20px 25px;
+  }
+
+  .home-project-list__layout {
+    grid-template-columns: minmax(0, 1fr) 130px;
+  }
+
+  .recent-publications--home li {
+    grid-template-columns: minmax(0, 1fr) 112px;
+    gap: 16px;
+  }
+
+  .recent-publications--home .circle-link {
+    display: none;
+  }
+
+  .recent-publications__figure img {
+    height: 80px;
   }
 
   .home-software-list article,

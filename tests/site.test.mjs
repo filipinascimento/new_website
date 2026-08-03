@@ -61,12 +61,27 @@ test("uses direct figures and correct links for the supplied publication PDFs", 
 });
 
 test("applies the GitHub Pages base path to publication and project figures", async () => {
+  const homePage = await readFile(new URL("app/page.tsx", root), "utf8");
   const publicationsPage = await readFile(new URL("app/publications/page.tsx", root), "utf8");
   const publicationExplorer = await readFile(new URL("app/components/PublicationExplorer.tsx", root), "utf8");
   const projectCard = await readFile(new URL("app/components/ProjectCard.tsx", root), "utf8");
   assert.match(publicationsPage, /GITHUB_PAGES/);
   assert.match(publicationExplorer, /assetRoot.*figure\.src/);
   assert.match(projectCard, /assetRoot.*figure\.src/);
+  assert.match(homePage, /basePath.*project\.figure\.src/);
+  assert.match(homePage, /basePath.*work\.figure\.src/);
+});
+
+test("shows the corresponding project and publication figures on the homepage", async () => {
+  const homePage = await readFile(new URL("app/page.tsx", root), "utf8");
+  const styles = await readFile(new URL("app/globals.css", root), "utf8");
+
+  assert.match(homePage, /publicationFigures\.figures/);
+  assert.match(homePage, /figureByTitle\.get\(work\.normalizedTitle\)/);
+  assert.match(homePage, /home-project-list__figure/);
+  assert.match(homePage, /recent-publications__figure/);
+  assert.match(styles, /\.home-project-list__figure img\s*\{[^}]*object-fit:\s*contain/s);
+  assert.match(styles, /\.recent-publications__figure img\s*\{[^}]*object-fit:\s*contain/s);
 });
 
 test("keeps scientific figures intact and only links verified figure sources", async () => {

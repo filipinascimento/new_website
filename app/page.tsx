@@ -4,9 +4,10 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import contentJson from "@/data/content.json";
 import openAlexJson from "@/data/openalex/works.json";
+import publicationFigures from "@/data/publication-figures.json";
 import { HeliosPreview } from "./components/HeliosPreview";
 import { SoftwareIcon } from "./components/SoftwareIcon";
-import type { ContentRecord, ProjectRecord, Publication, SoftwareRecord, TeachingRecord } from "./lib/types";
+import type { ContentRecord, ProjectRecord, Publication, PublicationFigure, SoftwareRecord, TeachingRecord } from "./lib/types";
 
 export const metadata: Metadata = {
   title: { absolute: "Filipi Nascimento Silva · Research and software" },
@@ -44,7 +45,13 @@ export default function Home() {
     .slice(0, 4);
   const software = (contentJson.software as SoftwareRecord[]).filter((item) => item.featured).slice(0, 3);
   const teaching = contentJson.teaching as TeachingRecord[];
-  const allWorks = openAlexJson.works as Publication[];
+  const figureByTitle = new Map(
+    publicationFigures.figures.map((figure) => [figure.normalizedTitle, figure]),
+  );
+  const allWorks: Publication[] = (openAlexJson.works as Publication[]).map((work) => ({
+    ...work,
+    figure: figureByTitle.get(work.normalizedTitle) as PublicationFigure | undefined,
+  }));
   const workByTitle = new Map(allWorks.map((work) => [work.title, work]));
   const pinnedWorks = profile.recentPublications
     .map((title) => workByTitle.get(title))
@@ -118,9 +125,44 @@ export default function Home() {
               {projects.map((project) => (
                 <article key={project.slug}>
                   <div className="home-project-list__meta"><span>{project.status}</span><span>{project.year}</span></div>
-                  <h3>{project.title}</h3>
-                  <div className="home-project-list__body" dangerouslySetInnerHTML={{ __html: project.html }} />
-                  {project.topics && <div className="home-project-list__topics">{project.topics.map((topic) => <span key={topic}>{topic}</span>)}</div>}
+                  <div className="home-project-list__layout">
+                    <div>
+                      <h3>{project.title}</h3>
+                      <div className="home-project-list__body" dangerouslySetInnerHTML={{ __html: project.html }} />
+                      {project.topics && <div className="home-project-list__topics">{project.topics.map((topic) => <span key={topic}>{topic}</span>)}</div>}
+                    </div>
+                    {project.figure && project.figure.sourceUrl ? (
+                      <a
+                        className="home-project-list__figure"
+                        href={project.figure.sourceUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`View figure source for ${project.title}`}
+                      >
+                        <img
+                          src={`${basePath}${project.figure.src}`}
+                          alt={project.figure.alt}
+                          loading="lazy"
+                          style={{
+                            objectFit: project.figure.fit || "contain",
+                            objectPosition: project.figure.position || "center",
+                          }}
+                        />
+                      </a>
+                    ) : project.figure ? (
+                      <div className="home-project-list__figure">
+                        <img
+                          src={`${basePath}${project.figure.src}`}
+                          alt={project.figure.alt}
+                          loading="lazy"
+                          style={{
+                            objectFit: project.figure.fit || "contain",
+                            objectPosition: project.figure.position || "center",
+                          }}
+                        />
+                      </div>
+                    ) : null}
+                  </div>
                 </article>
               ))}
             </div>
@@ -134,7 +176,7 @@ export default function Home() {
             <ul className="recent-publications recent-publications--home">
               {works.map((work) => (
                 <li key={work.id}>
-                  <div>
+                  <div className="recent-publications__content">
                     <h3><a href={work.url} target="_blank" rel="noreferrer">{work.title}</a></h3>
                     <p>{authors(work.authors)}</p>
                     <div className="recent-publications__meta">
@@ -142,6 +184,25 @@ export default function Home() {
                       {work.openAccess && <span className="open-access">Open access</span>}
                     </div>
                   </div>
+                  {work.figure && (
+                    <a
+                      className="recent-publications__figure"
+                      href={work.figure.sourceUrl || work.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`View figure source for ${work.title}`}
+                    >
+                      <img
+                        src={`${basePath}${work.figure.src}`}
+                        alt={work.figure.alt}
+                        loading="lazy"
+                        style={{
+                          objectFit: work.figure.fit || "contain",
+                          objectPosition: work.figure.position || "center",
+                        }}
+                      />
+                    </a>
+                  )}
                   <a className="circle-link" href={work.url} target="_blank" rel="noreferrer" aria-label={`Open ${work.title}`}><ArrowUpRight size={16} /></a>
                 </li>
               ))}
