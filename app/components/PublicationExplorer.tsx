@@ -17,7 +17,7 @@ function authorLine(authors: Publication["authors"]) {
   return names.length <= 8 ? names.join(", ") : `${names.slice(0, 7).join(", ")}, et al.`;
 }
 
-export function PublicationExplorer({ works }: { works: Publication[] }) {
+export function PublicationExplorer({ works, assetRoot = "" }: { works: Publication[]; assetRoot?: string }) {
   const [query, setQuery] = useState("");
   const [type, setType] = useState("all");
   const [visible, setVisible] = useState(24);
@@ -81,7 +81,7 @@ export function PublicationExplorer({ works }: { works: Publication[] }) {
                 rel="noreferrer"
                 aria-label={`View figure source for ${work.title}`}
               >
-                <img src={work.figure.src} alt={work.figure.alt} loading="lazy" />
+                <img src={`${assetRoot}${work.figure.src}`} alt={work.figure.alt} loading="lazy" />
               </a>
             )}
             <div className="publication-list__content">

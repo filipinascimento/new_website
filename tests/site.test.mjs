@@ -36,6 +36,15 @@ test("provides a figure for every audited publication and project", async () => 
   }
 });
 
+test("applies the GitHub Pages base path to publication and project figures", async () => {
+  const publicationsPage = await readFile(new URL("app/publications/page.tsx", root), "utf8");
+  const publicationExplorer = await readFile(new URL("app/components/PublicationExplorer.tsx", root), "utf8");
+  const projectCard = await readFile(new URL("app/components/ProjectCard.tsx", root), "utf8");
+  assert.match(publicationsPage, /GITHUB_PAGES/);
+  assert.match(publicationExplorer, /assetRoot.*figure\.src/);
+  assert.match(projectCard, /assetRoot.*figure\.src/);
+});
+
 test("merges split OpenAlex identities without duplicate titles", async () => {
   const config = await json("config/profile-sources.json");
   const profile = await json("data/openalex/profile.json");
