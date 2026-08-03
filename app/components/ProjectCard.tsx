@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import type { ProjectRecord } from "../lib/types";
 
 export function ProjectCard({ project }: { project: ProjectRecord }) {
+  const assetRoot = process.env.GITHUB_PAGES === "true" ? "/new_website" : "";
   return (
     <article className="project-card">
       <div className="project-card__topline">
@@ -21,7 +22,7 @@ export function ProjectCard({ project }: { project: ProjectRecord }) {
             rel="noreferrer"
             aria-label={`View figure source for ${project.title}`}
           >
-            <img src={project.figure.src} alt={project.figure.alt} loading="lazy" />
+            <img src={`${assetRoot}${project.figure.src}`} alt={project.figure.alt} loading="lazy" />
           </a>
         )}
       </div>

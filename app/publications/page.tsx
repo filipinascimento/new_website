@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 
 export default function PublicationsPage() {
   const date = new Intl.DateTimeFormat("en-US", { dateStyle: "long" }).format(new Date(openAlexProfile.fetchedAt));
+  const assetRoot = process.env.GITHUB_PAGES === "true" ? "/new_website" : "";
   const figureByTitle = new Map(
     publicationFigures.figures.map((figure) => [figure.normalizedTitle, figure]),
   );
@@ -39,7 +40,7 @@ export default function PublicationsPage() {
           <h2>Publication list</h2>
           <span>Last updated {date}</span>
         </div>
-        <PublicationExplorer works={works} />
+        <PublicationExplorer works={works} assetRoot={assetRoot} />
       </section>
     </main>
   );
