@@ -20,11 +20,8 @@ export function ProjectCard({ project }: { project: ProjectRecord }) {
         <span>{project.status}</span>
         <span>{project.year}</span>
       </div>
-      <div className="project-card__layout">
-        <div>
-          <h3>{project.title}</h3>
-          <div className="project-card__body" dangerouslySetInnerHTML={{ __html: project.html }} />
-        </div>
+      <div className="project-card__content">
+        <h3>{project.title}</h3>
         {project.figure && project.figure.sourceUrl ? (
           <a
             className="project-card__figure"
@@ -38,6 +35,7 @@ export function ProjectCard({ project }: { project: ProjectRecord }) {
         ) : project.figure ? (
           <div className="project-card__figure">{figureImage}</div>
         ) : null}
+        <div className="project-card__body" dangerouslySetInnerHTML={{ __html: project.html }} />
       </div>
       {project.topics && (
         <div className="tag-list" aria-label="Topics">

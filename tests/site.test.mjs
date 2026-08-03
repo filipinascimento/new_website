@@ -327,3 +327,19 @@ test("keeps every navigation link visible at compact widths", async () => {
   assert.match(styles, /@media \(max-width: 680px\)[\s\S]*?\.site-nav\s*\{[^}]*grid-template-columns:\s*repeat\(3, max-content\)[^}]*justify-content:\s*space-between/s);
   assert.doesNotMatch(styles, /\.site-nav\s*\{[^}]*overflow-x:\s*auto/s);
 });
+
+test("lets project descriptions wrap beside figures and continue at full width", async () => {
+  const home = await readFile(new URL("app/page.tsx", root), "utf8");
+  const projectCard = await readFile(new URL("app/components/ProjectCard.tsx", root), "utf8");
+  const styles = await readFile(new URL("app/globals.css", root), "utf8");
+
+  assert.match(home, /home-project-list__content/);
+  assert.doesNotMatch(home, /home-project-list__layout/);
+  assert.match(projectCard, /project-card__content/);
+  assert.doesNotMatch(projectCard, /project-card__layout/);
+  assert.match(styles, /\.home-project-list__content\s*\{[^}]*display:\s*flow-root/s);
+  assert.match(styles, /\.home-project-list__figure\s*\{[^}]*float:\s*right/s);
+  assert.match(styles, /\.project-card__content\s*\{[^}]*display:\s*flow-root/s);
+  assert.match(styles, /\.project-card__figure\s*\{[^}]*float:\s*right/s);
+  assert.match(styles, /@media \(max-width: 680px\)[\s\S]*?\.home-project-list__figure,[\s\S]*?\.project-card__figure\s*\{[^}]*float:\s*none[^}]*width:\s*100%/s);
+});

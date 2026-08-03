@@ -125,12 +125,8 @@ export default function Home() {
               {projects.map((project) => (
                 <article key={project.slug}>
                   <div className="home-project-list__meta"><span>{project.status}</span><span>{project.year}</span></div>
-                  <div className="home-project-list__layout">
-                    <div>
-                      <h3>{project.title}</h3>
-                      <div className="home-project-list__body" dangerouslySetInnerHTML={{ __html: project.html }} />
-                      {project.topics && <div className="home-project-list__topics">{project.topics.map((topic) => <span key={topic}>{topic}</span>)}</div>}
-                    </div>
+                  <div className="home-project-list__content">
+                    <h3>{project.title}</h3>
                     {project.figure && project.figure.sourceUrl ? (
                       <a
                         className="home-project-list__figure"
@@ -162,7 +158,9 @@ export default function Home() {
                         />
                       </div>
                     ) : null}
+                    <div className="home-project-list__body" dangerouslySetInnerHTML={{ __html: project.html }} />
                   </div>
+                  {project.topics && <div className="home-project-list__topics">{project.topics.map((topic) => <span key={topic}>{topic}</span>)}</div>}
                 </article>
               ))}
             </div>
