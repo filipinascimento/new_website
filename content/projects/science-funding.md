@@ -10,6 +10,10 @@ topics: [Science funding, Data infrastructure, Entity resolution]
 links:
   - label: Public preprint
     url: https://arxiv.org/abs/2603.24147
+figure:
+  src: /figures/publications/linking-global-science-funding-to-research-publications.png
+  alt: "Pipeline linking global science funding to research publications."
+  sourceUrl: https://arxiv.org/abs/2603.24147
 ---
 
 Building large-scale, validated links between funding acknowledgments, organizations, and publications. The broader research program examines how public, philanthropic, and corporate support shapes scientific directions, researcher trajectories, and the geography of knowledge production.

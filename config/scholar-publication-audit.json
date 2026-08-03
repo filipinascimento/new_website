@@ -102,6 +102,11 @@
     "Using Full-Text Content to Characterize and Identify Best Seller Books": "Using full-text content to characterize and identify best seller books: A study of early 20th-century literature",
     "Concentric Characterization and Classification of Complex Network Nodes: Theory and Application to Institutional Collaboration": "Concentric characterization and classification of complex network nodes: Application to an institutional collaboration network"
   },
+  "manualPreprintUrls": {
+    "Scale invariance and statistical significance in complex weighted networks": [
+      "https://arxiv.org/abs/2510.23964"
+    ]
+  },
   "profileEntryAudit": {
     "rawRowsAtAudit": 118,
     "publishedRows": 63,

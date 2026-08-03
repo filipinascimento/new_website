@@ -125,7 +125,7 @@ function normalizeTitle(title = "") {
 
 function normalizePreprintUrl(value = "") {
   const raw = String(value).trim();
-  if (!raw) return null;
+  if (!raw || raw.toLowerCase() === "null") return null;
   const arxivUrl = raw.match(/arxiv\.org\/(?:abs|pdf)\/([^?#]+)/i);
   const arxivDoi = raw.match(/10\.48550\/arxiv\.([^?#]+)/i);
   const identifier = (arxivUrl?.[1] || arxivDoi?.[1] || "")
@@ -276,7 +276,10 @@ function curatePublishedWorks(works, audit) {
           versions.flatMap((version) => [
             ...(version.preprintUrls || []),
             ...(version.type === "preprint" ? [version.url] : []),
-          ]).map(normalizePreprintUrl).filter(Boolean),
+          ])
+            .concat(audit.manualPreprintUrls?.[canonicalTitle] || [])
+            .map(normalizePreprintUrl)
+            .filter(Boolean),
         ),
       ];
       return {

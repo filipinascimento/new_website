@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import openAlexProfile from "@/data/openalex/profile.json";
 import openAlexWorks from "@/data/openalex/works.json";
+import publicationFigures from "@/data/publication-figures.json";
 import scholarProfile from "@/data/scholar/profile.json";
 import { PublicationExplorer } from "../components/PublicationExplorer";
 import type { Publication } from "../lib/types";
@@ -12,6 +13,13 @@ export const metadata: Metadata = {
 
 export default function PublicationsPage() {
   const date = new Intl.DateTimeFormat("en-US", { dateStyle: "long" }).format(new Date(openAlexProfile.fetchedAt));
+  const figureByTitle = new Map(
+    publicationFigures.figures.map((figure) => [figure.normalizedTitle, figure]),
+  );
+  const works = (openAlexWorks.works as Publication[]).map((work) => ({
+    ...work,
+    figure: figureByTitle.get(work.normalizedTitle),
+  }));
   return (
     <main id="main-content">
       <header className="page-hero shell page-hero--publications">
@@ -31,7 +39,7 @@ export default function PublicationsPage() {
           <h2>Publication list</h2>
           <span>Last updated {date}</span>
         </div>
-        <PublicationExplorer works={openAlexWorks.works as Publication[]} />
+        <PublicationExplorer works={works} />
       </section>
     </main>
   );

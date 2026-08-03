@@ -73,6 +73,17 @@ export function PublicationExplorer({ works }: { works: Publication[] }) {
         {shown.map((work) => (
           <li key={work.id}>
             <div className="publication-list__year">{work.year || "Not dated"}</div>
+            {work.figure && (
+              <a
+                className="publication-list__figure"
+                href={work.figure.sourceUrl || work.url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View figure source for ${work.title}`}
+              >
+                <img src={work.figure.src} alt={work.figure.alt} loading="lazy" />
+              </a>
+            )}
             <div className="publication-list__content">
               <h3><a href={work.url} target="_blank" rel="noreferrer">{work.title}</a></h3>
               <p className="publication-list__authors">{authorLine(work.authors)}</p>

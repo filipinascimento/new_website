@@ -23,6 +23,7 @@ export type ProjectRecord = ContentRecord & {
   accent?: string;
   topics?: string[];
   links?: LinkItem[];
+  figure?: PublicationFigure;
 };
 
 export type SoftwareRecord = ContentRecord & {
@@ -69,6 +70,16 @@ export type Publication = {
   openAlexIds: string[];
   preprintUrls: string[];
   alternateUrls: string[];
+  figure?: PublicationFigure;
+};
+
+export type PublicationFigure = {
+  src: string;
+  alt: string;
+  caption?: string | null;
+  sourceUrl?: string | null;
+  sourceLabel?: string | null;
+  method?: string;
 };
 
 export type GitHubRepo = {

@@ -9,6 +9,10 @@ topics: [Climate networks, Granger causality, Complex systems]
 links:
   - label: Geophysical Research Letters
     url: https://doi.org/10.1029/2021GL094707
+figure:
+  src: /figures/publications/detecting-climate-teleconnections-with-granger-causality.png
+  alt: "Climate network used to detect statistically significant teleconnections."
+  sourceUrl: https://doi.org/10.1029/2021GL094707
 ---
 
 Developed a network-based method for detecting statistically significant long-range relationships between temperature and precipitation anomalies. The project used Granger causality to reveal climate teleconnections while explicitly controlling for indirect effects.

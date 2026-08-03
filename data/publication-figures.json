@@ -1,0 +1,757 @@
+{
+  "generatedAt": "2026-08-03T00:32:29.820Z",
+  "count": 75,
+  "missingCount": 0,
+  "figures": [
+    {
+      "normalizedTitle": "the tone of awareness topic sentiment and toxicity maps during mental health month on tiktok",
+      "title": "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok",
+      "src": "/figures/publications/the-tone-of-awareness-topic-sentiment-and-toxicity-maps-during-mental-health.png",
+      "alt": "Figure from The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok.",
+      "caption": "Figure 2: Schematic representation of our dataset collection and analysis pipeline.",
+      "sourceUrl": "https://arxiv.org/abs/2606.13581",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "recovering link weight structure in complex networks with weight aware walks",
+      "title": "Recovering link-weight structure in complex networks with weight-aware walks",
+      "src": "/figures/publications/recovering-link-weight-structure-in-complex-networks-with-weight-aware-walks.png",
+      "alt": "Figure from Recovering link-weight structure in complex networks with weight-aware walks.",
+      "caption": "Figure 1: Example of the methodology employed to analyze embeddings generated via biased random walks in weighted networks. The process begins with graph selection, followed by the execution of random walks to yield sequences of nodes. These sequences subsequently serve as input for generating node embeddings. The resulting embeddings are then subjected to analysis through the proposed experiments, for instance, by leveraging them to measure node similarity.",
+      "sourceUrl": "https://arxiv.org/abs/2508.07489",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "heuristic and exact modularity optimization with size constrained communities",
+      "title": "Heuristic and exact modularity optimization with size-constrained communities",
+      "src": "/figures/publications/heuristic-and-exact-modularity-optimization-with-size-constrained-communitie.png",
+      "alt": "Figure from Heuristic and exact modularity optimization with size-constrained communities.",
+      "caption": "Figure 1: Tests of UL, CL, and CIP on the planted partition model. Panel (a) shows the standard modularity values of the partitions produced by the three methods; UL often attains higher standard modularity because it is not subject to community-size constraints. Panel (b) shows that the planted partitions are retrieved at considerably higher rates by CL and CIP compared to UL for small and medium values of . Panel (c) shows that UL’s comparative lower retrieval rate is due to community sizes which are not consistent with the range of community sizes in the planted partition model. CL and CIP consistently produce communities that are within the expected range of sizes. The vertical dotted line marks the detectability limit for this configuration.",
+      "sourceUrl": "https://arxiv.org/abs/2605.25248",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "from node2vec to gpt based graphrag scientific impact prediction across graph and language models",
+      "title": "From Node2Vec to GPT-based GraphRAG: scientific impact prediction across graph and language models",
+      "src": "/figures/publications/from-node2vec-to-gpt-based-graphrag-scientific-impact-prediction-across-grap.png",
+      "alt": "Figure from From Node2Vec to GPT-based GraphRAG: scientific impact prediction across graph and language models.",
+      "caption": "Figure 1: Overview of the methodology employed to predict scientific impact. The process begins with data collection from scientific papers and citations, followed by the construction of two graphs: a citation graph and a textual similarity graph. Node embeddings are generated via Node2Vec alone or concatenated with OpenAI’s textual based abstract embeddings. These are then used as inputs to neural classifiers tasked with predicting whether a paper will rank among the top in citations after years of publication.",
+      "sourceUrl": "https://arxiv.org/abs/2605.18410",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "network clustering algorithms and preprocessing pipelines for robust cell type identification in single cell rna sequencing data",
+      "title": "Network clustering algorithms and preprocessing pipelines for robust cell type identification in single-cell RNA sequencing data",
+      "src": "/figures/publications/network-clustering-algorithms-and-preprocessing-pipelines-for-robust-cell-ty.png",
+      "alt": "Comparison of clustering algorithms for single-cell RNA sequencing networks.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1038/s41598-026-49033-w",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "israel hamas war on x a case study of coordinated campaigns and information integrity",
+      "title": "Israel-Hamas War on X: A Case Study of Coordinated Campaigns and Information Integrity",
+      "src": "/figures/publications/israel-hamas-war-on-x-a-case-study-of-coordinated-campaigns-and-information-.png",
+      "alt": "Timeline and activity patterns from the study of coordinated campaigns on X.",
+      "caption": null,
+      "sourceUrl": "https://arxiv.org/abs/2604.10566",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "linking global science funding to research publications",
+      "title": "Linking Global Science Funding to Research Publications",
+      "src": "/figures/publications/linking-global-science-funding-to-research-publications.png",
+      "alt": "Figure from Linking Global Science Funding to Research Publications.",
+      "caption": "Figure 1 : Coverage of publications containing funding information across bibliometric databases . Left axis shows the yearly proportion of publications with at least one funding acknowledgement (lineplot). Right axis shows the yearly count of publications with at least one funding acknowledgement (bars)",
+      "sourceUrl": "https://arxiv.org/abs/2603.24147",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "leveraging gans for citation intent classification and its impact on citation network analysis",
+      "title": "Leveraging GANs for citation intent classification and its impact on citation network analysis",
+      "src": "/figures/publications/leveraging-gans-for-citation-intent-classification-and-its-impact-on-citatio.png",
+      "alt": "Figure from Leveraging GANs for citation intent classification and its impact on citation network analysis.",
+      "caption": "Figure 1 : Distribution of articles across disciplines in the unarXiv dataset. The dataset demonstrates a significant imbalance, with computer science, physics, and mathematics accounting for 47%, 26%, and 17% of the total articles, respectively.",
+      "sourceUrl": "https://arxiv.org/abs/2505.21162",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "scale invariance and statistical significance in complex weighted networks",
+      "title": "Scale invariance and statistical significance in complex weighted networks",
+      "src": "/figures/publications/scale-invariance-and-statistical-significance-in-complex-weighted-networks.png",
+      "alt": "Weighted-network structure used to study scale invariance and statistical significance.",
+      "caption": null,
+      "sourceUrl": "https://arxiv.org/abs/2510.23964",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "detectability threshold in weighted modular networks",
+      "title": "Detectability threshold in weighted modular networks",
+      "src": "/figures/publications/detectability-threshold-in-weighted-modular-networks.png",
+      "alt": "Figure from Detectability threshold in weighted modular networks.",
+      "caption": "Figure 1: (a) Detectability threshold for the weighted planted partition model as a function of , i.e., the sum of average value of the within- and cross-community edge weights. Here and . Different curves corresponds to the different distributions of the weights we consider. Predictions are given by Eq. ( 37 ) for the Dirac distribution, Eq. ( 41 ) for the Poisson distribution, Eq. ( 45 ) for the exponential distribution, Eq. ( 49 ) for the geometric distribution, and Eq. ( 53 ) for the signed-Bernoulli distribution. Note that geometric weights require and signed-Bernoulli weights require , explaining the limited range of their corresponding curves. (b) Detectability threshold for the weighted planted partition model as a function of , with the same parameters as in (a) but for the case of homogeneous topology, given by Eq. ( 43 ) for the Poisson distribution, Eq. ( 39 ) for the Dirac distribution, Eq. ( 47 ) for the exponential distribution, Eq. ( 51 ) for the geometric distribution, and Eq. ( 55 ) for the signed-Bernoulli distribution. The limited range of geometric and signed-Bernoulli weight curves reflects their respective parameter constraints.",
+      "sourceUrl": "https://arxiv.org/abs/2511.00214",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "predicting citation impact of research papers using gpt and other text embeddings",
+      "title": "Predicting citation impact of research papers using GPT and other text embeddings",
+      "src": "/figures/publications/predicting-citation-impact-of-research-papers-using-gpt-and-other-text-embed.png",
+      "alt": "Figure from Predicting citation impact of research papers using GPT and other text embeddings.",
+      "caption": "Figure 1: Comparative performance of text embedding models on citation prediction. Box plots illustrating the effectiveness of different embedding techniques in predicting the top 20% cited academic papers over the years using different classification algorithms. Performance is evaluated using (AUC-ROC) and (AUC-PR) across the balanced and skewed datasets. ACC denotes the prediction of papers in the top 20% of accumulative citations over the years, while YCC refers to the prediction of papers with the top annual citations in a specific year. The results highlight the variance in model performance, with implications for model selection in citation analysis tasks.",
+      "sourceUrl": "https://arxiv.org/abs/2407.19942",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "triadic novelty a typology and measurement framework for recognizing novel contributions in science",
+      "title": "Triadic Novelty: A Typology and Measurement Framework for Recognizing Novel Contributions in Science",
+      "src": "/figures/publications/triadic-novelty-a-typology-and-measurement-framework-for-recognizing-novel-c.png",
+      "alt": "Three types of triadic novelty in weighted co-occurrence networks.",
+      "caption": null,
+      "sourceUrl": "https://arxiv.org/abs/2506.17851",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "the rise of bluesky",
+      "title": "The Rise of Bluesky",
+      "src": "/figures/publications/the-rise-of-bluesky.png",
+      "alt": "Figure from The Rise of Bluesky.",
+      "caption": "Figure 1: Daily engagement and network metrics on Bluesky. Vertical dashed lines represent four major events. (a) Profile creation occurred in bursts corresponding to these events. We assign users to four groups based on the periods in which they joined (shown by the colors). (b) Total activity by user group. The dashed line corresponds to users outside of the four major groups. (c) Visualization of the follower network based on a 1% sample of the users. Panels (d-i) plot various quantities versus the increasing number of users; only 26 million users with at least one friend or follower as of 7 February 2025 are considered. Note that the number of users can occasionally decrease due to deletion and suspension of accounts. (d) Total activity by user group. (e) Average activity per active user, defined as having at least one post, repost, reply, or like. (f) Daily active users. We plot the absolute count (black) and the percentage out of total users (gray). (g) Average out-degree by user group. (h) Average clustering coefficient of the Bluesky follower network (black). We also plot the expected value in a random network with the same number of nodes and edges, which is given by the average degree divided by the node count (gray). (i) Gini (black) and Kappa (gray) indices of in-degree heterogeneity.",
+      "sourceUrl": "https://arxiv.org/abs/2504.12902",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "science of science a complex network perspective",
+      "title": "Science of Science: a complex network perspective",
+      "src": "/figures/publications/science-of-science-a-complex-network-perspective.png",
+      "alt": "Complex-network perspective on the science of science.",
+      "caption": null,
+      "sourceUrl": "https://www.frontiersin.org/journals/research-metrics-and-analytics/articles/10.3389/frma.2025.1595966/full",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "using network analysis and large language models to obtain a landscape of the literature on dressing materials for wound healing the predominance of chitosan and other",
+      "title": "Using network analysis and large-language models to obtain a landscape of the literature on dressing materials for wound healing: The predominance of chitosan and other …",
+      "src": "/figures/publications/using-network-analysis-and-large-language-models-to-obtain-a-landscape-of-th.png",
+      "alt": "Network map of research themes in wound-healing materials.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1016/j.ijbiomac.2025.141565",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "measuring research interest similarity with transition probabilities",
+      "title": "Measuring research interest similarity with transition probabilities",
+      "src": "/figures/publications/measuring-research-interest-similarity-with-transition-probabilities.png",
+      "alt": "Research-interest similarity represented through transition probabilities.",
+      "caption": null,
+      "sourceUrl": "https://arxiv.org/abs/2409.18240",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "comparing random walks in graph embedding and link prediction",
+      "title": "Comparing random walks in graph embedding and link prediction",
+      "src": "/figures/publications/comparing-random-walks-in-graph-embedding-and-link-prediction.png",
+      "alt": "Figure from Comparing random walks in graph embedding and link prediction.",
+      "caption": "Figure 1: Methodology used in the work. The main steps applied are a) graph preparation , which includes graph selection and preprocessing; b) random walk application and node sequences collection; c) node embeddings process through the Skip-Gram model; and d) link prediction and similarity analysis.",
+      "sourceUrl": "https://arxiv.org/abs/2308.03636",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "using full text content to characterize and identify best seller books a study of early 20th century literature",
+      "title": "Using full-text content to characterize and identify best seller books: A study of early 20th-century literature",
+      "src": "/figures/publications/using-full-text-content-to-characterize-and-identify-best-seller-books-a-stu.png",
+      "alt": "Overview of the full-text analysis used to characterize best seller books.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1371/journal.pone.0302070",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "brainlife io a decentralized and open source cloud platform to support neuroscience research",
+      "title": "brainlife. io: A decentralized and open-source cloud platform to support neuroscience research",
+      "src": "/figures/publications/brainlife-io-a-decentralized-and-open-source-cloud-platform-to-support-neuro.png",
+      "alt": "The decentralized brainlife.io platform and neuroscience workflow.",
+      "caption": null,
+      "sourceUrl": "https://arxiv.org/abs/2306.02183",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "recovering network topology and dynamics from sequences a machine learning approach",
+      "title": "Recovering network topology and dynamics from sequences: A machine learning approach",
+      "src": "/figures/publications/recovering-network-topology-and-dynamics-from-sequences-a-machine-learning-a.png",
+      "alt": "Figure from Recovering network topology and dynamics from sequences: A machine learning approach.",
+      "caption": "Figure 1: Schematics of the methodology. First, we generate multiple iterations of the considered network models. Then, for each considered walk dynamics, we sample a number of walk sequences. Each walk sequence is then used to generate a reconstructed network. This is accomplished by connecting nodes according to adjacency of nodes in the sequence. For instance, for a sequence of nodes , edges are reconstructed. Next, we compute a set of network measurements for each walk sequence. Finally, the features of each network are used to train a classifier that try to recover the corresponding model, walk dynamics or both.",
+      "sourceUrl": "https://arxiv.org/abs/2206.15190",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "identifying the perceived local properties of networks reconstructed from biased random walks",
+      "title": "Identifying the perceived local properties of networks reconstructed from biased random walks",
+      "src": "/figures/publications/identifying-the-perceived-local-properties-of-networks-reconstructed-from-bi.png",
+      "alt": "Figure from Identifying the perceived local properties of networks reconstructed from biased random walks.",
+      "caption": "Figure 1: Example of a subgraph (highlighted in red) representing the limited information observed by a random walk starting at node A.",
+      "sourceUrl": "https://arxiv.org/abs/2211.06657",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "history of chemistry of materials according to topic evolution based on network analysis and natural language processing",
+      "title": "History of Chemistry of Materials According to Topic Evolution Based on Network Analysis and Natural Language Processing",
+      "src": "/figures/publications/history-of-chemistry-of-materials-according-to-topic-evolution-based-on-netw.png",
+      "alt": "Topic evolution in the history of Chemistry of Materials.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1021/acs.chemmater.3c02962",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "network analysis and natural language processing to obtain a landscape of the scientific literature on materials applications",
+      "title": "Network analysis and natural language processing to obtain a landscape of the scientific literature on materials applications",
+      "src": "/figures/publications/network-analysis-and-natural-language-processing-to-obtain-a-landscape-of-th.png",
+      "alt": "Network and language-processing pipeline for mapping materials applications.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1021/acsami.3c01632",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "text characterization based on recurrence networks",
+      "title": "Text characterization based on recurrence networks",
+      "src": "/figures/publications/text-characterization-based-on-recurrence-networks.png",
+      "alt": "Figure from Text characterization based on recurrence networks.",
+      "caption": "Figure 1: Diagram of the execution pipeline of the methodology proposed. The pre-processing of the raw text yields the organized text (O), which is then used to generate the mesoscopic network. Finally, measurements such as the Recurrence Signatures proposed can be extracted from the network to characterize it.",
+      "sourceUrl": "https://arxiv.org/abs/2201.06665",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "analyzing the influence of prolific collaborations on authors productivity and visibility",
+      "title": "Analyzing the influence of prolific collaborations on authors productivity and visibility",
+      "src": "/figures/publications/analyzing-the-influence-of-prolific-collaborations-on-authors-productivity-a.png",
+      "alt": "Figure from Analyzing the influence of prolific collaborations on authors productivity and visibility.",
+      "caption": "Figure 1: Number of authors per field of study considering papers published between 1950 and 2020. We also show after each bar the corresponding fraction of authors in the respective field.",
+      "sourceUrl": "https://arxiv.org/abs/2112.06607",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "on the stability of citation networks",
+      "title": "On the stability of citation networks",
+      "src": "/figures/publications/on-the-stability-of-citation-networks.png",
+      "alt": "Figure from On the stability of citation networks.",
+      "caption": "Figure 1: The basic framework underlying the derivation of a citation network. (a) It starts with a specific query on a database; (b) the recovered documents are selected; (c) from the documents and their citations, a network is created; (d) the respective communities are identified, and labels are attributed to it.",
+      "sourceUrl": "https://arxiv.org/abs/2105.01693",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "robustness modularity in complex networks",
+      "title": "Robustness modularity in complex networks",
+      "src": "/figures/publications/robustness-modularity-in-complex-networks.png",
+      "alt": "Figure from Robustness modularity in complex networks.",
+      "caption": "Figure 1: Schematic representation of the proposed methodology. The network is the one at the top. First, links in the network are randomly rewired with a probability . Then, a clustering algorithm is applied on all perturbed networks, producing a TPR profile (bottom). The RM is the area above the curve of the TPR profile (highlighted).",
+      "sourceUrl": "https://arxiv.org/abs/2110.02297",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "finding contrasting patterns in rhythmic properties between prose and poetry",
+      "title": "Finding contrasting patterns in rhythmic properties between prose and poetry",
+      "src": "/figures/publications/finding-contrasting-patterns-in-rhythmic-properties-between-prose-and-poetry.png",
+      "alt": "Figure from Finding contrasting patterns in rhythmic properties between prose and poetry.",
+      "caption": "Figure 1: Pipeline of the proposed analysis. (a) Set of texts to be analyzed. (b) The texts are converted into sequences of phones. (c) The phone sequences are represented as sequences of phone repetitions. (d) The sequences obtained in (c) are classified into poetry and prose.",
+      "sourceUrl": "https://arxiv.org/abs/2107.08512",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "visualizing big science projects",
+      "title": "Visualizing big science projects",
+      "src": "/figures/publications/visualizing-big-science-projects.png",
+      "alt": "Data integration and network maps for visualizing big science projects.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1038/s42254-021-00374-7",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "associations between author level metrics in subsequent time periods",
+      "title": "Associations between author-level metrics in subsequent time periods",
+      "src": "/figures/publications/associations-between-author-level-metrics-in-subsequent-time-periods.png",
+      "alt": "Figure from Associations between author-level metrics in subsequent time periods.",
+      "caption": "Figure 1: Schematic representation of the components needed to calculate citations and references diversity.",
+      "sourceUrl": "https://arxiv.org/abs/2011.12479",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "detecting climate teleconnections with granger causality",
+      "title": "Detecting climate teleconnections with Granger causality",
+      "src": "/figures/publications/detecting-climate-teleconnections-with-granger-causality.png",
+      "alt": "Figure from Detecting climate teleconnections with Granger causality.",
+      "caption": "Figure 1: Graphical description of the methodology used in this study (also see the Methods section). Surface air temperature data in the Niño 3.4 region (a) is used to perform lagged correlation or Granger causality analysis against precipitation data throughout the world, up to a maximum lag . For each considered time resolution (varying from 7 days to 30 days), we calculate the lagged correlation or Granger causality between anomalies in precipitation ( ) in a particular region and the ENSO temperature ( ) (b). The significance of the result is found considering surrogates of both time series, i.e., and (c), and then calculating the respective -value for the region (d). For a given threshold we define that region has significant relationship with the ENSO if the corresponding -value is smaller than . Significant regions are aggregated and counted across the considered resolution values to measure persistence (e). Finally, colors on the maps represent regions with significant -values that are persistent across (f).",
+      "sourceUrl": "https://arxiv.org/abs/2012.03848",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "fury advanced scientific visualization",
+      "title": "FURY: advanced scientific visualization",
+      "src": "/figures/publications/fury-advanced-scientific-visualization.png",
+      "alt": "Scientific visualization produced with FURY.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.21105/joss.03384",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "principal component analysis a natural approach to data exploration",
+      "title": "Principal component analysis: A natural approach to data exploration",
+      "src": "/figures/publications/principal-component-analysis-a-natural-approach-to-data-exploration.png",
+      "alt": "Figure from Principal component analysis: A natural approach to data exploration.",
+      "caption": "Figure 1: PCA example on a real-world situation. Each bean (a) is characterized in terms of two measurements: diameter and square root of area . Though these two measurements are intrinsically related in a direct fashion, bean shape variations induce a dispersion of the objects when mapped into the features space (b). PCA allows the identification of the orientation of maximum data dispersion (c). As the dispersion in the resulting second axis is relatively small, this axis can be discarded (d).",
+      "sourceUrl": "https://arxiv.org/abs/1804.02502",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "classification of abrupt changes along viewing profiles of scientific articles",
+      "title": "Classification of abrupt changes along viewing profiles of scientific articles",
+      "src": "/figures/publications/classification-of-abrupt-changes-along-viewing-profiles-of-scientific-articl.png",
+      "alt": "Figure from Classification of abrupt changes along viewing profiles of scientific articles.",
+      "caption": "Figure 1: Profiles of 6 randomly chosen PLoS ONE articles showing, in each case, the cumulative number of views along successive months. Interestingly, several of these profiles present approximate polygonal shape, with sharp turns followed by relatively straight segments.",
+      "sourceUrl": "https://arxiv.org/abs/2005.04512",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "enriching and analyzing small citation networks a case study on transistor s history",
+      "title": "Enriching and analyzing small citation networks: A case study on transistor’s history",
+      "src": "/figures/publications/enriching-and-analyzing-small-citation-networks-a-case-study-on-transistor-s.png",
+      "alt": "Figure from Enriching and analyzing small citation networks: A case study on transistor’s history.",
+      "caption": "Figure 1: Diagram representing how the studied network is created. The region denoted by the dashed line represents the network core. (a): the selected nodes (in red), obtained from the keyword search (”bjt” and ”bipolar junction transistor”) and the respective connections. (b): the cited documents are included own in blue). (c): blue leaf nodes leading to entries not selected in the search are removed, and the larger connected component is taken. (d): the edges between blued nodes are included.",
+      "sourceUrl": "https://arxiv.org/abs/2008.03134",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "contrarian effects and echo chamber formation in opinion dynamics",
+      "title": "Contrarian effects and echo chamber formation in opinion dynamics",
+      "src": "/figures/publications/contrarian-effects-and-echo-chamber-formation-in-opinion-dynamics.png",
+      "alt": "Figure from Contrarian effects and echo chamber formation in opinion dynamics.",
+      "caption": "Figure 2: Representation of the contrarian-related processing. (a): Initial configuration example of nodes and and their respective neighbors. (b): the probabilities of node to influence its neighbors, in which the highlighted neighbor was convinced to the opinion of . In this example, only one neighbor had its opinion changed, but all nodes had the same probability of adhering to the opinion of . The Underdog effect is illustrated in (c), given that the green node corresponds to the less frequent opinion. (d): the probabilities of to convince its neighbors. The highlighted illustrates the change to opinion .",
+      "sourceUrl": "https://arxiv.org/abs/1910.06487",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "a comparative analysis of knowledge acquisition performance in complex networks",
+      "title": "A comparative analysis of knowledge acquisition performance in complex networks",
+      "src": "/figures/publications/a-comparative-analysis-of-knowledge-acquisition-performance-in-complex-netwo.png",
+      "alt": "Figure from A comparative analysis of knowledge acquisition performance in complex networks.",
+      "caption": "Figure 1: Methodology employed to analysis the behavior of learning curves. In (a), we selected different network topologies. In (b), dynamics based on variations of random walks were considered to explore the networks. In (c), we obtain the learning curves describing how many nodes are discovered as the network is explored. Finally, in (d) each curve is mapped into a 2-dimensional space and similarities in the behavior of learning curves for different topologies and dynamics are analyzed.",
+      "sourceUrl": "https://arxiv.org/abs/2007.12028",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "recency predicts bursts in the evolution of author citations",
+      "title": "Recency predicts bursts in the evolution of author citations",
+      "src": "/figures/publications/recency-predicts-bursts-in-the-evolution-of-author-citations.png",
+      "alt": "Figure from Recency predicts bursts in the evolution of author citations.",
+      "caption": "Figure 1: Bipartite Paper-Author citation network. (a) A paper in our data set cites articles ( , , , ). The orange lines represent citations between papers, the blue lines match each author to their papers. (b) From the paper-paper citations we derive the citations between papers and authors, yielding a weighted bipartite network.",
+      "sourceUrl": "https://arxiv.org/abs/1911.11926",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "complex systems features similarity and connectivity",
+      "title": "Complex systems: features, similarity and connectivity",
+      "src": "/figures/publications/complex-systems-features-similarity-and-connectivity.png",
+      "alt": "Figure from Complex systems: features, similarity and connectivity.",
+      "caption": "Figure 1: Diagram illustrating the typical interaction between a problem (P), related database (D), alternative data representations (A), Researcher (R), methods (M), and implementation hardware (H). The choice of more specific configurations of these elements, especially the definition of the data representations, can be assisted by guidelines, subjected to intrinsic and extrinsic constraints and goals.",
+      "sourceUrl": "https://arxiv.org/abs/1606.05400",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "a complex network approach to political analysis application to the brazilian chamber of deputies",
+      "title": "A complex network approach to political analysis: Application to the Brazilian Chamber of Deputies",
+      "src": "/figures/publications/a-complex-network-approach-to-political-analysis-application-to-the-brazilia.png",
+      "alt": "Figure from A complex network approach to political analysis: Application to the Brazilian Chamber of Deputies.",
+      "caption": "Figure 1: Schematic representing the methodology in this paper. In (a), the voting data is analyzed. In (b), the pairwise similarity of votes in distinct propositions generates a weighted network of deputies. Edges weight represent the distance between two deputies, according to their voting behavior. In (c), edges are filtered so as to preserve the community structure. In (d), we identify the community structure of the network. Finally, in (e), the resulting network is analyzed by measuring e.g. distance between parties or clusters of deputies.",
+      "sourceUrl": "https://arxiv.org/abs/1909.02346",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "opinion diversity and social bubbles in adaptive sznajd networks",
+      "title": "Opinion diversity and social bubbles in adaptive Sznajd networks",
+      "src": "/figures/publications/opinion-diversity-and-social-bubbles-in-adaptive-sznajd-networks.png",
+      "alt": "Figure from Opinion diversity and social bubbles in adaptive Sznajd networks.",
+      "caption": "(a) , , , and .",
+      "sourceUrl": "https://arxiv.org/abs/1905.00867",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "malleability of complex networks",
+      "title": "Malleability of complex networks",
+      "src": "/figures/publications/malleability-of-complex-networks.png",
+      "alt": "Figure from Malleability of complex networks.",
+      "caption": null,
+      "sourceUrl": "https://arxiv.org/abs/1810.09602",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "dynamic gene network analysis of caco 2 cell response to shiga toxin producing escherichia coli associated hemolytic uremic syndrome",
+      "title": "Dynamic Gene Network Analysis of Caco-2 Cell Response to Shiga Toxin-Producing Escherichia coli-Associated Hemolytic–Uremic Syndrome",
+      "src": "/figures/publications/dynamic-gene-network-analysis-of-caco-2-cell-response-to-shiga-toxin-produci.png",
+      "alt": "Dynamic gene-network analysis workflow for Caco-2 cell response.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.3390/microorganisms7070195",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "connecting network science and information theory",
+      "title": "Connecting Network Science and Information Theory",
+      "src": "/figures/publications/connecting-network-science-and-information-theory.png",
+      "alt": "Figure from Connecting Network Science and Information Theory.",
+      "caption": "Figure 1: Overall framework underlying the integration between network science and information theory. A network (a) is sampled by a given dynamics and a respective time series corresponding to a sequence of symbols (b) is obtained and transmitted. The receiver of the latter can then try to recover the original network (c). If desired, the transmission can be optimized, e.g. by using compaction.",
+      "sourceUrl": "https://arxiv.org/abs/1704.03091",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "can spatiality promote diversity",
+      "title": "Can Spatiality Promote Diversity?",
+      "src": "/figures/publications/can-spatiality-promote-diversity.png",
+      "alt": "Figure from Can Spatiality Promote Diversity?.",
+      "caption": "Figure 1: Average opinion diversity and standard deviation as a function of rewiring probability considering 400000 Monte Carlo iterations. The inset shows how diversity changes with the number of iterations (MCT) for the four rewiring probabilities highlighted in the main plot.",
+      "sourceUrl": "https://arxiv.org/abs/1809.00729",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "the dynamics of knowledge acquisition via self learning in complex networks",
+      "title": "The dynamics of knowledge acquisition via self-learning in complex networks",
+      "src": "/figures/publications/the-dynamics-of-knowledge-acquisition-via-self-learning-in-complex-networks.png",
+      "alt": "Figure from The dynamics of knowledge acquisition via self-learning in complex networks.",
+      "caption": null,
+      "sourceUrl": "https://arxiv.org/abs/1802.09337",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "topological characterization of world cities",
+      "title": "Topological characterization of world cities",
+      "src": "/figures/publications/topological-characterization-of-world-cities.png",
+      "alt": "Figure from Topological characterization of world cities.",
+      "caption": "Figure 1: Framework for filtering cities for further analysis.",
+      "sourceUrl": "https://arxiv.org/abs/1709.08244",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "characterizing bjts using the early voltage in the forward active mode",
+      "title": "Characterizing BJTs using the Early voltage in the forward active mode",
+      "src": "/figures/publications/characterizing-bjts-using-the-early-voltage-in-the-forward-active-mode.png",
+      "alt": "Figure from Characterizing BJTs using the Early voltage in the forward active mode.",
+      "caption": "Figure 1: Common emitter configuration of a BJT. The input signal is represented by , and the output corresponds to or . The base-emitter junction is directly biased, while the base-collector junction is reversely biased. Resistor is often understood as the load of the circuit. is the fixed voltage for circuit operation.",
+      "sourceUrl": "https://arxiv.org/abs/1701.02269",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "a pattern recognition approach to transistor array parameter variance",
+      "title": "A pattern recognition approach to transistor array parameter variance",
+      "src": "/figures/publications/a-pattern-recognition-approach-to-transistor-array-parameter-variance.png",
+      "alt": "Figure from A pattern recognition approach to transistor array parameter variance.",
+      "caption": "Figure 1: The modified, fixed bias, class A common emitter configuration adopted in the reported experiments.",
+      "sourceUrl": "https://arxiv.org/abs/1708.00469",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "biological network border detection",
+      "title": "Biological network border detection",
+      "src": "/figures/publications/a-diffusion-based-approach-to-obtaining-the-borders-of-urban-areas.png",
+      "alt": "Network-border detection through accessibility and diffusion structure.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1039/c7ib00161d",
+      "sourceLabel": "Related author figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "knowledge acquisition a complex networks approach",
+      "title": "Knowledge acquisition: A complex networks approach",
+      "src": "/figures/publications/knowledge-acquisition-a-complex-networks-approach.png",
+      "alt": "Figure from Knowledge acquisition: A complex networks approach.",
+      "caption": "Figure 1: Example of the TSAW dynamics on a 2D lattice along three distinct time steps: (a) first iteration, (b) second iteration and (c) 13th iteration. Node colors indicate the number of times that a vertex was visited. The colors orange, blue, green, and red represent , , , and , respectively. For each situation the permitted transitions are shown as arrows between nodes alongside with the transition probability given by equation 2 .",
+      "sourceUrl": "https://arxiv.org/abs/1703.03366",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "representation of texts as complex networks a mesoscopic approach",
+      "title": "Representation of texts as complex networks: a mesoscopic approach",
+      "src": "/figures/publications/representation-of-texts-as-complex-networks-a-mesoscopic-approach.png",
+      "alt": "Figure from Representation of texts as complex networks: a mesoscopic approach.",
+      "caption": "Figure 1: Illustration of the presented methodology. Initially, the text is organized in sets of subsequent and overlapping windows , each containing structural paragraphs, as shown in (a). Next, the cosine similarity is calculated among all pairs of text windows (illustrated by the width of the lines in b). The mesoscopic network is obtained by maintaining only connections among pairs with similarity higher than a threshold value . This is illustrated by the network visualization in (c).",
+      "sourceUrl": "https://arxiv.org/abs/1606.09636",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "negative feedback linearity and parameter invariance in linear electronics",
+      "title": "Negative feedback, linearity and parameter invariance in linear electronics",
+      "src": "/figures/publications/negative-feedback-linearity-and-parameter-invariance-in-linear-electronics.png",
+      "alt": "Figure from Negative feedback, linearity and parameter invariance in linear electronics.",
+      "caption": "Figure 1: Illustration of negative feedback. An input signal is amplified according to a transfer function , and a fraction of the result is subtracted from the input.",
+      "sourceUrl": "https://arxiv.org/abs/1611.06356",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "patterns of authors contribution in scientific manuscripts",
+      "title": "Patterns of authors contribution in scientific manuscripts",
+      "src": "/figures/publications/patterns-of-authors-contribution-in-scientific-manuscripts.png",
+      "alt": "Figure from Patterns of authors contribution in scientific manuscripts.",
+      "caption": "Figure 1: Example of bipartite network representing the relationship between authors and contributions. The list of all possible contributions was obtained from the information provided by authors who published in the PLoS ONE journal. Note that the total amount of authors and particular contributions vary from article to article.",
+      "sourceUrl": "https://arxiv.org/abs/1609.05545",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "seeking maximum linearity of transfer functions",
+      "title": "Seeking maximum linearity of transfer functions",
+      "src": "/figures/publications/seeking-maximum-linearity-of-transfer-functions.png",
+      "alt": "Figure from Seeking maximum linearity of transfer functions.",
+      "caption": "Figure 1: (a) Illustration of an input signal being transformed by a system into an output signal . (b) The transfer function specifying the system. (c) It is often desired to have the operation point of the system in the center of the most linear region of the transfer curve, so that the shifted input signal is transformed into the output signal with little distortion.",
+      "sourceUrl": "https://arxiv.org/abs/1608.04008",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "a diffusion based approach to obtaining the borders of urban areas",
+      "title": "A diffusion-based approach to obtaining the borders of urban areas",
+      "src": "/figures/publications/a-diffusion-based-approach-to-obtaining-the-borders-of-urban-areas.png",
+      "alt": "Figure from A diffusion-based approach to obtaining the borders of urban areas.",
+      "caption": "Figure 1: Example of administrative regions visualized on the map of a city. The administrative regions at the (a) city and (b) district levels are shown in red. The main inhabited region of the city can be seen at the lower part of the map.",
+      "sourceUrl": "https://arxiv.org/abs/1510.06326",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "using network science and text analytics to produce surveys in a scientific topic",
+      "title": "Using network science and text analytics to produce surveys in a scientific topic",
+      "src": "/figures/publications/using-network-science-and-text-analytics-to-produce-surveys-in-a-scientific-.png",
+      "alt": "Figure from Using network science and text analytics to produce surveys in a scientific topic.",
+      "caption": "Figure 1: Example of the structure of an organized scientific survey. Papers are grouped into more general topics which are reflected as sections, subsections, chapters, etc. A threshold of relevance and focus is thus necessary as their content needs to be summarized and cannot retain the full level of detail for each paper.",
+      "sourceUrl": "https://arxiv.org/abs/1506.05690",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "modular transcriptional repertoire and microrna target analyses characterize genomic dysregulation in the thymus of down syndrome infants",
+      "title": "Modular transcriptional repertoire and MicroRNA target analyses characterize genomic dysregulation in the thymus of Down syndrome infants.",
+      "src": "/figures/publications/modular-transcriptional-repertoire-and-microrna-target-analyses-characterize.jpg",
+      "alt": "Modular transcriptional and microRNA analysis of the thymus in Down syndrome.",
+      "caption": null,
+      "sourceUrl": "https://www.oncotarget.com/article/7120/text/",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "concentric network symmetry",
+      "title": "Concentric network symmetry",
+      "src": "/figures/publications/concentric-network-symmetry.png",
+      "alt": "Figure from Concentric network symmetry.",
+      "caption": "Figure 1: (Color online) Illustration of the dual meaning of accessibility. A self-avoiding random walk dynamics is used. The graph in (a) has 5 reachable nodes but an effective number of accessed nodes equal to . The graph in (b) has exactly 4 reachable nodes and since they are all equally accessed, .",
+      "sourceUrl": "https://arxiv.org/abs/1407.0224",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "thermodynamic characterization of networks using graph polynomials",
+      "title": "Thermodynamic characterization of networks using graph polynomials",
+      "src": "/figures/publications/thermodynamic-characterization-of-networks-using-graph-polynomials.png",
+      "alt": "Figure from Thermodynamic characterization of networks using graph polynomials.",
+      "caption": "Figure 1: (Color online) The scatter plot of Boltzmann partition function associated with normalized Laplacian operator in Eq.( 6 ) and the normalized Laplacian quasi characteristic polynomial given by Eq.( 11 ) for different for Erdős-Rényi and Barabási-Albert random graphs. Black triangles: ; blue circles: ; red stars:",
+      "sourceUrl": "https://arxiv.org/abs/1512.01418",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "a framework for evaluating complex networks measurements",
+      "title": "A framework for evaluating complex networks measurements",
+      "src": "/figures/publications/a-framework-for-evaluating-complex-networks-measurements.png",
+      "alt": "Figure from A framework for evaluating complex networks measurements.",
+      "caption": "Figure 1: Illustration of the distinct distributions that can be observed depending on the choice of measurements or entities under analysis. (a) Heterogeneous distribution. (b) A more uniform distribution for the same entities as in (a) obtained by using different measurements. (c) A distinct distribution observed for the same measurements as in (a) but a distinct set of entities. The errorbars represent the level of noise of each respective measurement.",
+      "sourceUrl": "https://arxiv.org/abs/1412.7367",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "concentric network symmetry grasps authors styles in word adjacency networks",
+      "title": "Concentric network symmetry grasps authors' styles in word adjacency networks",
+      "src": "/figures/publications/concentric-network-symmetry-grasps-authors-styles-in-word-adjacency-networks.png",
+      "alt": "Word-adjacency networks used to compare authors' styles with concentric symmetry.",
+      "caption": null,
+      "sourceUrl": "https://arxiv.org/abs/1504.02162",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "community structure analysis of transcriptional networks reveals distinct molecular pathways for early and late onset temporal lobe epilepsy with childhood febrile seizures",
+      "title": "Community structure analysis of transcriptional networks reveals distinct molecular pathways for early-and late-onset temporal lobe epilepsy with childhood febrile seizures",
+      "src": "/figures/publications/community-structure-analysis-of-transcriptional-networks-reveals-distinct-mo.png",
+      "alt": "Gene coexpression networks for early- and late-onset temporal lobe epilepsy.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1371/journal.pone.0128174",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "modular dynamics of financial market networks",
+      "title": "Modular Dynamics of Financial Market Networks",
+      "src": "/figures/publications/modular-dynamics-of-financial-market-networks.png",
+      "alt": "Figure from Modular Dynamics of Financial Market Networks.",
+      "caption": "Figure 1: (Color online) Schematic representation of the different steps of our methodology. Please refer to the text for an explanation about each step.",
+      "sourceUrl": "https://arxiv.org/abs/1501.05040",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "methods for gene coexpression network visualization and analysis",
+      "title": "Methods for gene coexpression network visualization and analysis",
+      "src": "/figures/publications/methods-for-gene-coexpression-network-visualization-and-analysis.png",
+      "alt": "Gene coexpression network visualization and analysis.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1007/978-3-319-11985-4_4",
+      "sourceLabel": "Related author figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "thymus gene coexpression networks a comparative study in children with and without down syndrome",
+      "title": "Thymus gene coexpression networks: a comparative study in children with and without Down Syndrome",
+      "src": "/figures/publications/thymus-gene-coexpression-networks-a-comparative-study-in-children-with-and-w.jpg",
+      "alt": "Thymus gene coexpression network analysis.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1007/978-3-319-11985-4_7",
+      "sourceLabel": "Related author figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "complex network analysis of ca3 transcriptome reveals pathogenic and compensatory pathways in refractory temporal lobe epilepsy",
+      "title": "Complex network analysis of CA3 transcriptome reveals pathogenic and compensatory pathways in refractory temporal lobe epilepsy",
+      "src": "/figures/publications/complex-network-analysis-of-ca3-transcriptome-reveals-pathogenic-and-compens.png",
+      "alt": "CA3 transcriptome network associated with refractory temporal lobe epilepsy.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1371/journal.pone.0079913",
+      "sourceLabel": "Paper figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "quantifying the interdisciplinarity of scientific journals and fields",
+      "title": "Quantifying the interdisciplinarity of scientific journals and fields",
+      "src": "/figures/publications/quantifying-the-interdisciplinarity-of-scientific-journals-and-fields.png",
+      "alt": "Figure from Quantifying the interdisciplinarity of scientific journals and fields.",
+      "caption": "Figure 1: In-Strength and Impact Factor Distributions. The in-strength distribution resulted in a power law with exponential cuttoff [ 17 ] , where the best fitting is shown as a dashed red line with power coefficient . The inset shows that the impact factor distribution also obeys a power law best fitted by the curve shown in red with a power coefficient .",
+      "sourceUrl": "https://arxiv.org/abs/1203.4807",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "local dimension of complex networks",
+      "title": "Local Dimension of Complex Networks",
+      "src": "/figures/publications/local-dimension-of-complex-networks.png",
+      "alt": "Figure from Local Dimension of Complex Networks.",
+      "caption": "(a)",
+      "sourceUrl": "https://arxiv.org/abs/1209.2476",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "investigating relationships within and between category networks in wikipedia",
+      "title": "Investigating relationships within and between category networks in Wikipedia",
+      "src": "/figures/publications/using-network-science-and-text-analytics-to-produce-surveys-in-a-scientific-.png",
+      "alt": "Category and knowledge networks used to map scientific relationships.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1016/j.joi.2011.03.003",
+      "sourceLabel": "Related author figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "a pattern recognition approach to complex networks",
+      "title": "A pattern recognition approach to complex networks",
+      "src": "/figures/publications/a-framework-for-evaluating-complex-networks-measurements.png",
+      "alt": "Multivariate pattern-recognition view of complex-network measurements.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1088/1742-5468/2010/11/p11015",
+      "sourceLabel": "Related author figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "identifying the borders of mathematical knowledge",
+      "title": "Identifying the borders of mathematical knowledge",
+      "src": "/figures/publications/identifying-the-borders-of-mathematical-knowledge.png",
+      "alt": "Map of scientific fields used to visualize the structure and boundaries of knowledge.",
+      "caption": null,
+      "sourceUrl": "https://doi.org/10.1088/1751-8113/43/32/325202",
+      "sourceLabel": "Related author figure",
+      "method": "curated"
+    },
+    {
+      "normalizedTitle": "concentric characterization and classification of complex network nodes application to an institutional collaboration network",
+      "title": "Concentric characterization and classification of complex network nodes: Application to an institutional collaboration network",
+      "src": "/figures/publications/concentric-characterization-and-classification-of-complex-network-nodes-appl.png",
+      "alt": "Figure from Concentric characterization and classification of complex network nodes: Application to an institutional collaboration network.",
+      "caption": "Figure 1: A small network with 3 concentric levels considering node as reference",
+      "sourceUrl": "https://arxiv.org/abs/0710.1857",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "identifying complex networks by random walks",
+      "title": "Identifying Complex Networks by Random Walks",
+      "src": "/figures/publications/identifying-complex-networks-by-random-walks.png",
+      "alt": "Figure from Identifying Complex Networks by Random Walks.",
+      "caption": "Figure 1: Average degree distributions for 2000 realizations of ER and BA networks with average degree .",
+      "sourceUrl": "https://arxiv.org/abs/physics/0612121",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    },
+    {
+      "normalizedTitle": "hierarchical characterization of complex networks",
+      "title": "Hierarchical characterization of complex networks",
+      "src": "/figures/publications/hierarchical-characterization-of-complex-networks.png",
+      "alt": "Figure from Hierarchical characterization of complex networks.",
+      "caption": "Figure 1: Three situations yielding the same clustering coefficient (equal to 1) for the reference node .",
+      "sourceUrl": "https://arxiv.org/abs/cond-mat/0412761",
+      "sourceLabel": "Preprint figure",
+      "method": "ar5iv"
+    }
+  ]
+}

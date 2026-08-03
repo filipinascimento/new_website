@@ -8,8 +8,23 @@ export function ProjectCard({ project }: { project: ProjectRecord }) {
         <span>{project.status}</span>
         <span>{project.year}</span>
       </div>
-      <h3>{project.title}</h3>
-      <div className="project-card__body" dangerouslySetInnerHTML={{ __html: project.html }} />
+      <div className="project-card__layout">
+        <div>
+          <h3>{project.title}</h3>
+          <div className="project-card__body" dangerouslySetInnerHTML={{ __html: project.html }} />
+        </div>
+        {project.figure && (
+          <a
+            className="project-card__figure"
+            href={project.figure.sourceUrl || project.links?.[0]?.url || "#"}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`View figure source for ${project.title}`}
+          >
+            <img src={project.figure.src} alt={project.figure.alt} loading="lazy" />
+          </a>
+        )}
+      </div>
       {project.topics && (
         <div className="tag-list" aria-label="Topics">
           {project.topics.map((topic) => <span key={topic}>{topic}</span>)}

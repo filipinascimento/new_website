@@ -18,7 +18,7 @@ export default function ProjectsPage() {
       <header className="page-hero shell">
         <div className="eyebrow">Projects</div>
         <h1>Research projects</h1>
-        <p>Recent work is intentionally summarized at a high level. Selected earlier projects include more context and acknowledge important public collaborations.</p>
+        <p>Recent work is intentionally summarized at a high level. Earlier projects include more context and links to the publications, tools, and public resources behind them.</p>
       </header>
       <section className="section shell section--first">
         <div className="section-label-row">
