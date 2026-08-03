@@ -123,44 +123,44 @@ export default function Home() {
             </div>
             <div className="home-project-list">
               {projects.map((project) => (
-                <article key={project.slug}>
-                  <div className="home-project-list__meta"><span>{project.status}</span><span>{project.year}</span></div>
+                <article className={`home-project-card home-project-card--${project.accent || "neutral"}`} key={project.slug}>
+                  {project.figure && project.figure.sourceUrl ? (
+                    <a
+                      className="home-project-list__figure"
+                      href={project.figure.sourceUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`View figure source for ${project.title}`}
+                    >
+                      <img
+                        src={`${basePath}${project.figure.src}`}
+                        alt={project.figure.alt}
+                        loading="lazy"
+                        style={{
+                          objectFit: project.figure.fit || "contain",
+                          objectPosition: project.figure.position || "center",
+                        }}
+                      />
+                    </a>
+                  ) : project.figure ? (
+                    <div className="home-project-list__figure">
+                      <img
+                        src={`${basePath}${project.figure.src}`}
+                        alt={project.figure.alt}
+                        loading="lazy"
+                        style={{
+                          objectFit: project.figure.fit || "contain",
+                          objectPosition: project.figure.position || "center",
+                        }}
+                      />
+                    </div>
+                  ) : null}
                   <div className="home-project-list__content">
+                    <div className="home-project-list__meta"><span>{project.status}</span><span>{project.year}</span></div>
                     <h3>{project.title}</h3>
-                    {project.figure && project.figure.sourceUrl ? (
-                      <a
-                        className="home-project-list__figure"
-                        href={project.figure.sourceUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label={`View figure source for ${project.title}`}
-                      >
-                        <img
-                          src={`${basePath}${project.figure.src}`}
-                          alt={project.figure.alt}
-                          loading="lazy"
-                          style={{
-                            objectFit: project.figure.fit || "contain",
-                            objectPosition: project.figure.position || "center",
-                          }}
-                        />
-                      </a>
-                    ) : project.figure ? (
-                      <div className="home-project-list__figure">
-                        <img
-                          src={`${basePath}${project.figure.src}`}
-                          alt={project.figure.alt}
-                          loading="lazy"
-                          style={{
-                            objectFit: project.figure.fit || "contain",
-                            objectPosition: project.figure.position || "center",
-                          }}
-                        />
-                      </div>
-                    ) : null}
                     <div className="home-project-list__body"><p>{project.summary || project.text}</p></div>
+                    {project.topics && <div className="home-project-list__topics">{project.topics.map((topic) => <span key={topic}>{topic}</span>)}</div>}
                   </div>
-                  {project.topics && <div className="home-project-list__topics">{project.topics.map((topic) => <span key={topic}>{topic}</span>)}</div>}
                 </article>
               ))}
             </div>

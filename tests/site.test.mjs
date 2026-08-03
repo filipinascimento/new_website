@@ -328,20 +328,18 @@ test("keeps every navigation link visible at compact widths", async () => {
   assert.doesNotMatch(styles, /\.site-nav\s*\{[^}]*overflow-x:\s*auto/s);
 });
 
-test("lets project descriptions wrap beside figures and continue at full width", async () => {
+test("uses dedicated editorial media fields for project figures", async () => {
   const home = await readFile(new URL("app/page.tsx", root), "utf8");
   const projectCard = await readFile(new URL("app/components/ProjectCard.tsx", root), "utf8");
   const styles = await readFile(new URL("app/globals.css", root), "utf8");
 
   assert.match(home, /home-project-list__content/);
-  assert.doesNotMatch(home, /home-project-list__layout/);
   assert.match(projectCard, /project-card__content/);
-  assert.doesNotMatch(projectCard, /project-card__layout/);
-  assert.match(styles, /\.home-project-list__content\s*\{[^}]*display:\s*flow-root/s);
-  assert.match(styles, /\.home-project-list__figure\s*\{[^}]*float:\s*right/s);
-  assert.match(styles, /\.project-card__content\s*\{[^}]*display:\s*flow-root/s);
-  assert.match(styles, /\.project-card__figure\s*\{[^}]*float:\s*right/s);
-  assert.match(styles, /@media \(max-width: 680px\)[\s\S]*?\.home-project-list__figure,[\s\S]*?\.project-card__figure\s*\{[^}]*float:\s*none[^}]*width:\s*100%/s);
+  assert.match(styles, /\.home-project-list__figure\s*\{[^}]*grid-area:\s*media/s);
+  assert.match(styles, /\.project-card\s*\{[^}]*grid-template-columns:/s);
+  assert.match(styles, /\.project-card__figure\s*\{[^}]*grid-area:\s*media/s);
+  assert.doesNotMatch(styles, /(?:home-project-list|project-card)__figure\s*\{[^}]*float:/s);
+  assert.match(styles, /@media \(max-width: 680px\)[\s\S]*?\.project-card,[\s\S]*?\.project-card:nth-child\(even\)\s*\{[^}]*grid-template-columns:\s*1fr/s);
 });
 
 test("renders publication figures on white surfaces", async () => {
@@ -361,7 +359,7 @@ test("normalizes featured project figures and uses concise homepage summaries", 
   assert.ok(featured.every((project) => project.figure.src.startsWith("/figures/projects/normalized/")));
   for (const project of featured) await access(new URL(`public${project.figure.src}`, root));
   assert.match(home, /project\.summary \|\| project\.text/);
-  assert.match(styles, /\.home-project-list__figure img\s*\{[^}]*aspect-ratio:\s*3 \/ 2/s);
-  assert.match(styles, /\.project-card__figure img\s*\{[^}]*aspect-ratio:\s*3 \/ 2/s);
+  assert.match(styles, /\.home-project-list__figure\s*\{[^}]*height:\s*clamp\(/s);
+  assert.match(styles, /\.project-card__figure\s*\{[^}]*min-height:\s*330px/s);
   assert.match(styles, /\.home-project-list__topics,[\s\S]*?\.tag-list\s*\{[^}]*font-size:\s*1rem[^}]*font-weight:\s*500/s);
 });
