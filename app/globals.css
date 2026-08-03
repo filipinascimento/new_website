@@ -653,7 +653,7 @@ a {
   min-width: 0;
   overflow: hidden;
   border-radius: 8px 2px 8px 2px;
-  background: color-mix(in srgb, var(--paper) 72%, transparent);
+  background: #fff;
 }
 
 .recent-publications li:nth-child(even) .recent-publications__figure {
@@ -1284,7 +1284,7 @@ a {
   min-height: 82px;
   overflow: hidden;
   border-radius: 8px 2px 8px 2px;
-  background: color-mix(in srgb, var(--paper) 72%, transparent);
+  background: #fff;
 }
 
 .publication-list li:nth-child(even) .publication-list__figure {

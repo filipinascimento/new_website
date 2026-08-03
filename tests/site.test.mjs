@@ -343,3 +343,9 @@ test("lets project descriptions wrap beside figures and continue at full width",
   assert.match(styles, /\.project-card__figure\s*\{[^}]*float:\s*right/s);
   assert.match(styles, /@media \(max-width: 680px\)[\s\S]*?\.home-project-list__figure,[\s\S]*?\.project-card__figure\s*\{[^}]*float:\s*none[^}]*width:\s*100%/s);
 });
+
+test("renders publication figures on white surfaces", async () => {
+  const styles = await readFile(new URL("app/globals.css", root), "utf8");
+  assert.match(styles, /\.recent-publications__figure\s*\{[^}]*background:\s*#fff/s);
+  assert.match(styles, /\.publication-list__figure\s*\{[^}]*background:\s*#fff/s);
+});
