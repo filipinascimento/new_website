@@ -45,6 +45,7 @@ test("uses direct figures and correct links for the supplied publication PDFs", 
     ["Methods for gene coexpression network visualization and analysis", "https://doi.org/10.1007/978-3-319-11985-4_4"],
     ["Thymus gene coexpression networks: a comparative study in children with and without Down Syndrome", "https://doi.org/10.1007/978-3-319-11985-4_7"],
     ["Investigating relationships within and between category networks in Wikipedia", "https://doi.org/10.1016/j.joi.2011.03.003"],
+    ["A pattern recognition approach to complex networks", "https://doi.org/10.1088/1742-5468/2010/11/p11015"],
     ["Identifying the borders of mathematical knowledge", "https://doi.org/10.1088/1751-8113/43/32/325202"],
   ]);
 
@@ -56,6 +57,7 @@ test("uses direct figures and correct links for the supplied publication PDFs", 
     assert.equal(figure.sourceUrl, sourceUrl);
     assert.doesNotMatch(figure.src, /a-framework-for-evaluating|a-diffusion-based|dynamic-gene-network|using-network-science-and-text-analytics/);
   }
+  assert.equal(figures.figures.filter((figure) => figure.sourceLabel === "Related author figure").length, 0);
 });
 
 test("applies the GitHub Pages base path to publication and project figures", async () => {

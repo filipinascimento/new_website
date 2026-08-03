@@ -99,10 +99,10 @@ figures:
     caption: "Wikipedia category networks for biology and mathematics."
     sourceUrl: https://doi.org/10.1016/j.joi.2011.03.003
   - title: "A pattern recognition approach to complex networks"
-    src: /figures/publications/a-framework-for-evaluating-complex-networks-measurements.png
-    alt: "Multivariate pattern-recognition view of complex-network measurements."
+    localPath: content/publication-figures/assets/pattern-recognition-complex-networks.png
+    alt: "Canonical-variable projection separating network models with different levels of edge rewiring."
+    caption: "Canonical-variable projection of network models with different levels of edge rewiring."
     sourceUrl: https://doi.org/10.1088/1742-5468/2010/11/p11015
-    sourceLabel: Related author figure
   - title: "Identifying the borders of mathematical knowledge"
     localPath: content/publication-figures/assets/identifying-borders-mathematical-knowledge.png
     alt: "Theorem network colored by diversity entropy with central and frontier theorems identified."

@@ -1,5 +1,5 @@
 ---
-generatedAt: "2026-08-03T04:58:23.123Z"
+generatedAt: "2026-08-03T06:14:18.792Z"
 figures:
   - title: "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok"
     normalizedTitle: "the tone of awareness topic sentiment and toxicity maps during mental health month on tiktok"
@@ -703,11 +703,11 @@ figures:
     position: "center"
   - title: "A pattern recognition approach to complex networks"
     normalizedTitle: "a pattern recognition approach to complex networks"
-    src: "/figures/publications/a-framework-for-evaluating-complex-networks-measurements.png"
-    alt: "Multivariate pattern-recognition view of complex-network measurements."
-    caption: null
+    src: "/figures/publications/a-pattern-recognition-approach-to-complex-networks.png"
+    alt: "Canonical-variable projection separating network models with different levels of edge rewiring."
+    caption: "Canonical-variable projection of network models with different levels of edge rewiring."
     sourceUrl: "https://doi.org/10.1088/1742-5468/2010/11/p11015"
-    sourceLabel: "Related author figure"
+    sourceLabel: "Paper figure"
     method: "curated"
     fit: "contain"
     position: "center"
