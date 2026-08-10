@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-03T11:42:00.542Z",
+  "fetchedAt": "2026-08-10T09:46:57.475Z",
   "works": [
     {
       "id": "https://openalex.org/W7164499166",
@@ -397,7 +397,7 @@
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2026.101791",
       "url": "https://doi.org/10.1016/j.joi.2026.101791",
-      "citedByCount": 5,
+      "citedByCount": 6,
       "openAccess": true,
       "openAccessStatus": "hybrid",
       "preprintUrls": [
@@ -929,7 +929,7 @@
       "source": "Nature Methods",
       "doi": "https://doi.org/10.1038/s41592-024-02237-2",
       "url": "https://doi.org/10.1038/s41592-024-02237-2",
-      "citedByCount": 70,
+      "citedByCount": 71,
       "openAccess": true,
       "openAccessStatus": "hybrid",
       "preprintUrls": [
@@ -1647,7 +1647,7 @@
       "source": "Nature Reviews Physics",
       "doi": "https://doi.org/10.1038/s42254-021-00374-7",
       "url": "https://doi.org/10.1038/s42254-021-00374-7",
-      "citedByCount": 17,
+      "citedByCount": 18,
       "openAccess": false,
       "openAccessStatus": "closed",
       "preprintUrls": [],
@@ -1858,7 +1858,7 @@
       "source": "ACM Computing Surveys",
       "doi": "https://doi.org/10.1145/3447755",
       "url": "https://doi.org/10.1145/3447755",
-      "citedByCount": 483,
+      "citedByCount": 487,
       "openAccess": false,
       "openAccessStatus": "closed",
       "preprintUrls": [
@@ -2224,7 +2224,7 @@
       "source": "PLoS ONE",
       "doi": "https://doi.org/10.1371/journal.pone.0229928",
       "url": "https://doi.org/10.1371/journal.pone.0229928",
-      "citedByCount": 27,
+      "citedByCount": 28,
       "openAccess": true,
       "openAccessStatus": "gold",
       "preprintUrls": [
@@ -3200,7 +3200,7 @@
       "source": "Physical Review E",
       "doi": "https://doi.org/10.1103/physreve.92.032810",
       "url": "https://doi.org/10.1103/physreve.92.032810",
-      "citedByCount": 39,
+      "citedByCount": 40,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
