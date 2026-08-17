@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T09:46:57.640Z",
+  "generatedAt": "2026-08-17T08:59:09.295Z",
   "googleScholar": {
     "profileEntries": 118,
     "acceptedPublishedRows": 63,
@@ -15,15 +15,15 @@
   },
   "openAlex": {
     "linkedAuthorRecords": 10,
-    "rawUniqueWorksAcrossLinkedAuthors": 127,
+    "rawUniqueWorksAcrossLinkedAuthors": 128,
     "manuallyLinkedWorks": 18,
-    "candidateWorksBeforePublicationAudit": 95,
+    "candidateWorksBeforePublicationAudit": 96,
     "curatedPublishedWorks": 64,
     "curatedStandalonePreprints": 11,
     "duplicateNormalizedTitles": 0,
     "missingCanonicalPublications": [],
     "missingCanonicalPreprints": [],
-    "primaryAuthorCitations": 1781,
+    "primaryAuthorCitations": 1786,
     "primaryAuthorHIndex": 19
   },
   "crosswalk": {

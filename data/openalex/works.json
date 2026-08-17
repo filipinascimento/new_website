@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-10T09:46:57.475Z",
+  "fetchedAt": "2026-08-17T08:59:09.125Z",
   "works": [
     {
       "id": "https://openalex.org/W7164499166",
@@ -446,23 +446,23 @@
       "authors": [
         {
           "name": "Filipi N. Silva",
-          "id": null
+          "id": "https://openalex.org/A5053702199"
         },
         {
           "name": "Sadamori Kojaku",
-          "id": null
+          "id": "https://openalex.org/A5087795032"
         },
         {
           "name": "Alessandro Flammini",
-          "id": null
+          "id": "https://openalex.org/A5011228873"
         },
         {
           "name": "Filippo Radicchi",
-          "id": null
+          "id": "https://openalex.org/A5048471401"
         },
         {
           "name": "Santo Fortunato",
-          "id": null
+          "id": "https://openalex.org/A5135587706"
         }
       ],
       "topics": [
@@ -1730,7 +1730,7 @@
       "source": "Geophysical Research Letters",
       "doi": "https://doi.org/10.1029/2021gl094707",
       "url": "https://doi.org/10.1029/2021gl094707",
-      "citedByCount": 51,
+      "citedByCount": 52,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -1858,7 +1858,7 @@
       "source": "ACM Computing Surveys",
       "doi": "https://doi.org/10.1145/3447755",
       "url": "https://doi.org/10.1145/3447755",
-      "citedByCount": 487,
+      "citedByCount": 491,
       "openAccess": false,
       "openAccessStatus": "closed",
       "preprintUrls": [
@@ -2887,7 +2887,7 @@
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2017.03.003",
       "url": "https://doi.org/10.1016/j.joi.2017.03.003",
-      "citedByCount": 90,
+      "citedByCount": 92,
       "openAccess": true,
       "openAccessStatus": "hybrid",
       "preprintUrls": [
@@ -3403,7 +3403,7 @@
       "publicationDate": "2015-01-21",
       "year": 2015,
       "type": "preprint",
-      "source": "arXiv (Cornell University)",
+      "source": "RePEc: Research Papers in Economics",
       "doi": "https://doi.org/10.48550/arxiv.1501.05040",
       "url": "https://arxiv.org/abs/1501.05040",
       "citedByCount": 13,
@@ -3797,8 +3797,8 @@
       "doi": "https://doi.org/10.1088/1751-8113/43/32/325202",
       "url": "https://doi.org/10.1088/1751-8113/43/32/325202",
       "citedByCount": 16,
-      "openAccess": false,
-      "openAccessStatus": "closed",
+      "openAccess": true,
+      "openAccessStatus": "green",
       "preprintUrls": [],
       "authors": [
         {
